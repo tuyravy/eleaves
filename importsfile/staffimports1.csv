@@ -1,0 +1,805 @@
+000001,Kheang Vinea            ,??? ????,10-Oct-90,S0045                   ,5,GCA,08-Jun-15,100,SHO,HeadOffice2_Branch_KHR,30-Jun-18
+001291,Ren Phaneth             ,??? ?????,01-Feb-94,S0310                   ,5,GCA,04-Mar-15,102,CHC,ChaomChau_Branch_KHR,30-Jun-18
+001330,Chhorn Theara           ,?? ?????,25-Apr-94,S0591                   ,5,GCA,21-Dec-15,102,CHC,ChaomChau_Branch_KHR,30-Jun-18
+001332,Sok Piseth              ,??? ???????,11-Aug-91,S0083                   ,5,GCA,09-Sep-13,102,CHC,ChaomChau_Branch_KHR,30-Jun-18
+001347,Chhuon Bunchhoeun       ,??? ???????,13-Apr-95,S1010                   ,5,GCA,28-Nov-16,102,CHC,ChaomChau_Branch_KHR,30-Jun-18
+001717,Yen Chantha             ,??? ?????,24-Aug-92,S0995                   ,5,GCA,07-Nov-16,102,CHC,ChaomChau_Branch_KHR,30-Jun-18
+001964,Nov Bopha               ,?? ????,01-May-94,S0560                   ,6,Cashier,16-Nov-15,102,CHC,ChaomChau_Branch_KHR,30-Jun-18
+002927,Say Sopheak             ,???? ?????????,15-Mar-94,S0235                   ,9,ACC,04-Aug-14,102,CHC,ChaomChau_Branch_KHR,30-Jun-18
+003482,Seng Sokleng            ,??? ??????,20-Oct-68,S0013                   ,0,BM,03-Sep-12,102,CHC,ChaomChau_Branch_KHR,30-Jun-18
+003468,Oum Sophearin           ,???? ???????,10-Jan-91,S0101                   ,1,DBM,02-Dec-13,102,CHC,ChaomChau_Branch_KHR,30-Jun-18
+003535,Kory Sokdaro            ,?? ????????,10-May-94,S0354                   ,7,Other,21-Jan-15,102,CHC,ChaomChau_Branch_KHR,30-Jun-18
+003599,Mich Lay                ,???? ??,12-Aug-94,N 150512498             ,6,Cashier,NULL,102,CHC,ChaomChau_Branch_KHR,30-Jun-18
+003625,Porn Ratana             ,??? ????,10-Apr-96,S1213,5,GCA,NULL,102,CHC,ChaomChau_Branch_KHR,30-Jun-18
+003628,Von Sok                 ,??? ???,11-Oct-99,S1203,5,GCA,NULL,102,CHC,ChaomChau_Branch_KHR,30-Jun-18
+003637,Lat Sreyleak            , ????? ????????,06-Feb-92,N050828884              ,9,ACC,18-Dec-17,102,CHC,ChaomChau_Branch_KHR,30-Jun-18
+003649,Ke Tola                 ,?? ????,01-Apr-95,S1260,5,GCA,21-Dec-18,102,CHC,ChaomChau_Branch_KHR,30-Jun-18
+003670,Thorn Virak             ,?? ????,06-Jul-90,S1273,5,GCA,02-Jan-18,102,CHC,ChaomChau_Branch_KHR,30-Jun-18
+003686,Chorn BunChhai          ,?? ?????????,15-Sep-98,S1321,5,GCA,19-Mar-18,102,CHC,ChaomChau_Branch_KHR,30-Jun-18
+003616,Yong Chhouy             ,???? ???,01-Apr-98,S1194,5,GCA,NULL,102,CHC,ChaomChau_Branch_KHR,30-Jun-18
+004410,Our Minhchou            ,??? ?????,19-Jul-97,S0838                   ,6,Cashier,08-Aug-16,103,CCR,ChrangChamreh_Branch_KHR,30-Jun-18
+004559,Phhat Sopheak           ,????? ?????????,01-Jan-90,N/A                     ,5,GCA,25-May-17,103,CCR,ChrangChamreh_Branch_KHR,30-Jun-18
+004582,Lam Reach               ,?? ???,01-Jan-90,S000                    ,5,GCA,16-May-17,103,CCR,ChrangChamreh_Branch_KHR,30-Jun-18
+004598,Thaong Phanit           ,??? ?????,20-Jan-93,S1141,5,GCA,19-Jun-17,103,CCR,ChrangChamreh_Branch_KHR,30-Jun-18
+004626,Dol Vichhai             ,??? ????,11-Sep-96,S1155                   ,5,GCA,10-Jul-17,103,CCR,ChrangChamreh_Branch_KHR,30-Jun-18
+004630,Hout Tith               ,??? ???,10-May-99,S1170,5,GCA,01-Aug-17,103,CCR,ChrangChamreh_Branch_KHR,30-Jun-18
+002837,Khoeun Pheakdey         ,??? ?????,12-Oct-95,S0875                   ,5,GCA,05-Sep-16,103,CCR,ChrangChamreh_Branch_KHR,30-Jun-18
+004672,Hout Thean              ,??? ???,28-Jan-96,S1257,5,GCA,04-Dec-17,103,CCR,ChrangChamreh_Branch_KHR,30-Jun-18
+004673,kong sreysros           ,??? ?????????,02-Feb-99,S00                     ,6,Cashier,11-Dec-17,103,CCR,ChrangChamreh_Branch_KHR,30-Jun-18
+004682,Vaoek Chyvorn           ,??? ?????,12-Feb-96,S1258,5,GCA,18-Dec-17,103,CCR,ChrangChamreh_Branch_KHR,30-Jun-18
+001974,Chhoy Davit             ,??? ?????,09-Jan-92,S0751                   ,7,Other,15-Mar-16,103,CCR,ChrangChamreh_Branch_KHR,30-Jun-18
+002333,Yun Vannak              ,??? ?????,20-Sep-94,S0416                   ,5,GCA,09-Mar-15,103,CCR,ChrangChamreh_Branch_KHR,30-Jun-18
+002381,Mey Piset               ,??? ???????,11-Apr-91,S0362                   ,5,GCA,04-Feb-15,103,CCR,ChrangChamreh_Branch_KHR,30-Jun-18
+002519,Bun Roth                ,???? ????,28-Jan-90,S0876                   ,5,GCA,15-Sep-16,103,CCR,ChrangChamreh_Branch_KHR,30-Jun-18
+002602,Loch Nalen              ,??? ?????,11-Nov-93,S0495                   ,9,ACC,22-Jun-15,103,CCR,ChrangChamreh_Branch_KHR,30-Jun-18
+001492,Hak Net                 ,???? ???,07-Mar-88,S0868                   ,5,GCA,29-Aug-16,103,CCR,ChrangChamreh_Branch_KHR,30-Jun-18
+001233,Soung Pov               ,??? ??,02-Aug-87,S0006                   ,0,BM,01-Aug-12,103,CCR,ChrangChamreh_Branch_KHR,30-Jun-18
+001424,Phong Phanith           ,??? ?????,02-Apr-97,S1306,5,GCA,28-Feb-18,105,PAG,PreaekAnhchanh_Branch_KHR,30-Jun-18
+001502,Sot Boden               ,??? ??????,02-Mar-85,S0283                   ,5,GCA,29-Sep-14,105,PAG,PreaekAnhchanh_Branch_KHR,30-Jun-18
+001659,Vet Kheng               ,???? ???,11-Jun-87,S0422                   ,5,GCA,12-Mar-15,105,PAG,PreaekAnhchanh_Branch_KHR,30-Jun-18
+001138,Son Veasna              ,???? ?????,09-Apr-99,S1251,5,GCA,09-Dec-17,105,PAG,PreaekAnhchanh_Branch_KHR,30-Jun-18
+004677,sao sivorn              ,?? ?????,25-Apr-92,N/A                     ,6,Cashier,16-Nov-17,105,PAG,PreaekAnhchanh_Branch_KHR,30-Jun-18
+004951,Ty Sotom chan thorn     ,?? ?????,07-Apr-90,S0255,1,DBM,01-Sep-14,105,PAG,PreaekAnhchanh_Branch_KHR,30-Jun-18
+002799,Korn Bauna              ,???? ????,01-Jan-90,S0321                   ,5,GCA,03-Nov-14,105,PAG,PreaekAnhchanh_Branch_KHR,30-Jun-18
+002781,Horm Ratha              ,?? ?????,30-Jul-93,S0174                   ,5,GCA,05-May-14,105,PAG,PreaekAnhchanh_Branch_KHR,30-Jun-18
+002865,Cheng Sokh              ,??? ???,06-Mar-89,S0726                   ,5,GCA,23-Feb-16,105,PAG,PreaekAnhchanh_Branch_KHR,30-Jun-18
+002825,Nou Sophea              ,???????,11-May-87,S0343                   ,1,DBM,02-Dec-13,105,PAG,PreaekAnhchanh_Branch_KHR,30-Jun-18
+004467,Kea Rany                ,?? ?????,12-Apr-95,S1167,5,GCA,01-Aug-17,105,PAG,PreaekAnhchanh_Branch_KHR,30-Jun-18
+004375,An Vibul                ,??? ?????,07-Aug-91,S1307,5,GCA,05-Mar-18,105,PAG,PreaekAnhchanh_Branch_KHR,30-Jun-18
+004378,Nguon Chheakloem        ,??? ??????,02-Mar-95,S0747                   ,5,GCA,09-Feb-16,105,PAG,PreaekAnhchanh_Branch_KHR,30-Jun-18
+004380,Chhen Lyda              ,??? ????,10-May-98,S1336,5,GCA,30-Apr-18,105,PAG,PreaekAnhchanh_Branch_KHR,30-Jun-18
+004382,Phorn Bunkhav           ,?? ???????,27-Oct-96,S1112                   ,5,GCA,14-Apr-17,105,PAG,PreaekAnhchanh_Branch_KHR,30-Jun-18
+004384,Chan Thorn              ,???? ??,10-Sep-94,S0894                   ,5,GCA,01-Nov-16,105,PAG,PreaekAnhchanh_Branch_KHR,30-Jun-18
+004396,Chinda Kordom           ,?????? ??????,10-Jan-99,S1250,5,GCA,09-Feb-17,105,PAG,PreaekAnhchanh_Branch_KHR,30-Jun-18
+004319,Ly Sokkhim              ,?? ??????,08-Jul-91,S0836                   ,6,Cashier,20-Jul-16,105,PAG,PreaekAnhchanh_Branch_KHR,30-Jun-18
+004320,Nim Saona               ,??? ????,12-Nov-91,S1018                   ,9,ACC,15-Dec-16,105,PAG,PreaekAnhchanh_Branch_KHR,30-Jun-18
+004321,Chan Tort               ,??? ??,07-Jun-88,S0009                   ,0,BM,27-Aug-12,105,PAG,PreaekAnhchanh_Branch_KHR,30-Jun-18
+004326,Tha Borith              ,?? ???????,25-Jun-92,S1095,5,GCA,20-Mar-17,105,PAG,PreaekAnhchanh_Branch_KHR,30-Jun-18
+000001,Seng Tharo              ,??? ?????,06-Aug-92,S0446                   ,5,GCA,21-Apr-15,106,KPY,KomPongSvay_Branch_KHR,30-Jun-18
+002432,Heng Kimseng            ,??? ??????,07-Sep-96,SID0000                 ,5,GCA,28-Mar-17,106,KPY,KomPongSvay_Branch_KHR,30-Jun-18
+002322,Am Thyda                ,?? ????,05-Feb-96,S0501                   ,3,Teller,03-Jun-15,106,KPY,KomPongSvay_Branch_KHR,30-Jun-18
+002323,Sous Samoeun            ,??? ?????,18-May-90,S1005                   ,5,GCA,24-Oct-16,106,KPY,KomPongSvay_Branch_KHR,30-Jun-18
+002330,Khat Yorn               ,???? ??,10-Oct-86,S0278                   ,0,BM,17-Sep-14,106,KPY,KomPongSvay_Branch_KHR,30-Jun-18
+002462,Se Reach                ,?? ???,29-Mar-97,S1185,5,GCA,06-Sep-17,106,KPY,KomPongSvay_Branch_KHR,30-Jun-18
+002463,Dong Det                ,??? ???,20-Mar-96,S1182,5,GCA,04-Sep-17,106,KPY,KomPongSvay_Branch_KHR,30-Jun-18
+002464,Horm Kimhuo             ,?? ??????,12-Feb-93,S1233,5,GCA,27-Nov-17,106,KPY,KomPongSvay_Branch_KHR,30-Jun-18
+002465,Toun Sina               ,?????????,02-Nov-91,S0335,1,DBM,08-Dec-14,106,KPY,KomPongSvay_Branch_KHR,30-Jun-18
+002276,Pech Dana               ,???? ????,07-Jun-91,S0848                   ,6,Cashier,08-Aug-16,106,KPY,KomPongSvay_Branch_KHR,30-Jun-18
+002278,Srung Sokkheng          ,????? ??????,28-Dec-87,S0511                   ,7,Other,11-Aug-15,106,KPY,KomPongSvay_Branch_KHR,30-Jun-18
+001614,Kong Panha              ,??? ?????,01-Oct-90,S0856                   ,5,GCA,04-Aug-16,107,ASL,AngSnoul_Branch_KHR,30-Jun-18
+000001,Kan Monerat             ,??? ??????????,04-Jun-93,S0414                   ,9,ACC,28-Oct-15,107,ASL,AngSnoul_Branch_KHR,30-Jun-18
+000009,Oem Phy                 ,???? ??,14-May-88,S0157                   ,5,GCA,24-Mar-14,107,ASL,AngSnoul_Branch_KHR,30-Jun-18
+001061,Sok Channrith           ,??? ?????????,06-Apr-91,S0448                   ,5,GCA,27-Apr-15,107,ASL,AngSnoul_Branch_KHR,30-Jun-18
+000156,Sor Saphatt             ,? ??????,02-Mar-97,S0823                   ,5,GCA,07-Jul-16,107,ASL,AngSnoul_Branch_KHR,30-Jun-18
+000274,Phon Sopheak            ,??? ?????????,01-Jan-90,S0084                   ,5,GCA,07-Oct-13,107,ASL,AngSnoul_Branch_KHR,30-Jun-18
+003362,Hou Jieme               ,?? ????,09-Apr-94,S0907                   ,5,GCA,01-Mar-17,107,ASL,AngSnoul_Branch_KHR,30-Jun-18
+003457,Heng Hongsuy            ,??? ???????,24-Mar-81,S1187                   ,1,DBM,08-Sep-17,107,ASL,AngSnoul_Branch_KHR,30-Jun-18
+003564,Chorn Bunchhai          ,?? ?????????,15-Sep-98,S1321,5,GCA,19-Mar-18,107,ASL,AngSnoul_Branch_KHR,30-Jun-18
+003574,Vann Senghong           ,????? ??????,12-Mar-97,S1338,5,GCA,04-May-18,107,ASL,AngSnoul_Branch_KHR,30-Jun-18
+003513,PORN RATANA             ,??? ????,10-Apr-96,S1213                   ,5,GCA,06-Dec-17,107,ASL,AngSnoul_Branch_KHR,30-Jun-18
+003514,YONG CHHOUY             ,???? ???,01-Apr-98,S1194                   ,5,GCA,26-Sep-17,107,ASL,AngSnoul_Branch_KHR,30-Jun-18
+003515,KE TOLA                 ,?? ????,01-Apr-95,S1260                   ,5,GCA,20-Dec-17,107,ASL,AngSnoul_Branch_KHR,30-Jun-18
+003516,VON SOK                 ,??? ???,11-Oct-99,S1203                   ,5,GCA,13-Oct-17,107,ASL,AngSnoul_Branch_KHR,30-Jun-18
+003534,Thorn Virak             ,?? ????,06-Jul-90,S1273,5,GCA,02-Jan-18,107,ASL,AngSnoul_Branch_KHR,30-Jun-18
+003187,Suong Saroath           ,??? ???????,01-Jan-87,S0091                   ,6,Cashier,11-Nov-13,107,ASL,AngSnoul_Branch_KHR,30-Jun-18
+002754,Sao Panha               ,?? ?????,01-Jan-95,S0662                   ,5,GCA,01-Feb-16,107,ASL,AngSnoul_Branch_KHR,30-Jun-18
+003556,Tep Sitha               ,??? ?????,20-Jun-94,S1156,5,GCA,13-Jul-17,108,SAG,SaAng_Branch_KHR,30-Jun-18
+003580,Heng Reaksmey           ,??? ?????,20-Jun-89,S1171,5,GCA,07-Jul-17,108,SAG,SaAng_Branch_KHR,30-Jun-18
+003489,Seng Tharo              ,??? ?????,06-Aug-92,S0337                   ,5,GCA,21-Apr-15,108,SAG,SaAng_Branch_KHR,30-Jun-18
+003495,Sous Samoeun            ,??? ?????,10-May-90,S1005                   ,5,GCA,24-Oct-16,108,SAG,SaAng_Branch_KHR,30-Jun-18
+003499,Lors Meo                ,??? ???,08-May-93,S0122                   ,1,DBM,20-May-14,108,SAG,SaAng_Branch_KHR,30-Jun-18
+003500,Phork Voleak            ,??? ????????,07-Nov-97,S0000                   ,3,Teller,26-Jun-17,108,SAG,SaAng_Branch_KHR,30-Jun-18
+003313,Pech Dana               ,???? ????,07-Jun-91,S848                    ,9,ACC,08-Aug-16,108,SAG,SaAng_Branch_KHR,30-Jun-18
+003861,Phay Ngak               ,?? ?????,09-May-95,S1287                   ,5,GCA,05-Feb-18,108,SAG,SaAng_Branch_KHR,30-Jun-18
+003763,Horm Kimhuo             ,??? ??????,12-Feb-93,S1233,5,GCA,21-Nov-17,108,SAG,SaAng_Branch_KHR,30-Jun-18
+003826,Oeur Sam At             ,?? ?????,20-Jan-87,S1269,5,GCA,05-Jan-18,108,SAG,SaAng_Branch_KHR,30-Jun-18
+003479,Khat Yorn               ,???? ??,10-Oct-86,S197                    ,0,BM,01-Jun-17,108,SAG,SaAng_Branch_KHR,30-Jun-18
+003608,Dong Det                ,??? ???,20-Mar-96,S1182,5,GCA,04-Sep-17,108,SAG,SaAng_Branch_KHR,30-Jun-18
+003609,Se Reach                ,?? ???,29-Mar-97,S1185,5,GCA,06-Sep-17,108,SAG,SaAng_Branch_KHR,30-Jun-18
+000009,Neang Kongnov           ,??? ?????,02-Feb-92,S0384                   ,5,GCA,05-Feb-15,108,SAG,SaAng_Branch_KHR,30-Jun-18
+000007,Khim Kosal              ,??? ????,01-Dec-98,S1345,5,GCA,16-May-18,108,SAG,SaAng_Branch_KHR,30-Jun-18
+001964,Hy Reahou               ,??? ?????,05-Apr-96,S0575                   ,5,GCA,07-Dec-15,108,SAG,SaAng_Branch_KHR,30-Jun-18
+002399,Khim Vouthy             ,??? ??????,07-Jun-89,S0842                   ,5,GCA,18-Jul-16,110,NKL,NeakLeung_Branch_KHR,30-Jun-18
+000155,Teab Vanna              ,??? ?????,22-Apr-94,S0742                   ,5,GCA,02-Mar-16,110,NKL,NeakLeung_Branch_KHR,30-Jun-18
+001161,Tith Vary               ,??? ?????,08-Apr-98,S0629                   ,5,GCA,18-Jan-16,110,NKL,NeakLeung_Branch_KHR,30-Jun-18
+003928,Mao Sophouy             ,??? ?????,06-Jun-87,S0007                   ,0,BM,01-Feb-12,110,NKL,NeakLeung_Branch_KHR,30-Jun-18
+003930,Ken Sodali              ,??? ??????,16-Oct-97,S0744                   ,6,Cashier,07-Mar-16,110,NKL,NeakLeung_Branch_KHR,30-Jun-18
+003962,Seng Sreyleak           ,???? ?????????,10-Sep-98,S0826                   ,6,Cashier,05-Jul-16,110,NKL,NeakLeung_Branch_KHR,30-Jun-18
+004065,Beng Ratana             ,???? ????,10-Jun-93,S1043                   ,5,GCA,13-Dec-16,110,NKL,NeakLeung_Branch_KHR,30-Jun-18
+004328,Rom Reach               ,??? ???,29-Aug-94,S1201,5,GCA,03-Oct-17,110,NKL,NeakLeung_Branch_KHR,30-Jun-18
+004290,Kornh Bunthon           ,??????????,11-Feb-92,S1146,5,GCA,26-Jun-17,110,NKL,NeakLeung_Branch_KHR,30-Jun-18
+004291,Yorn Dara               ,???? ????,12-Jan-91,S0892,5,GCA,10-Oct-16,110,NKL,NeakLeung_Branch_KHR,30-Jun-18
+004292,Oun Chandet             ,??? ???????,01-Jan-97,S0667,7,Other,01-Feb-16,110,NKL,NeakLeung_Branch_KHR,30-Jun-18
+004298,Chea Sokhon             ,?? ?????,07-May-93,N051419947              ,6,Cashier,15-Jun-17,110,NKL,NeakLeung_Branch_KHR,30-Jun-18
+004432,Chhum My                ,??? ??,04-Aug-90,S1279,5,GCA,23-Jan-18,110,NKL,NeakLeung_Branch_KHR,30-Jun-18
+004135,Mao Sophou              ,??? ????,15-Sep-95,S0178                   ,1,DBM,01-Sep-14,110,NKL,NeakLeung_Branch_KHR,30-Jun-18
+004190,Som Sokhoeun            ,???? ?????,05-Feb-98,S1064                   ,5,GCA,09-Feb-17,110,NKL,NeakLeung_Branch_KHR,30-Jun-18
+004485,Pov Sambath             ,?? ????????,18-Oct-90,S1334,5,GCA,23-Apr-18,110,NKL,NeakLeung_Branch_KHR,30-Jun-18
+004506,I Chan Youhak           ,???????? ??????,19-Jan-00,N051190690              ,5,GCA,14-May-18,110,NKL,NeakLeung_Branch_KHR,30-Jun-18
+004514,Roeurn Neng             ,??? ???,17-Jul-95,N050887774              ,6,Cashier,04-Jun-18,110,NKL,NeakLeung_Branch_KHR,30-Jun-18
+004531,Sean Chetra             ,???? ??????,12-Apr-93,S0822                   ,5,GCA,02-Jan-17,112,BAT,BaTi_Branch_KHR,30-Jun-18
+004780,Hol Sopheak             ,???? ?????,25-Jul-96,S1229,5,GCA,06-Nov-17,112,BAT,BaTi_Branch_KHR,30-Jun-18
+004830,Pok Tit                 ,???? ?????,01-Jan-98,S1305,10,unknown,19-Feb-18,112,BAT,BaTi_Branch_KHR,30-Jun-18
+001099,Nek Piseth              ,???? ???????,24-Apr-98,S1054,5,GCA,06-Feb-17,112,BAT,BaTi_Branch_KHR,30-Jun-18
+000576,Phin Chanty             ,??? ?????,17-Oct-89,S0598                   ,5,GCA,04-Jan-16,112,BAT,BaTi_Branch_KHR,30-Jun-18
+000737,Nhoek Vuthy             ,??? ??????,07-Feb-90,S0092                   ,0,BM,13-Jan-13,112,BAT,BaTi_Branch_KHR,30-Jun-18
+000009,Meach Phan              ,??? ???,02-Jun-91,S0895                   ,5,GCA,11-Oct-16,112,BAT,BaTi_Branch_KHR,30-Jun-18
+000008,Soeum Vanny             ,???? ?????,11-Feb-93,S0570                   ,5,GCA,01-Dec-15,112,BAT,BaTi_Branch_KHR,30-Jun-18
+000010,Sak Srey                ,???? ????,15-Apr-93,S0086                   ,9,ACC,07-Oct-13,112,BAT,BaTi_Branch_KHR,30-Jun-18
+000011,Uy Somalis              ,???? ????????,06-Apr-91,S0757                   ,6,Cashier,01-Jun-16,112,BAT,BaTi_Branch_KHR,30-Jun-18
+000003,Kong La                 ,??? ??,02-Aug-88,S0044                   ,1,DBM,26-Aug-13,112,BAT,BaTi_Branch_KHR,30-Jun-18
+000005,Seap Nhev               ,???? ????,14-Jan-90,S0032                   ,1,DBM,09-Apr-13,112,BAT,BaTi_Branch_KHR,30-Jun-18
+001500,Phun Symey              ,??? ??????,23-Sep-93,S0627                   ,5,GCA,18-Jan-16,112,BAT,BaTi_Branch_KHR,30-Jun-18
+001283,Loem Koemsros           ,??? ???????,07-Jun-94,S0000                   ,5,GCA,01-Sep-16,112,BAT,BaTi_Branch_KHR,30-Jun-18
+001647,Chev Sona               ,??? ????,10-Jan-95,S0418                   ,5,GCA,09-Mar-15,114,KTR,KamPongTrach_Branch_KHR,30-Jun-18
+000333,Ky Phy                  ,?? ??,21-Mar-88,S0423                   ,5,GCA,13-Mar-15,114,KTR,KamPongTrach_Branch_KHR,30-Jun-18
+003828,Vi Reth                 ,?? ????,24-Feb-90,S0145,1,DBM,24-Feb-14,114,KTR,KamPongTrach_Branch_KHR,30-Jun-18
+003829,Bo MeyMey               ,??? ??????,01-Feb-95,S0442                   ,6,Cashier,02-Apr-15,114,KTR,KamPongTrach_Branch_KHR,30-Jun-18
+003835,Ngoy Seyha              ,??? ????,06-Oct-93,S                       ,5,GCA,18-Apr-18,114,KTR,KamPongTrach_Branch_KHR,30-Jun-18
+003836,Sean Chetra             ,???? ??????,02-Jan-17,S1027                   ,5,GCA,02-Jan-17,114,KTR,KamPongTrach_Branch_KHR,30-Jun-18
+003772,Sor Vanleng             ,?? ????????,03-Jun-94,S1215,5,GCA,26-Oct-17,114,KTR,KamPongTrach_Branch_KHR,30-Jun-18
+003811,Iem Thearom             ,??? ?????,12-Jan-86,S1003                   ,5,GCA,02-Nov-16,114,KTR,KamPongTrach_Branch_KHR,30-Jun-18
+003580,San Choeun              ,?? ???,09-Jul-87,S0048                   ,0,BM,26-Feb-13,114,KTR,KamPongTrach_Branch_KHR,30-Jun-18
+003581,Buon Matay              ,??? ????????,19-Jul-97,S0424                   ,9,ACC,16-Mar-15,114,KTR,KamPongTrach_Branch_KHR,30-Jun-18
+003557,Kan Makara              ,??? ????,10-Oct-88,S0624                   ,5,GCA,13-Jan-16,115,CKL,ChamKarLeu_Branch_KHR,30-Jun-18
+003312,Moeun Pha               ,??? ??,20-Jun-92,S1361                   ,5,GCA,17-Sep-15,115,CKL,ChamKarLeu_Branch_KHR,30-Jun-18
+003335,NAI NAM                 ,?? ???,12-Apr-95,S1291,5,GCA,09-Feb-18,115,CKL,ChamKarLeu_Branch_KHR,30-Jun-18
+003624,Yoem Sakeng             ,??? ?????,12-Feb-94,N220086059              ,5,GCA,10-Jun-17,115,CKL,ChamKarLeu_Branch_KHR,30-Jun-18
+003604,Chav Sopagnha           ,??? ???????,01-Jan-92,S0693                   ,5,GCA,05-Oct-16,115,CKL,ChamKarLeu_Branch_KHR,30-Jun-18
+004067,Ret sokthan             ,???? ??????,14-Oct-84,S0019                   ,0,BM,01-Jan-12,115,CKL,ChamKarLeu_Branch_KHR,30-Jun-18
+004068,Chan Soklim             ,?? ??????,01-Jan-92,S0835                   ,6,Cashier,20-Jul-16,115,CKL,ChamKarLeu_Branch_KHR,30-Jun-18
+004069,Lun Salorn              ,??? ????,01-Mar-90,S0282                   ,1,DBM,11-Feb-12,115,CKL,ChamKarLeu_Branch_KHR,30-Jun-18
+003922,Long Chhengty           ,???  ?????,01-Apr-88,S0812                   ,5,GCA,28-Dec-15,115,CKL,ChamKarLeu_Branch_KHR,30-Jun-18
+004511,THOL THOEUN             ,???? ???,03-Jan-90,S1270,5,GCA,09-Jan-18,115,CKL,ChamKarLeu_Branch_KHR,30-Jun-18
+004641,yan kimsin              ,???? ???????,23-Aug-96,S1205,5,GCA,09-Oct-17,115,CKL,ChamKarLeu_Branch_KHR,30-Jun-18
+004529,Som Sokheng             ,???????????,12-Feb-94,S0632                   ,5,GCA,10-Jun-17,115,CKL,ChamKarLeu_Branch_KHR,30-Jun-18
+004476,Ly Lom                  ,?? ???,30-Jun-90,0,1,DBM,28-Apr-15,115,CKL,ChamKarLeu_Branch_KHR,30-Jun-18
+004477,TOUERN nhor             ,??? ??,30-Jun-87,0,7,Other,10-Jun-16,115,CKL,ChamKarLeu_Branch_KHR,30-Jun-18
+004236,Chav Sopagna            ,??? ???????,01-Jul-93,S0000                   ,5,GCA,05-Oct-16,115,CKL,ChamKarLeu_Branch_KHR,30-Jun-18
+004435,Mel Sokkhean            ,???? ?????,06-Jun-17,S000                    ,5,GCA,05-May-14,115,CKL,ChamKarLeu_Branch_KHR,30-Jun-18
+004674,CHOEUN SOVANNARY        ,??? ?????????,20-May-95,F110412024              ,6,Cashier,25-Dec-17,115,CKL,ChamKarLeu_Branch_KHR,30-Jun-18
+004672,Dos Dornn               ,??? ????,08-Oct-97,S1245,5,GCA,04-Dec-17,115,CKL,ChamKarLeu_Branch_KHR,30-Jun-18
+000404,Teum Bona +Sok Sithat   ,??? ????,NULL,0,6,Cashier,NULL,115,CKL,ChamKarLeu_Branch_KHR,30-Jun-18
+000001,Vann Lida               ,????? ????,07-Jun-91,S0125                   ,9,ACC,02-Jun-14,115,CKL,ChamKarLeu_Branch_KHR,30-Jun-18
+002062,pheap sopheak           ,??? ?????????,30-Jun-96,S0336                   ,5,GCA,08-Feb-16,115,CKL,ChamKarLeu_Branch_KHR,30-Jun-18
+002591,Chin Rina               ,??? ????,12-Jul-92,S1122                   ,6,Cashier,25-Apr-17,116,VHS,ViHearSour_Branch_KHR,30-Jun-18
+002592,Thik Thida              ,?? ????,18-Sep-89,S0105                   ,9,ACC,16-Dec-13,116,VHS,ViHearSour_Branch_KHR,30-Jun-18
+002593,Kung Painn              ,??? ????,08-Sep-88,S1101                   ,0,BM,03-Apr-17,116,VHS,ViHearSour_Branch_KHR,30-Jun-18
+002594,Ty Sotom                ,?? ?????,30-Jun-92,S0255                   ,1,DBM,01-Sep-14,116,VHS,ViHearSour_Branch_KHR,30-Jun-18
+001304,Ty Sotom chan thorn     ,?? ?????,07-Apr-90,N040413278              ,1,DBM,01-Sep-14,116,VHS,ViHearSour_Branch_KHR,30-Jun-18
+001378,Phorn Bunkhav           ,?? ???????,27-Oct-96,S1112                   ,5,GCA,04-Apr-17,116,VHS,ViHearSour_Branch_KHR,30-Jun-18
+000004,Hoy Senghong            ,?? ??????,04-Jul-93,S0176                   ,5,GCA,05-Mar-14,116,VHS,ViHearSour_Branch_KHR,30-Jun-18
+000016,An Vibol                ,??? ?????,05-Mar-18,S1307,5,GCA,05-Mar-18,116,VHS,ViHearSour_Branch_KHR,30-Jun-18
+000006,Chinda Kordom           ,?????? ??????,10-Jan-99,S1250,5,GCA,09-Nov-17,116,VHS,ViHearSour_Branch_KHR,30-Jun-18
+000477,Chhen Lida              ,??? ????,10-May-98,S1336,5,GCA,30-Apr-18,116,VHS,ViHearSour_Branch_KHR,30-Jun-18
+000035,Nguon Chheakloem        ,??? ??????,02-Mar-95,S0747                   ,5,GCA,09-Feb-16,116,VHS,ViHearSour_Branch_KHR,30-Jun-18
+002805,n/a N/A                 ,?? ?????,07-Apr-90,N040413278              ,1,DBM,01-Sep-14,116,VHS,ViHearSour_Branch_KHR,30-Jun-18
+003210,Yoeun Samath            ,??? ?????,03-Feb-96,S1012                   ,5,GCA,01-Dec-16,117,SKN,Skun_Branch_KHR,30-Jun-18
+003095,Phin Phan               ,??? ???,19-Mar-95,S0867                   ,5,GCA,25-Aug-16,117,SKN,Skun_Branch_KHR,30-Jun-18
+003097,Neang Ratanakpisey      ,??? ????????,13-Jun-94,S0871                   ,5,GCA,05-Sep-16,117,SKN,Skun_Branch_KHR,30-Jun-18
+003004,Kem Kheang              ,???? ???,11-Mar-92,S0579                   ,9,ACC,14-Dec-15,117,SKN,Skun_Branch_KHR,30-Jun-18
+003459,Nath Samnang            ,??? ?????,01-May-99,S1254,5,GCA,19-Dec-17,117,SKN,Skun_Branch_KHR,30-Jun-18
+003303,Son Sinan               ,??? ??????,05-Apr-95,S1116                   ,5,GCA,27-Mar-17,117,SKN,Skun_Branch_KHR,30-Jun-18
+003366,Thoeung Maly            ,??? ?????,06-Sep-93,N062004138              ,6,Cashier,13-Mar-17,117,SKN,Skun_Branch_KHR,30-Jun-18
+003398,KANG SITHEA             ,?? ??????,19-Oct-91,S1184,10,unknown,05-Sep-17,117,SKN,Skun_Branch_KHR,30-Jun-18
+003475,SOK SAMBAT              ,????????????,12-May-97,S1265,5,GCA,26-Jan-18,117,SKN,Skun_Branch_KHR,30-Jun-18
+000249,Ly Lam                  ,??? ???,02-Jan-90,S0449                   ,5,GCA,28-Apr-15,117,SKN,Skun_Branch_KHR,30-Jun-18
+000007,Oth Sophat              ,???? ?????,02-Oct-87,S0389                   ,5,GCA,09-Feb-15,117,SKN,Skun_Branch_KHR,30-Jun-18
+000004,Sath Sophea             ,??? ????,18-Sep-88,S0154                   ,5,GCA,17-Mar-14,117,SKN,Skun_Branch_KHR,30-Jun-18
+000005,Year Phally             ,?? ?????,03-Apr-92,S0238                   ,1,DBM,12-Aug-14,117,SKN,Skun_Branch_KHR,30-Jun-18
+000002,Chhan Laut              ,??? ???,02-May-89,S0277                   ,5,GCA,15-Sep-14,117,SKN,Skun_Branch_KHR,30-Jun-18
+001338,Ork Sokoun              ,??? ??????,05-Sep-92,S0595                   ,5,GCA,31-Dec-15,117,SKN,Skun_Branch_KHR,30-Jun-18
+002106,Toeun Noy               ,??? ??,05-Feb-90,S0738                   ,5,GCA,01-Mar-16,117,SKN,Skun_Branch_KHR,30-Jun-18
+001944,Toeur Thanak            ,??? ????,08-Feb-90,S0138                   ,5,GCA,24-Feb-14,117,SKN,Skun_Branch_KHR,30-Jun-18
+001898,Oeurn Vandat            ,??? ????????,25-Mar-91,S0622                   ,5,GCA,18-Jan-16,117,SKN,Skun_Branch_KHR,30-Jun-18
+001807,N/A N/A                 ,??? ?????,27-Mar-88,S546                    ,5,GCA,30-Dec-16,118,PRN,PreyNup_Branch_KHR,30-Jun-18
+001224,Huy Savy                ,????  ????,08-Mar-93,S104                    ,3,Teller,01-Apr-14,118,PRN,PreyNup_Branch_KHR,30-Jun-18
+000002,Vith Rina               ,????  ????,27-May-91,S236                    ,6,Cashier,03-Nov-14,118,PRN,PreyNup_Branch_KHR,30-Jun-18
+000001,Lim Lisim               ,???  ??????,21-Mar-94,S0096                   ,9,ACC,01-Dec-13,118,PRN,PreyNup_Branch_KHR,30-Jun-18
+000005,Ly Chheng               ,?? ???,08-Jan-91,S0411,5,GCA,02-Mar-15,118,PRN,PreyNup_Branch_KHR,30-Jun-18
+000003,San Ven                 ,????  ???,10-Mar-94,S0583                   ,5,GCA,22-Dec-15,118,PRN,PreyNup_Branch_KHR,30-Jun-18
+000009,Rin Kimthong            ,???  ??????,03-Jan-97,S0306                   ,1,DBM,23-Feb-15,118,PRN,PreyNup_Branch_KHR,30-Jun-18
+000014,Phal Somnang            ,??  ?????,15-May-86,S0155,5,GCA,17-Mar-14,118,PRN,PreyNup_Branch_KHR,30-Jun-18
+000224,Choy Rath               ,??  ????,11-May-94,S0352,5,GCA,18-Jan-15,118,PRN,PreyNup_Branch_KHR,30-Jun-18
+003923,Ouk Saoleng             ,???? ?????,10-Feb-87,S1314,5,GCA,13-Mar-18,118,PRN,PreyNup_Branch_KHR,30-Jun-18
+003883,Kong Vichit             ,??? ???????,05-Jan-94,S1253,5,GCA,08-Dec-17,118,PRN,PreyNup_Branch_KHR,30-Jun-18
+003749,N/A N/A                 ,??????,06-May-74,F0109242                ,5,GCA,NULL,118,PRN,PreyNup_Branch_KHR,30-Jun-18
+003855,Kem Sopheak             ,??? ???????,17-Feb-98,S1207,5,GCA,02-Oct-17,118,PRN,PreyNup_Branch_KHR,30-Jun-18
+002682,Korb Nhoeurn            ,?? ???,18-Mar-96,N/A                     ,5,GCA,11-Jun-18,119,AKC,AngkorChey_Branch_KHR,30-Jun-18
+002686,Mao Samdy               ,??? ??????,17-Feb-98,N/A                     ,5,GCA,25-Jun-18,119,AKC,AngkorChey_Branch_KHR,30-Jun-18
+001559,Ngann Visal             ,????? ?????,18-May-92,S0557                   ,5,GCA,11-Nov-15,119,AKC,AngkorChey_Branch_KHR,30-Jun-18
+001770,Tuoch Keatha            ,??? ????,17-Oct-91,S0563                   ,5,GCA,23-Nov-15,119,AKC,AngkorChey_Branch_KHR,30-Jun-18
+002648,Chhan Tet               ,???? ???,17-Jun-93,S1214                   ,5,GCA,24-Oct-17,119,AKC,AngkorChey_Branch_KHR,30-Jun-18
+002651,Mak Doeurn              ,???? ???,04-Sep-93,S1236                   ,6,Cashier,17-Nov-17,119,AKC,AngkorChey_Branch_KHR,30-Jun-18
+002666,Horm Ron                ,?? ????,05-Aug-99,S1300,5,GCA,22-Feb-18,119,AKC,AngkorChey_Branch_KHR,30-Jun-18
+002450,Sak Sy                  ,???? ???,11-Aug-95,S0085                   ,9,ACC,07-Oct-13,119,AKC,AngkorChey_Branch_KHR,30-Jun-18
+002451,Vann Ly                 ,????? ??,28-Oct-91,S0028                   ,0,BM,19-Nov-12,119,AKC,AngkorChey_Branch_KHR,30-Jun-18
+002511,Chhorn Phearin          ,?? ?????,05-Mar-91,S0061                   ,1,DBM,07-Mar-13,119,AKC,AngkorChey_Branch_KHR,30-Jun-18
+002521,Nhip Chanthy            ,??? ?????,10-Dec-83,S0725                   ,5,GCA,23-Feb-16,119,AKC,AngkorChey_Branch_KHR,30-Jun-18
+002470,Sean Sotouch            ,???? ?????,08-Apr-91,S0874                   ,5,GCA,09-Sep-16,119,AKC,AngkorChey_Branch_KHR,30-Jun-18
+002473,Chun Sophal             ,??? ????,03-Apr-83,S0288                   ,7,Other,03-Oct-14,119,AKC,AngkorChey_Branch_KHR,30-Jun-18
+002276,Yorn phanith            ,??? ???????,04-Apr-98,S1295,5,GCA,NULL,122,TTY,TrengTroYeng_Branch_KHR,30-Jun-18
+002297,An Rithy                ,??? ??????,19-Dec-99,S1311,5,GCA,NULL,122,TTY,TrengTroYeng_Branch_KHR,30-Jun-18
+002263,SOK SABO                ,??? ??????,12-May-97,S1266,5,GCA,NULL,122,TTY,TrengTroYeng_Branch_KHR,30-Jun-18
+002272,Chhun Sokkha            ,?? ?????,01-Jan-98,S1292,5,GCA,NULL,122,TTY,TrengTroYeng_Branch_KHR,30-Jun-18
+002086,Sun Vichet              ,???? ???????,20-Sep-91,S0020                   ,0,BM,18-Oct-12,122,TTY,TrengTroYeng_Branch_KHR,30-Jun-18
+002087,Trin Channuon           ,????? ???????,11-Nov-95,S0451                   ,6,Cashier,04-May-15,122,TTY,TrengTroYeng_Branch_KHR,30-Jun-18
+002091,Muy Monita              ,??? ???????,25-Jul-95,S0112                   ,9,ACC,17-Jan-14,122,TTY,TrengTroYeng_Branch_KHR,30-Jun-18
+002187,Chhorn Pheakdey         ,?? ?????,02-Jan-97,S1067,5,GCA,16-Feb-17,122,TTY,TrengTroYeng_Branch_KHR,30-Jun-18
+001655,Sat Monor               ,??? ????,22-Nov-96,S0884                   ,5,GCA,19-Sep-16,122,TTY,TrengTroYeng_Branch_KHR,30-Jun-18
+001634,Say Ramo                ,???  ??????,02-Feb-88,S0780                   ,5,GCA,18-Apr-16,122,TTY,TrengTroYeng_Branch_KHR,30-Jun-18
+000632,CHoem Sorn              ,??????,20-Aug-95,S0329                   ,5,GCA,24-Nov-14,122,TTY,TrengTroYeng_Branch_KHR,30-Jun-18
+000008,Phan Dara               ,???? ?????,17-Aug-90,S0385                   ,5,GCA,05-Feb-15,122,TTY,TrengTroYeng_Branch_KHR,30-Jun-18
+000007,Sok Sothea              ,??? ????,02-Apr-91,S0131                   ,1,DBM,17-Feb-14,122,TTY,TrengTroYeng_Branch_KHR,30-Jun-18
+000004,Kann Chetra             ,???? ????????,15-Feb-91,S0130                   ,5,GCA,17-Feb-15,122,TTY,TrengTroYeng_Branch_KHR,30-Jun-18
+000004,Say Chhin               ,???? ???,13-Apr-93,S0426                   ,5,GCA,17-Mar-15,123,KPT,KomPot_Branch_KHR,30-Jun-18
+000003,Vi Reth                 ,??? ????,03-Mar-95,S0145                   ,1,DBM,24-Feb-14,123,KPT,KomPot_Branch_KHR,30-Jun-18
+000005,Lonh Tuoch              ,?????? ???,26-Nov-90,S0431                   ,5,GCA,23-Mar-15,123,KPT,KomPot_Branch_KHR,30-Jun-18
+000001,Leang Monorith          ,???? ????????,12-Jan-90,S0146                   ,5,GCA,24-Feb-14,123,KPT,KomPot_Branch_KHR,30-Jun-18
+000002,Ses Tho                 ,????? ??,30-Mar-94,S0330                   ,5,GCA,24-Nov-14,123,KPT,KomPot_Branch_KHR,30-Jun-18
+000007,Hong Sareth             ,??? ??????,06-Sep-86,S0200                   ,5,GCA,16-Jun-14,123,KPT,KomPot_Branch_KHR,30-Jun-18
+000397,Nhet Va                 ,???? ???,17-Apr-93,S0456                   ,5,GCA,19-May-15,123,KPT,KomPot_Branch_KHR,30-Jun-18
+000494,Khann Sinat             ,???? ??????,10-Oct-92,S0149                   ,0,BM,03-Mar-14,123,KPT,KomPot_Branch_KHR,30-Jun-18
+000368,Pen Sovannara           ,????? ??????????,03-Feb-91,S0468                   ,5,GCA,03-Jun-15,123,KPT,KomPot_Branch_KHR,30-Jun-18
+000015,Sok Meng                ,??? ????,02-Mar-91,S0492                   ,5,GCA,11-Jun-15,123,KPT,KomPot_Branch_KHR,30-Jun-18
+000020,Yorn Chantha            ,?? ?????,28-Aug-88,S0143                   ,9,ACC,24-Feb-14,123,KPT,KomPot_Branch_KHR,30-Jun-18
+001487,Long Lita               ,??? ????,04-Jan-93,S0162                   ,6,Cashier,01-Apr-14,123,KPT,KomPot_Branch_KHR,30-Jun-18
+002560,Pa Yim                  ,??? ???,24-Sep-90,S0073,1,DBM,29-Jul-13,123,KPT,KomPot_Branch_KHR,30-Jun-18
+002563,Sen Vichny              ,???? ??????,10-Nov-95,S1315,5,GCA,20-Mar-18,123,KPT,KomPot_Branch_KHR,30-Jun-18
+002573,Leang Vanny             ,??? ?????,02-May-91,S0108,1,DBM,30-Dec-13,123,KPT,KomPot_Branch_KHR,30-Jun-18
+002528,Phok Sarom              ,??? ?????,30-Oct-89,S1240,5,GCA,27-Nov-17,123,KPT,KomPot_Branch_KHR,30-Jun-18
+002453,Loek Vichhera           ,??? ????????,11-Nov-95,S0787                   ,7,Other,27-Apr-16,123,KPT,KomPot_Branch_KHR,30-Jun-18
+002219,Tror Phal               ,????? ??,04-Feb-90,S0219                   ,5,GCA,04-Aug-14,125,MMT,Memot_Branch_KHR,30-Jun-18
+000018,Luch Sros               ,??? ?????,02-Feb-82,S0987,5,GCA,05-Oct-16,125,MMT,Memot_Branch_KHR,30-Jun-18
+000002,Voeurn Ra               ,??? ???,09-May-92,S0794                   ,5,GCA,16-May-16,125,MMT,Memot_Branch_KHR,30-Jun-18
+000001,Sok Sai                 ,??? ??,17-Nov-93,SID0795                 ,5,GCA,16-May-16,125,MMT,Memot_Branch_KHR,30-Jun-18
+000003,Reang Rem               ,??? ????,12-May-91,S0293                   ,5,GCA,06-Oct-14,125,MMT,Memot_Branch_KHR,30-Jun-18
+002876,Chhay Pisey             ,??? ????,16-Apr-94,0,5,GCA,13-Oct-16,125,MMT,Memot_Branch_KHR,30-Jun-18
+004452,Ngoy Samnang            ,???? ?????,10-Sep-84,S1033,5,GCA,04-Jan-17,125,MMT,Memot_Branch_KHR,30-Jun-18
+004453,Um Povsakleakna         ,???? ?????????????,13-Oct-94,S0104                   ,6,Cashier,24-Oct-16,125,MMT,Memot_Branch_KHR,30-Jun-18
+004529,Ly Menghort             ,?? ????????,06-Dec-94,S0115                   ,1,DBM,NULL,125,MMT,Memot_Branch_KHR,30-Jun-18
+004917,Phan Seyha              ,??? ????,05-May-98,S1221,5,GCA,01-Nov-17,125,MMT,Memot_Branch_KHR,30-Jun-18
+004923,Sok Sin                 ,??? ????,23-Jun-97,S1121                   ,5,GCA,15-Nov-17,125,MMT,Memot_Branch_KHR,30-Jun-18
+004721,Chheng Cham Raeun       ,??? ?????,21-Aug-88,SI0003                  ,0,BM,20-Oct-11,125,MMT,Memot_Branch_KHR,30-Jun-18
+004764,Voeung Socheat          ,??? ??????,04-Jun-92,NULL,6,Cashier,19-Jun-17,125,MMT,Memot_Branch_KHR,30-Jun-18
+004765,York Soklim             ,???? ??????,16-Nov-95,NULL,5,GCA,20-Jun-17,125,MMT,Memot_Branch_KHR,30-Jun-18
+004974,Chhok Sothea            ,?? ??????,03-Feb-99,S1278,5,GCA,16-Jan-18,125,MMT,Memot_Branch_KHR,30-Jun-18
+004975,Heng Vorleak            ,??? ??????,02-Apr-95,S0000                   ,9,ACC,17-Jan-18,125,MMT,Memot_Branch_KHR,30-Jun-18
+005011,Mao Nary                ,??? ????,01-Aug-94,S0679,5,GCA,14-Mar-18,125,MMT,Memot_Branch_KHR,30-Jun-18
+005040,VOURN INN               ,??? ???,01-Mar-94,S1366,5,GCA,04-Jun-18,125,MMT,Memot_Branch_KHR,30-Jun-18
+002765,Seng Pong               ,??? ???,07-Sep-98,S1206,10,unknown,16-Oct-17,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+002806,Vorn Louth              ,?? ???,18-Feb-97,S1294,5,GCA,12-Feb-18,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+002824,Rorn Leng               ,?? ???,01-Jan-92,N150785851              ,5,GCA,NULL,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+002848,Touch Kimoel            ,??? ??????,04-Aug-97,S1358,5,GCA,28-May-18,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+000003,Cherb Chea              ,??? ??,05-Apr-93,S0551                   ,5,GCA,04-Nov-15,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+000001,Chim Sophea             ,??? ????,18-Sep-89,S0340                   ,6,Cashier,22-Dec-14,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+000002,Voeurn Sopheak          ,??? ??????,05-Jun-95,S0467                   ,3,Teller,03-Jun-15,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+000009,Chea Sorn               ,?? ?????,10-Jan-92,S0518                   ,5,GCA,31-Aug-15,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+000013,Pheap Phea lot          ,??? ?????,08-Apr-93,S0633                   ,5,GCA,21-Jan-16,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+000011,Choeung Hor             ,??? ???,07-Oct-92,S0653                   ,5,GCA,01-Feb-16,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+000506,Yat Bunyoeu             ,????? ??????,02-Jul-92,S0294                   ,5,GCA,06-Oct-14,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+000450,Chhun Chhay             ,??? ???,18-Apr-91,S0517                   ,5,GCA,31-Aug-15,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+002285,Ly Kimsuy               ,?? ???????,01-Feb-91,S0712                   ,5,GCA,15-Feb-16,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+002487,Yi Dany                 ,?? ????,04-Sep-89,S0317                   ,9,ACC,27-Oct-14,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+002490,Trak Vorn               ,?????? ???,04-Aug-88,S0072                   ,1,DBM,29-Jul-13,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+002491,Mut Da                  ,??? ??,07-May-89,S0040                   ,0,BM,29-Jan-13,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+002530,Por Sreyneang           ,???? ???????,01-May-81,S0273                   ,7,Other,08-Sep-14,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+002672,Choun Kunthie           ,??? ?????,04-Mar-97,N150737586              ,10,unknown,06-Mar-17,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+002675,Neom Chamreoun          ,??? ?????,10-Jul-97,S1087,10,unknown,13-Mar-17,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+002661,My Mut                  ,?? ???,06-Jul-95,S1057,10,unknown,14-Feb-17,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+002644,Nhes Naryda             ,???? ??????,25-Mar-99,N150625761              ,3,Teller,10-Jan-17,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+001692,Chet Sok kheng          ,??? ??????,06-Jan-91,S0429                   ,5,GCA,18-Mar-15,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+001250,Vorn Tol                ,??? ???,13-Jun-93,S0652                   ,5,GCA,01-Feb-16,126,KTM,KamPongTmor_Branch_KHR,30-Jun-18
+001309,Chab Chon               ,???? ???,01-Oct-94,S0665                   ,5,GCA,01-Feb-16,128,BMC,BanteayMeanchey_Branch_KHR,30-Jun-18
+002326,Mai Morn                ,??? ???,17-Jan-95,S1318,5,GCA,19-Mar-18,128,BMC,BanteayMeanchey_Branch_KHR,30-Jun-18
+002336,Lat Sitha               ,???? ?????,05-Mar-98,S1355,5,GCA,21-May-18,128,BMC,BanteayMeanchey_Branch_KHR,30-Jun-18
+002337,Soeurng Thanak          ,??? ????,02-Mar-00,S1356,5,GCA,21-May-18,128,BMC,BanteayMeanchey_Branch_KHR,30-Jun-18
+002302,Vuth Lik                ,??? ??,20-Jun-98,S1286,5,GCA,05-Feb-18,128,BMC,BanteayMeanchey_Branch_KHR,30-Jun-18
+002280,Samnang Thavorn         ,????? ???????,21-Apr-97,170808163,6,Cashier,11-Dec-17,128,BMC,BanteayMeanchey_Branch_KHR,30-Jun-18
+002217,Ki Thoeurng             ,?? ???,09-Aug-94,S0227                   ,1,DBM,04-Aug-14,128,BMC,BanteayMeanchey_Branch_KHR,30-Jun-18
+002184,Phut Rany               ,??? ?????,01-Dec-94,S1166                   ,5,GCA,31-Jul-17,128,BMC,BanteayMeanchey_Branch_KHR,30-Jun-18
+002066,Mean Sarom              ,??? ?????,07-Dec-92,S1360,5,GCA,04-Jun-18,128,BMC,BanteayMeanchey_Branch_KHR,30-Jun-18
+001825,Ty Lina                 ,?? ????,09-Aug-88,S0496                   ,0,BM,29-Jun-15,128,BMC,BanteayMeanchey_Branch_KHR,30-Jun-18
+000006,Pall Sophea             ,????? ????,01-Feb-94,S0813                   ,6,Cashier,20-Jun-16,128,BMC,BanteayMeanchey_Branch_KHR,30-Jun-18
+000001,Chhorn Chem             ,?? ???,07-Jul-93,S0779                   ,5,GCA,01-Dec-15,128,BMC,BanteayMeanchey_Branch_KHR,30-Jun-18
+000001,Chin Sokhoy             ,??? ?????,05-Apr-95,S0668                   ,5,GCA,01-Feb-16,129,KRT,Kratie_Branch_KHR,30-Jun-18
+000010,Youn Veayao             ,???? ????,03-Jul-96,S0236                   ,5,GCA,04-Aug-14,129,KRT,Kratie_Branch_KHR,30-Jun-18
+000013,Doeuk Sokh Hang         ,???? ??????,10-Feb-89,S0767                   ,5,GCA,04-Aug-14,129,KRT,Kratie_Branch_KHR,30-Jun-18
+000016,Ret Tokea               ,??? ????,14-Jul-93,S0396                   ,5,GCA,11-Feb-15,129,KRT,Kratie_Branch_KHR,30-Jun-18
+000024,CHL                     ,?????????,NULL,CHL                     ,7,Other,NULL,129,KRT,Kratie_Branch_KHR,30-Jun-18
+002108,Sa Raymao               ,??????   ???,03-Jul-93,S0671                   ,5,GCA,01-Feb-16,129,KRT,Kratie_Branch_KHR,30-Jun-18
+002033,Sum Chantheng           ,???? ???????,02-Mar-94,S0669                   ,5,GCA,01-Feb-16,129,KRT,Kratie_Branch_KHR,30-Jun-18
+001977,Kim Tynang              ,???  ??????,04-Jul-97,S0670                   ,5,GCA,01-Feb-16,129,KRT,Kratie_Branch_KHR,30-Jun-18
+002012,Oun Chandet             ,??? ???????,01-Jan-97,S0667                   ,1,DBM,01-Feb-16,129,KRT,Kratie_Branch_KHR,30-Jun-18
+002628,Phoeuk Socheat          ,???  ??????,04-Feb-91,S0185                   ,1,DBM,12-May-14,129,KRT,Kratie_Branch_KHR,30-Jun-18
+002638,Oeung Chantrea          ,???  ???????,30-Jun-98,S0672                   ,6,Cashier,01-Feb-16,129,KRT,Kratie_Branch_KHR,30-Jun-18
+002535,Lak Kimleap             ,????  ??????,01-Nov-90,S0839                   ,5,GCA,21-Jul-16,129,KRT,Kratie_Branch_KHR,30-Jun-18
+001577,Chin Sodane             ,????   ??????,11-May-94,S0613                   ,3,Teller,11-Jan-16,129,KRT,Kratie_Branch_KHR,30-Jun-18
+002854,Kang Keo                ,?????? ???,08-Nov-94,S0531,5,GCA,05-Oct-15,129,KRT,Kratie_Branch_KHR,30-Jun-18
+002843,Chhum Seyha             ,??? ????,04-Nov-97,S1137,5,GCA,05-Jun-17,129,KRT,Kratie_Branch_KHR,30-Jun-18
+002845,Reang Rem               ,??? ????,12-May-91,NULL,1,DBM,06-Oct-14,129,KRT,Kratie_Branch_KHR,30-Jun-18
+002787,Poeng Siveley           ,??? ??????,06-Jun-93,S0033                   ,0,BM,21-Nov-12,129,KRT,Kratie_Branch_KHR,30-Jun-18
+002885,Ret Rat                 ,???? ????,05-Jun-96,S1178,5,GCA,23-Aug-17,129,KRT,Kratie_Branch_KHR,30-Jun-18
+002936,Choun Kosal             ,??? ?????,19-Aug-89,S0079,0,BM,28-Jun-13,129,KRT,Kratie_Branch_KHR,30-Jun-18
+001647,Soem Nabora             ,????? ???????,25-May-97,S0729                   ,5,GCA,23-Feb-16,130,SSVR,SvayRieng_Branch_KHR,30-Jun-18
+001650,Kuon Sale               ,??? ????,30-Dec-96,S0756                   ,3,Teller,28-Mar-16,130,SSVR,SvayRieng_Branch_KHR,30-Jun-18
+001667,Doeun Samnang           ,??? ?????,20-May-93,S0749                   ,5,GCA,10-Mar-16,130,SSVR,SvayRieng_Branch_KHR,30-Jun-18
+001669,Mey Kompheak            ,??? ??????,01-Jan-93,S0636                   ,5,GCA,25-Jan-16,130,SSVR,SvayRieng_Branch_KHR,30-Jun-18
+002216,Yoeurn Socheat          ,??? ??????,07-Jan-98,S1271,5,GCA,09-Jan-18,130,SSVR,SvayRieng_Branch_KHR,30-Jun-18
+002113,Mao Sophal              ,??? ????,25-Sep-89,N051458246              ,5,GCA,01-Sep-14,130,SSVR,SvayRieng_Branch_KHR,30-Jun-18
+002118,Morn Thearith           ,??? ?????,10-May-87,N090528763              ,5,GCA,11-Aug-16,130,SSVR,SvayRieng_Branch_KHR,30-Jun-18
+002141,Nhoem Samon             ,??? ????,NULL,S1191,5,GCA,11-Sep-17,130,SSVR,SvayRieng_Branch_KHR,30-Jun-18
+001917,Chea Chantha            ,?? ?????,03-Apr-91,S0246                   ,1,DBM,01-Sep-14,130,SSVR,SvayRieng_Branch_KHR,30-Jun-18
+001936,Sovan Rotha             ,?????? ?????,07-Nov-93,S0888                   ,5,GCA,04-Oct-16,130,SSVR,SvayRieng_Branch_KHR,30-Jun-18
+000640,Pin Daravuth            ,??? ????????,12-Jul-94,S325                    ,4,SCA,10-Nov-14,130,SSVR,SvayRieng_Branch_KHR,30-Jun-18
+001052,Nhoun Syne              ,??? ?????,08-Apr-90,S0391                   ,5,GCA,09-Feb-15,130,SSVR,SvayRieng_Branch_KHR,30-Jun-18
+000849,Chum Sopheaktra         ,???? ???????,20-Feb-96,S0338                   ,5,GCA,16-Dec-14,130,SSVR,SvayRieng_Branch_KHR,30-Jun-18
+000001,Y Sodorn                ,??? ????,07-Nov-90,S0403                   ,4,SCA,19-Feb-15,130,SSVR,SvayRieng_Branch_KHR,30-Jun-18
+000004,Khat Sophea             ,???? ????,22-May-93,S0217                   ,4,SCA,04-Aug-14,130,SSVR,SvayRieng_Branch_KHR,30-Jun-18
+000008,Yon Phannyphet          ,??? ?????????,26-Jun-96,S0573                   ,5,GCA,02-Dec-15,131,CHP,JaiPur_Branch_KHR,30-Jun-18
+001186,Ven Channa              ,???? ??????,03-Apr-90,S0264                   ,9,ACC,01-Sep-14,131,CHP,JaiPur_Branch_KHR,30-Jun-18
+001190,Neang Nakri             ,??? ??????,17-Apr-84,S0430                   ,7,Other,23-Mar-15,131,CHP,JaiPur_Branch_KHR,30-Jun-18
+001732,San Sok                 ,??? ???,25-Oct-97,S1362,5,GCA,05-Jun-18,131,CHP,JaiPur_Branch_KHR,30-Jun-18
+001479,Nhom Rangsey            ,??? ???????,18-Jul-96,S0520                   ,3,Teller,02-Sep-15,131,CHP,JaiPur_Branch_KHR,30-Jun-18
+001502,Pheach Pheara           ,??? ?????,16-Sep-85,S1026,5,GCA,26-Dec-16,131,CHP,JaiPur_Branch_KHR,30-Jun-18
+001538,Chhouk Enchantoris      ,??? ????????????,11-Jul-95,S1056,5,GCA,14-Feb-17,131,CHP,JaiPur_Branch_KHR,30-Jun-18
+001539,Choem Veasna            ,??? ?????,03-Mar-97,S1060                   ,5,GCA,16-Feb-17,131,CHP,JaiPur_Branch_KHR,30-Jun-18
+001550,Cheng Sotha             ,??? ????,12-Jan-91,S1068                   ,5,GCA,02-Mar-17,131,CHP,JaiPur_Branch_KHR,30-Jun-18
+001516,Em Savon                ,???? ?????,06-Sep-94,S1045,5,GCA,23-Jan-17,131,CHP,JaiPur_Branch_KHR,30-Jun-18
+001442,Khiev Samet             ,??? ??????,26-Mar-77,S0342                   ,7,Other,26-Dec-14,131,CHP,JaiPur_Branch_KHR,30-Jun-18
+001470,Sok Muth                ,??? ???,07-Mar-89,S0052                   ,0,BM,11-Mar-13,131,CHP,JaiPur_Branch_KHR,30-Jun-18
+001485,Li Math                 ,?? ?????,12-Feb-86,S0692                   ,5,GCA,08-Feb-16,132,KTL,KampongTralach_Branch_KHR,30-Jun-18
+001487,Rith Sombon             ,????? ???????,07-Jan-95,S0699                   ,5,GCA,08-Feb-16,132,KTL,KampongTralach_Branch_KHR,30-Jun-18
+001489,Pheng Sophal            ,??? ????,10-Nov-96,S0601                   ,5,GCA,04-Jan-16,132,KTL,KampongTralach_Branch_KHR,30-Jun-18
+001737,Nem Sokhan              ,??? ????,14-Jun-90,S0042                   ,0,BM,11-Feb-13,132,KTL,KampongTralach_Branch_KHR,30-Jun-18
+001911,Mey Serytouch           ,??? ???????,05-Aug-94,S1047                   ,6,Cashier,26-Jan-17,132,KTL,KampongTralach_Branch_KHR,30-Jun-18
+001914,Mao Sontharoth          ,??? ??????????,16-Oct-95,S0298                   ,0,BM,06-Oct-14,132,KTL,KampongTralach_Branch_KHR,30-Jun-18
+001955,Sun Vanny               ,???? ?????,25-Jan-91,S0439                   ,9,ACC,01-Apr-15,132,KTL,KampongTralach_Branch_KHR,30-Jun-18
+001965,Los Nes                 ,???? ???,11-Jan-91,S1160                   ,5,GCA,10-Jul-17,132,KTL,KampongTralach_Branch_KHR,30-Jun-18
+000146,Sot Vanna               ,????? ?????,03-Jun-94,S0314                   ,5,GCA,06-Oct-14,132,KTL,KampongTralach_Branch_KHR,30-Jun-18
+000008,Sngoun Piseth           ,????? ???????,08-Jan-97,S0660                   ,5,GCA,01-Feb-16,132,KTL,KampongTralach_Branch_KHR,30-Jun-18
+000012,Phon Sopheara           ,??? ???????,27-Jul-93,S0661                   ,5,GCA,01-Feb-16,132,KTL,KampongTralach_Branch_KHR,30-Jun-18
+000010,Cheap Sarim             ,??? ?????,19-May-92,S0419                   ,5,GCA,10-Mar-15,132,KTL,KampongTralach_Branch_KHR,30-Jun-18
+000003,Chhong Chhy             ,??? ??,15-Aug-94,S0254                   ,5,GCA,01-Sep-14,132,KTL,KampongTralach_Branch_KHR,30-Jun-18
+000002,Pa Chhany               ,??? ????,10-Jul-92,S0256                   ,5,GCA,01-Sep-14,132,KTL,KampongTralach_Branch_KHR,30-Jun-18
+000008,Mao Sophal              ,??? ????,25-Sep-89,S0260                   ,5,GCA,01-Sep-14,133,KTB,KampongTrabek_Branch_KHR,30-Jun-18
+000793,Morn Thearith           ,???? ?????,10-May-87,S0854                   ,5,GCA,11-Aug-16,133,KTB,KampongTrabek_Branch_KHR,30-Jun-18
+001480,Thor Heng               ,??? ???,05-Mar-89,S0791                   ,5,GCA,11-May-16,133,KTB,KampongTrabek_Branch_KHR,30-Jun-18
+001512,Chea Sokhon             ,?? ?????,07-May-93,S0000                   ,6,Cashier,15-Jun-17,133,KTB,KampongTrabek_Branch_KHR,30-Jun-18
+001513,Suos Mom                ,??? ???,15-Nov-93,S0358                   ,9,ACC,02-Feb-15,133,KTB,KampongTrabek_Branch_KHR,30-Jun-18
+001516,Kornh Bunthon           ,??? ??????,11-Feb-92,S1146,5,GCA,26-Jun-17,133,KTB,KampongTrabek_Branch_KHR,30-Jun-18
+001519,Oun Chandet             ,??? ???????,01-Jan-97,S0667,1,DBM,01-Feb-16,133,KTB,KampongTrabek_Branch_KHR,30-Jun-18
+001520,Nhoem Sam on            ,??? ????,02-Jun-95,S1191,5,GCA,11-Sep-17,133,KTB,KampongTrabek_Branch_KHR,30-Jun-18
+001522,Yoeurn Socheat          ,??? ??????,07-Oct-98,S1271,5,GCA,09-Jan-18,133,KTB,KampongTrabek_Branch_KHR,30-Jun-18
+001458,Sorm Seyha              ,??? ????,20-Apr-93,S0460                   ,1,DBM,25-May-15,133,KTB,KampongTrabek_Branch_KHR,30-Jun-18
+001399,Yorn Dara               ,??? ????,12-Jan-91,S0892                   ,5,GCA,10-Oct-16,133,KTB,KampongTrabek_Branch_KHR,30-Jun-18
+001406,Touch Vannak            ,??? ?????,15-Apr-85,S1022                   ,0,BM,26-Dec-16,133,KTB,KampongTrabek_Branch_KHR,30-Jun-18
+001406,Din Sarith              ,??? ?????,27-Jul-81,S0409                   ,0,BM,01-Mar-15,134,SVA,SvayAntor_Branch_KHR,30-Jun-18
+001347,Sreng Sambo             ,????? ?????,04-May-91,S0462                   ,6,Cashier,26-May-15,134,SVA,SvayAntor_Branch_KHR,30-Jun-18
+001204,Hun Kosal               ,???? ????,29-Aug-87,S0685                   ,5,GCA,03-Feb-16,134,SVA,SvayAntor_Branch_KHR,30-Jun-18
+001571,Vorng Mean              ,??? ???,11-Apr-93,S1059                   ,5,GCA,14-Feb-17,134,SVA,SvayAntor_Branch_KHR,30-Jun-18
+001492,Mey Yna                 ,??? ?????,04-Feb-94,S0996                   ,5,GCA,01-Nov-16,134,SVA,SvayAntor_Branch_KHR,30-Jun-18
+001667,Chhem Siha              ,??? ????,02-Jan-95,S1353                   ,5,GCA,04-Jun-18,134,SVA,SvayAntor_Branch_KHR,30-Jun-18
+001578,Cheav Hak               ,??? ????,12-May-85,S1218                   ,0,BM,13-Nov-17,134,SVA,SvayAntor_Branch_KHR,30-Jun-18
+001547,Sok Sovannareth         ,??? ????????????,13-Mar-98,S1029                   ,5,GCA,09-Jan-17,134,SVA,SvayAntor_Branch_KHR,30-Jun-18
+001756,Ken Sodali              ,??? ??????,16-Oct-97,S0744                   ,9,ACC,07-Mar-16,134,SVA,SvayAntor_Branch_KHR,30-Jun-18
+000881,Phan Phat               ,??? ???,02-Sep-90,S0267                   ,5,GCA,01-Sep-14,134,SVA,SvayAntor_Branch_KHR,30-Jun-18
+000006,Moeung Visar            ,??? ?????,23-Apr-96,S0262                   ,5,GCA,01-Sep-14,134,SVA,SvayAntor_Branch_KHR,30-Jun-18
+000002,Yan Sarat               ,????? ???????,27-Mar-94,S0266                   ,1,DBM,01-Sep-14,134,SVA,SvayAntor_Branch_KHR,30-Jun-18
+000001,Sorn Somaly             ,?? ???????,05-Dec-87,S0482                   ,9,ACC,08-Jun-15,134,SVA,SvayAntor_Branch_KHR,30-Jun-18
+000003,Chek Samon              ,??? ?????,07-Jan-91,S0070                   ,1,DBM,15-Jul-13,135,PCH,PreyChhor_Branch_KHR,30-Jun-18
+000004,Rorn Heng               ,??? ???,04-Sep-92,S0057                   ,5,GCA,01-Sep-14,135,PCH,PreyChhor_Branch_KHR,30-Jun-18
+000007,Noem Sitha              ,??? ?????,12-Dec-86,S0727                   ,5,GCA,23-Feb-16,135,PCH,PreyChhor_Branch_KHR,30-Jun-18
+001025,Sambath Kompheak        ,???????? ?????:,14-Feb-92,S0402                   ,9,ACC,16-Feb-15,135,PCH,PreyChhor_Branch_KHR,30-Jun-18
+000092,Heang Menghong          ,???? ???????,25-Jun-92,S0251                   ,5,GCA,01-Sep-14,135,PCH,PreyChhor_Branch_KHR,30-Jun-18
+000043,Saron Daro              ,????? ?????,09-Sep-94,S0203                   ,5,GCA,26-Jun-14,135,PCH,PreyChhor_Branch_KHR,30-Jun-18
+001943,Pheng Sam ath           ,??? ?????,19-Dec-96,S1016,5,GCA,12-Dec-16,135,PCH,PreyChhor_Branch_KHR,30-Jun-18
+002029,Thoeung Maly            ,??? ?????,06-Sep-93,S0000                   ,6,Cashier,13-Mar-17,135,PCH,PreyChhor_Branch_KHR,30-Jun-18
+002055,Seng Samnang            ,??? ??????,10-May-90,S0000                   ,6,Cashier,18-May-15,135,PCH,PreyChhor_Branch_KHR,30-Jun-18
+002142,Yoeun Samoeun           ,??? ?????,03-Jun-92,N/a                     ,6,Cashier,31-Jul-17,135,PCH,PreyChhor_Branch_KHR,30-Jun-18
+002268,York Soklim             ,??? ??????,16-Nov-95,S1096,5,GCA,13-Mar-17,135,PCH,PreyChhor_Branch_KHR,30-Jun-18
+002289,Lean Engla              ,??? ?????,10-Mar-95,N061399024              ,5,GCA,25-Apr-18,135,PCH,PreyChhor_Branch_KHR,30-Jun-18
+001487,Khean Danet             ,??? ?????,08-Oct-95,S0540                   ,5,GCA,27-Oct-15,135,PCH,PreyChhor_Branch_KHR,30-Jun-18
+001689,LUTH VOEURN             ,??? ???,23-Nov-96,S0816                   ,6,Cashier,01-Jul-16,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+001690,YOEURNG PHENG           ,??? ???,01-May-85,S0066                   ,0,BM,08-Jul-13,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+001691,NY CHHORVY              ,?? ???,10-Mar-92,S0647                   ,9,ACC,03-May-16,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+001692,NY CHHORVY              ,???? ???,10-Mar-92,S0786                   ,9,ACC,03-May-16,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+001309,VI SANIET               ,?? ?????,13-Oct-93,S0576                   ,5,GCA,07-Dec-15,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+001307,SUN SOKUN               ,????? ?????,22-Jun-83,N170406101              ,5,GCA,NULL,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+001219,Meak Rinda              ,??? ?????,01-Jul-93,N/A                     ,3,Teller,NULL,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+001390,CHOEURT SOPHEA          ,??? ????,03-May-95,N170728830              ,5,GCA,NULL,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+002165,THONG VUTHA             ,??? ?????,02-Mar-94,S1247,5,GCA,NULL,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+002168,NUON DINAN              ,??? ?????,01-Jan-97,S1243,5,GCA,29-Nov-17,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+002043,RORY SORNDOS            ,??? ??????,25-Jun-93,S1165,5,GCA,01-Aug-17,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+002045,PY PECH                 ,?? ?????,02-Jun-91,S0523,1,DBM,NULL,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+001907,CHOEURN SOKRAN          ,??? ???????,15-Dec-93,S1076,5,GCA,NULL,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+001921,VONG SOKNA              ,???? ?????,06-Nov-96,S1076,5,GCA,NULL,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+001706,Kl Thoeurng             ,?? ???,21-Oct-16,S0227                   ,1,DBM,NULL,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+001737,Ny Chhorvy              ,?? ???,10-Mar-92,S0786                   ,9,ACC,03-May-16,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+001738,Ny Chhorvy              ,?? ???,10-Mar-92,S0786                   ,9,ACC,03-May-16,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+001736,Yoeurng Phearum         ,??? ???,01-May-85,S0066                   ,0,BM,08-Jul-14,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+001801,OUM SOPHEAROM           ,???? ????????,13-May-91,N011061216              ,5,GCA,17-Oct-16,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+001059,RAN CHANRO              ,??? ???????,01-Aug-91,S0841                   ,5,GCA,26-Jul-16,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+000007,PHON VONGDARA           ,?? ????????,11-Feb-98,S0878,5,GCA,NULL,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+000008,RAN THA                 ,????? ??,11-Nov-89,S922                    ,5,GCA,NULL,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+000011,SAMRETH VISALSAC        ,??????? ??????????,07-Mar-96,S1015,5,GCA,21-Nov-16,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+000012,CHE SOPHEAK             ,??? ???????,30-Nov-95,S0299                   ,5,GCA,06-Oct-14,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+000013,Tho Vanthet             ,?? ????????,15-Jul-95,N170669835              ,3,Teller,NULL,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+000003,THORNG PHEARUM          ,??? ?????,09-Dec-94,S0297                   ,5,GCA,06-Oct-14,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+000002,SENG SOPHANNA           ,??? ????????,04-Nov-85,S0752                   ,5,GCA,15-Mar-16,136,MRS,MoungRoessei_Branch_KHR,30-Jun-18
+000002,Vorn Roatmithona        ,??? ???????????,07-Jun-99,S1313,5,GCA,20-Mar-18,137,SNK,SotNikom_Branch_KHR,30-Jun-18
+000001,Lach Chen               ,??? ???,02-Jan-92,S0303                   ,6,Cashier,06-Oct-14,137,SNK,SotNikom_Branch_KHR,30-Jun-18
+000005,Yean So An              ,??? ??????,26-Jul-92,S0821                   ,5,GCA,06-Oct-14,137,SNK,SotNikom_Branch_KHR,30-Jun-18
+000004,Leu Liveann             ,?? ???????,03-Mar-92,S0614                   ,5,GCA,12-Jan-16,137,SNK,SotNikom_Branch_KHR,30-Jun-18
+000008,Chin Mengseang          ,??? ???????,18-Feb-91,S0307                   ,5,GCA,06-Oct-14,137,SNK,SotNikom_Branch_KHR,30-Jun-18
+000837,Soung Vuthy             ,??? ??????,01-May-87,S0182,1,DBM,06-Oct-14,137,SNK,SotNikom_Branch_KHR,30-Jun-18
+000048,Nhean Nha               ,??? ???,10-Dec-91,S0406                   ,5,GCA,23-Feb-15,137,SNK,SotNikom_Branch_KHR,30-Jun-18
+000359,Beng Khuong             ,???? ???,03-Jul-89,S0312                   ,5,GCA,06-Oct-14,137,SNK,SotNikom_Branch_KHR,30-Jun-18
+003027,Chum Chanthy            ,??? ??????,18-Nov-99,S1282,5,GCA,23-Jan-18,137,SNK,SotNikom_Branch_KHR,30-Jun-18
+003065,Chhoeung Palleng        ,??? ?????,03-Jul-95,N150548582              ,6,Cashier,02-Apr-18,137,SNK,SotNikom_Branch_KHR,30-Jun-18
+000866,Them Ratha              ,??? ?????,23-Jun-95,S0444                   ,5,GCA,06-Apr-15,138,PUK,Pouk_Branch_KHR,30-Jun-18
+000007,Hak Heng                ,????? ???,02-Apr-88,S0305                   ,5,GCA,06-Oct-14,138,PUK,Pouk_Branch_KHR,30-Jun-18
+001871,Choan Pheak             ,??? ????,24-Jan-96,S1335,5,GCA,24-Jan-96,138,PUK,Pouk_Branch_KHR,30-Jun-18
+002034,Yoeum Srey Rath         ,???? ?????????,20-Jan-96,S1199                   ,6,Cashier,02-Oct-17,138,PUK,Pouk_Branch_KHR,30-Jun-18
+001990,Nhean Nha               ,??? ???,10-Dec-91,S0406                   ,1,DBM,23-Feb-15,138,PUK,Pouk_Branch_KHR,30-Jun-18
+002218,N/A N/A                 ,?,NULL,N/A                     ,5,GCA,NULL,138,PUK,Pouk_Branch_KHR,30-Jun-18
+001380,San Rasin               ,???? ???????,07-Sep-95,S0607                   ,5,GCA,04-Jan-16,138,PUK,Pouk_Branch_KHR,30-Jun-18
+001381,Kroem Yorn              ,????? ???,05-Jun-93,S0605                   ,5,GCA,04-Jan-16,138,PUK,Pouk_Branch_KHR,30-Jun-18
+001383,Hai Sarath              ,?? ???????,12-Sep-89,S0356                   ,5,GCA,01-Feb-15,138,PUK,Pouk_Branch_KHR,30-Jun-18
+001384,Seap ChanSey            ,???? ??????,01-Jun-99,S1264,5,GCA,25-Dec-17,138,PUK,Pouk_Branch_KHR,30-Jun-18
+001701,Hak Kamrang             ,???? ????,01-Feb-90,S0404                   ,9,ACC,20-Feb-15,138,PUK,Pouk_Branch_KHR,30-Jun-18
+001702,Nin Khuoch              ,??? ???,06-Jan-92,S0306                   ,6,Cashier,06-Oct-14,138,PUK,Pouk_Branch_KHR,30-Jun-18
+001703,Phai BoRan              ,?? ??????,03-Sep-88,S0142                   ,0,BM,24-Feb-14,138,PUK,Pouk_Branch_KHR,30-Jun-18
+001722,SAY CHHIN               ,??? ???,13-Apr-93,S0426                   ,1,DBM,18-Mar-15,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+001684,NHOEK PUTH              ,??? ???,06-Jul-99,S1204,5,GCA,02-Oct-17,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+001641,Yun Neang               ,??? ???,29-Aug-94,N/A                     ,10,unknown,07-Aug-17,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+001573,SOUN NAVY               ,??? ????,06-May-98,N030693403              ,6,Cashier,NULL,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+001574,Seng Chanthech          ,???,02-Feb-72,N030874876              ,0,BM,NULL,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+001532,CHEY SAVUTH             ,??? ?????,04-Apr-91,S0313                   ,5,GCA,05-Oct-14,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+001350,CHUM THY                ,??? ??,14-Jul-93,S0503                   ,5,GCA,06-Jul-15,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+001352,AI SAOLY                ,?? ????,01-Feb-92,S0870                   ,5,GCA,01-Sep-16,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+001461,NGEM SOKHANG            ,??? ??????,07-Jan-94,S0000                   ,5,GCA,26-Dec-16,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+001464,KAN SOKHA               ,???? ????,04-May-89,S0000                   ,6,Cashier,18-Jan-17,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+001345,YA SOKKEA               ,??? ?????,05-May-92,S0014                   ,0,BM,10-Sep-12,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+001736,HAK NET                 ,???? ???,07-Mar-88,S0868,10,unknown,29-Aug-16,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+000013,KHET PHITAU             ,??? ????,05-Mar-96,S0371                   ,5,GCA,04-Feb-15,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+000010,PHON THILA              ,??? ????,05-Mar-96,S0850                   ,5,GCA,01-Aug-16,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+000005,NHANH DARO              ,????? ?????,02-Mar-95,S0369                   ,5,GCA,04-Feb-15,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+000001,SON SROS                ,??? ?????,03-Mar-93,S0382                   ,5,GCA,04-Feb-15,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+000932,SUN VANNY               ,????? ?????,25-Jan-91,S0439                   ,9,ACC,01-Apr-15,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+000976,SIN SOCHEAT             ,???? ??????,18-Jul-86,S0754                   ,1,DBM,21-Mar-16,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+001202,TOEM PHEAK              ,??? ????,05-May-92,S0565                   ,5,GCA,01-Dec-15,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+000025,SAN SREYMACH            ,??? ????????,05-May-94,S0372                   ,9,ACC,04-Feb-15,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+000019,HON RATANA              ,??? ?????,06-Jan-96,S0368                   ,5,GCA,04-Feb-15,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+000022,NON MOV                 ,??? ??,15-Apr-92,S0373                   ,5,GCA,04-Feb-15,139,KPS,KongPisei_Branch_KHR,30-Jun-18
+001180,Boeng Kosal             ,???? ????,10-Jun-86,S0612                   ,5,GCA,08-Jan-16,140,PKB,PreyKabbas_Branch_KHR,30-Jun-18
+000016,Vit Khuoch              ,???? ???,03-Feb-93,S0378                   ,5,GCA,04-Feb-15,140,PKB,PreyKabbas_Branch_KHR,30-Jun-18
+001300,Soeurng Songly          ,??? ?????,01-Feb-90,S1002                   ,5,GCA,01-Nov-16,140,PKB,PreyKabbas_Branch_KHR,30-Jun-18
+001470,Sean Sarath             ,??? ???????,10-Apr-90,S0000                   ,0,BM,15-Aug-17,140,PKB,PreyKabbas_Branch_KHR,30-Jun-18
+001449,Sreng Nop               ,????? ???,10-Oct-92,S1154,5,GCA,05-Jul-17,140,PKB,PreyKabbas_Branch_KHR,30-Jun-18
+001429,Sok Channy              ,??? ??????,01-Apr-93,S0885                   ,6,Cashier,09-Oct-16,140,PKB,PreyKabbas_Branch_KHR,30-Jun-18
+001490,Kung La                 ,??? ??,20-Aug-98,S0078,1,DBM,26-Nov-13,140,PKB,PreyKabbas_Branch_KHR,30-Jun-18
+001484,Pel Chanty              ,???? ??????,02-Jul-99,S1216,5,GCA,09-Oct-17,140,PKB,PreyKabbas_Branch_KHR,30-Jun-18
+001515,Sin Sophat              ,???? ?????,03-Jan-60,S1226,5,GCA,15-Jan-17,140,PKB,PreyKabbas_Branch_KHR,30-Jun-18
+001614,Sourn Koemsun           ,??? ????????,12-Mar-89,S0755                   ,5,GCA,23-Mar-16,141,BAL,Bavel_Branch_KHR,30-Jun-18
+001558,Sal Raksa               ,??? ?????,10-Dec-95,S0770                   ,5,GCA,12-Nov-15,141,BAL,Bavel_Branch_KHR,30-Jun-18
+001958,Mao Santharoth          ,??? ??????????,16-Oct-95,S0298                   ,1,DBM,06-Oct-14,141,BAL,Bavel_Branch_KHR,30-Jun-18
+001959,Soeurng Vat             ,???? ?????,15-Oct-84,S0088                   ,0,BM,24-Oct-13,141,BAL,Bavel_Branch_KHR,30-Jun-18
+001960,Teth Thida              ,??? ????,07-Nov-94,S0844                   ,6,Cashier,18-Jul-16,141,BAL,Bavel_Branch_KHR,30-Jun-18
+002118,Che Sopheak             ,??? ???????,30-Nov-95,S0299                   ,1,DBM,06-Oct-14,141,BAL,Bavel_Branch_KHR,30-Jun-18
+002541,Chak Chanseyha          ,??? ????????,08-Aug-88,S1210,5,GCA,09-Oct-17,141,BAL,Bavel_Branch_KHR,30-Jun-18
+002648,Yuom Ya                 ,??? ???,09-Jul-98,S1281,5,GCA,NULL,141,BAL,Bavel_Branch_KHR,30-Jun-18
+002678,Pheap Chantha           ,??? ?????,08-Jan-93,S0506,1,DBM,NULL,141,BAL,Bavel_Branch_KHR,30-Jun-18
+000007,Em Piseth               ,?? ???????,28-May-97,S0561                   ,5,GCA,16-Nov-15,141,BAL,Bavel_Branch_KHR,30-Jun-18
+000006,Hun Sangha              ,???? ?????,02-Apr-92,S0367                   ,5,GCA,04-Feb-15,141,BAL,Bavel_Branch_KHR,30-Jun-18
+000008,Sal Sokhon              ,?? ????,23-May-94,S0700                   ,5,GCA,08-Feb-16,141,BAL,Bavel_Branch_KHR,30-Jun-18
+000001,Hun Vireak              ,???? ????,17-Oct-93,S0365                   ,5,GCA,04-Feb-15,141,BAL,Bavel_Branch_KHR,30-Jun-18
+000002,Soy Bros                ,?? ?????,10-Aug-90,S0720                   ,5,GCA,17-Feb-16,141,BAL,Bavel_Branch_KHR,30-Jun-18
+000005,Thuch Sophal            ,??? ????,21-Feb-91,S0688                   ,5,GCA,05-Feb-16,141,BAL,Bavel_Branch_KHR,30-Jun-18
+001112,Seam Sorphea            ,???? ????,05-May-95,S0715                   ,9,ACC,16-Feb-16,141,BAL,Bavel_Branch_KHR,30-Jun-18
+001070,Tha Phea                ,?? ??,10-Mar-97,S0599                   ,5,GCA,04-Jan-16,141,BAL,Bavel_Branch_KHR,30-Jun-18
+002716,Loeurng Ratthy          ,??? ??????,18-Jul-98,S1340,5,GCA,02-May-18,141,BAL,Bavel_Branch_KHR,30-Jun-18
+002718,Ruos Chhorliheang       ,??? ???????,01-Aug-97,S1339,5,GCA,02-May-18,141,BAL,Bavel_Branch_KHR,30-Jun-18
+000858,Net Sovann              ,??? ??????,04-Apr-87,S654                    ,5,GCA,01-Feb-16,143,KTH,Kampong_Thom_Branch_KHR,30-Jun-18
+000757,Thol Menghor            ,??? ???????,04-Nov-98,S0631                   ,5,GCA,04-Dec-17,143,KTH,Kampong_Thom_Branch_KHR,30-Jun-18
+000194,Heuon Hong              ,??? ???,12-May-97,S0568                   ,5,GCA,23-Jan-18,143,KTH,Kampong_Thom_Branch_KHR,30-Jun-18
+000005,Pen BunRith             ,???? ?????????,06-Mar-87,S0748                   ,5,GCA,10-Mar-16,143,KTH,Kampong_Thom_Branch_KHR,30-Jun-18
+000004,Lay Sophin              ,??? ?????,19-Jan-98,S0860                   ,5,GCA,17-Oct-17,143,KTH,Kampong_Thom_Branch_KHR,30-Jun-18
+000002,Chea Then               ,?? ???,12-Dec-95,S0481                   ,6,Cashier,08-Jun-15,143,KTH,Kampong_Thom_Branch_KHR,30-Jun-18
+000001,Seng Srey Poch          ,??? ????????,09-Nov-94,S0181                   ,9,ACC,05-May-14,143,KTH,Kampong_Thom_Branch_KHR,30-Jun-18
+000008,Bit Sophorn             ,???? ???????,10-Jan-99,S0479                   ,5,GCA,11-Sep-17,143,KTH,Kampong_Thom_Branch_KHR,30-Jun-18
+000009,Kuon Yat                ,??? ?????,21-Sep-94,S0507                   ,5,GCA,27-Jul-15,143,KTH,Kampong_Thom_Branch_KHR,30-Jun-18
+001219,Net Sovann              ,??? ??????,04-Apr-87,S0654,1,DBM,01-Feb-16,143,KTH,Kampong_Thom_Branch_KHR,30-Jun-18
+001218,Ea Sama                 ,??? ?????,05-Feb-88,S0005                   ,0,BM,07-May-12,143,KTH,Kampong_Thom_Branch_KHR,30-Jun-18
+001457,Lun Si Thouern          ,??? ??????,05-Apr-82,S060108097              ,5,GCA,NULL,144,CHL,Chhloung_Branch_KHR,30-Jun-18
+001346,Chea Sokly              ,??? ???,08-Mar-61,F0302210                ,0,BM,08-Jul-13,144,CHL,Chhloung_Branch_KHR,30-Jun-18
+001408,Yeb Sokkha              ,??? ????,10-Apr-96,S1147,5,GCA,03-Jul-17,144,CHL,Chhloung_Branch_KHR,30-Jun-18
+001417,Yoeurng Pheng           ,??? ???,01-May-85,S062116148              ,0,BM,08-Jul-13,144,CHL,Chhloung_Branch_KHR,30-Jun-18
+001497,Ngoem So Manea          ,??? ??????,01-Jul-94,S1228,5,GCA,15-Nov-17,144,CHL,Chhloung_Branch_KHR,30-Jun-18
+000011,Chea Piseth             ,?? ???????,20-Nov-96,S0548                   ,5,GCA,02-Nov-15,144,CHL,Chhloung_Branch_KHR,30-Jun-18
+000004,Hoeun Peou              ,??? ???,04-Jan-92,S0490                   ,5,GCA,08-Jun-15,144,CHL,Chhloung_Branch_KHR,30-Jun-18
+000005,Chon Vanheang           ,?? ????????,01-Feb-93,S0547                   ,5,GCA,02-Nov-15,144,CHL,Chhloung_Branch_KHR,30-Jun-18
+000020,Yann Malen              ,???? ??????,02-Jul-97,S0673                   ,5,GCA,01-Feb-16,144,CHL,Chhloung_Branch_KHR,30-Jun-18
+000404,Chin Sokhunnang         ,???? ????????,01-Aug-92,S0360                   ,6,Cashier,08-Jun-15,144,CHL,Chhloung_Branch_KHR,30-Jun-18
+000244,Thong Nera              ,?? ?????,02-Feb-89,S1017,5,GCA,19-Dec-16,144,CHL,Chhloung_Branch_KHR,30-Jun-18
+000750,Chhin Makara            ,??? ????,30-Jan-97,S0766                   ,5,GCA,05-Apr-16,144,CHL,Chhloung_Branch_KHR,30-Jun-18
+001179,Oum Panharoth           ,???? ????????????,06-Feb-93,S0171                   ,1,DBM,01-Sep-14,144,CHL,Chhloung_Branch_KHR,30-Jun-18
+001163,Chan Tort               ,???? ??,07-Jun-88,S0009                   ,0,BM,27-Aug-12,144,CHL,Chhloung_Branch_KHR,30-Jun-18
+001164,Tan Sokheng             ,???? ??????,03-Apr-92,S0395                   ,7,Other,24-Aug-15,144,CHL,Chhloung_Branch_KHR,30-Jun-18
+001085,Phoak Sokra             ,??? ??????,02-Jan-86,S1269                   ,5,GCA,08-Jun-15,145,PVH,Preah_Vihear_Branch_KHR,30-Jun-18
+000961,Suon Sopha              ,???? ????,07-Mar-93,S0719                   ,5,GCA,17-Feb-16,145,PVH,Preah_Vihear_Branch_KHR,30-Jun-18
+000001,Tieng Chantheary        ,??? ????????,30-Dec-93,S0107                   ,9,ACC,28-Apr-14,145,PVH,Preah_Vihear_Branch_KHR,30-Jun-18
+000002,Theun Sokmom            ,??? ??????,09-Sep-92,S0489                   ,6,Cashier,08-Jun-15,145,PVH,Preah_Vihear_Branch_KHR,30-Jun-18
+000011,Yam Sok Kry             ,????? ???????,10-Jan-90,S1263                   ,4,SCA,08-Jun-15,145,PVH,Preah_Vihear_Branch_KHR,30-Jun-18
+000009,No Sophea Rum           ,?? ????????,06-Oct-93,S1267                   ,4,SCA,08-Jun-15,145,PVH,Preah_Vihear_Branch_KHR,30-Jun-18
+000007,Mab Sothea              ,????? ????,09-Jan-96,S1389                   ,5,GCA,02-Nov-15,145,PVH,Preah_Vihear_Branch_KHR,30-Jun-18
+001527,Duk Vannak              ,???? ?????,01-Jul-92,S1025,5,GCA,19-Dec-16,145,PVH,Preah_Vihear_Branch_KHR,30-Jun-18
+001550,Ing Bunpang             ,????? ????????,19-May-92,S0858,5,GCA,01-Aug-16,145,PVH,Preah_Vihear_Branch_KHR,30-Jun-18
+001539,Phach Chhengputh        ,???? ??????,09-Mar-90,N150757452              ,5,GCA,01-Aug-16,145,PVH,Preah_Vihear_Branch_KHR,30-Jun-18
+001585,Hay Sokheamra           ,??? ???????,05-Mar-98,S1102,5,GCA,02-Mar-17,145,PVH,Preah_Vihear_Branch_KHR,30-Jun-18
+001372,Sok Sithat              ,??? ??????,07-Mar-88,S0030                   ,0,BM,19-Dec-12,145,PVH,Preah_Vihear_Branch_KHR,30-Jun-18
+001373,En Vannak               ,??? ?????,03-Oct-92,S0207                   ,1,DBM,09-Jul-14,145,PVH,Preah_Vihear_Branch_KHR,30-Jun-18
+001792,Bun Khemma              ,???? ??????,06-Jul-96,S1263,5,GCA,25-Dec-17,145,PVH,Preah_Vihear_Branch_KHR,30-Jun-18
+001458,Chheng Kimsrean         ,??? ??????????,03-Nov-98,S1231                   ,5,GCA,23-Nov-17,146,STR,Stueng_Trang_Branch_KHR,30-Jun-18
+001404,Phal Sothita            ,?? ??????,05-Jun-94,S1159                   ,6,Cashier,03-Jul-17,146,STR,Stueng_Trang_Branch_KHR,30-Jun-18
+001252,Vat Phanna              ,???? ??????,10-Feb-99,S1058                   ,5,GCA,06-Feb-17,146,STR,Stueng_Trang_Branch_KHR,30-Jun-18
+001278,Thet Seithy             ,??????????,07-Jan-97,S1124                   ,5,GCA,12-May-17,146,STR,Stueng_Trang_Branch_KHR,30-Jun-18
+001504,Leang Kosal             ,??? ????,09-Aug-90,S1325,5,GCA,18-Apr-18,146,STR,Stueng_Trang_Branch_KHR,30-Jun-18
+001505,Soy Mengseng            ,?? ???????,01-Dec-90,S1105                   ,0,BM,03-Apr-17,146,STR,Stueng_Trang_Branch_KHR,30-Jun-18
+001118,Khon Phina              ,??? ????,01-Mar-89,S0991                   ,5,GCA,17-Oct-16,146,STR,Stueng_Trang_Branch_KHR,30-Jun-18
+001039,Roeung Leang Eng        ,??? ??????,12-Jul-89,S0514                   ,9,ACC,24-Aug-15,146,STR,Stueng_Trang_Branch_KHR,30-Jun-18
+001125,Om Chetra               ,??? ??????,09-Oct-94,S0992                   ,5,GCA,17-Oct-16,146,STR,Stueng_Trang_Branch_KHR,30-Jun-18
+000938,Chheng Chearuos         ,??? ?????,01-Jan-97,S1111,5,GCA,11-Mar-18,147,SSUG,Suong_Weekly_Branch_KHR,30-Jun-18
+000939,Nou Sarat               ,?? ???????,06-Sep-88,S0504                   ,5,GCA,13-Jul-17,147,SSUG,Suong_Weekly_Branch_KHR,30-Jun-18
+000233,Kong Sieha              ,??? ????,15-Jul-90,S0765                   ,5,GCA,07-Apr-16,147,SSUG,Suong_Weekly_Branch_KHR,30-Jun-18
+000361,Na Tho                  ,?? ???,04-Mar-86,S1223,5,GCA,06-Nov-17,147,SSUG,Suong_Weekly_Branch_KHR,30-Jun-18
+000202,Lang Dalen              ,??? ?????,12-Sep-92,S0421                   ,3,Teller,11-Mar-15,147,SSUG,Suong_Weekly_Branch_KHR,30-Jun-18
+000118,Toeurn Sokkheng         ,??? ??????,17-Nov-94,S1275,5,GCA,05-Jan-18,147,SSUG,Suong_Weekly_Branch_KHR,30-Jun-18
+000011,Thong Phalla            ,??? ?????,02-May-92,S0716                   ,5,GCA,16-Feb-16,147,SSUG,Suong_Weekly_Branch_KHR,30-Jun-18
+000014,Nay Sovichet            ,?? ?????????,01-Feb-98,S0997,5,GCA,01-Nov-16,147,SSUG,Suong_Weekly_Branch_KHR,30-Jun-18
+000001,Pou Savorn              ,??? ?????,26-Jul-93,S0037                   ,5,GCA,01-Nov-17,147,SSUG,Suong_Weekly_Branch_KHR,30-Jun-18
+000004,Mao Navy                ,??? ????,09-Oct-90,S0679                   ,1,DBM,01-Feb-16,147,SSUG,Suong_Weekly_Branch_KHR,30-Jun-18
+000004,Hy Bunthoeurn           ,??? ???????,12-Feb-95,S0587                   ,5,GCA,16-Dec-15,148,SATS,AngTaSom_Weekly_Branch_KHR,30-Jun-18
+000006,Peang Chanthorn         ,??? ??????,04-Aug-95,S0457                   ,5,GCA,22-May-15,148,SATS,AngTaSom_Weekly_Branch_KHR,30-Jun-18
+000009,Khit Net                ,??? ???,01-Sep-90,S0036                   ,5,GCA,15-Dec-12,148,SATS,AngTaSom_Weekly_Branch_KHR,30-Jun-18
+000609,Tep Chenla              ,??? ?????,19-Apr-91,S0272                   ,5,GCA,10-Sep-14,148,SATS,AngTaSom_Weekly_Branch_KHR,30-Jun-18
+000941,Ngorn Pisey             ,?? ????,05-Jun-88,S0027                   ,3,Teller,19-Nov-12,148,SATS,AngTaSom_Weekly_Branch_KHR,30-Jun-18
+000871,Khun Ramy               ,??? ?????,11-Oct-89,S0864                   ,5,GCA,25-Aug-16,148,SATS,AngTaSom_Weekly_Branch_KHR,30-Jun-18
+000875,Ny Seyha                ,?? ????,03-Aug-96,S0852                   ,5,GCA,09-Aug-16,148,SATS,AngTaSom_Weekly_Branch_KHR,30-Jun-18
+000901,Kin Panha               ,??? ?????,09-Jul-91,S0990                   ,5,GCA,24-Oct-16,148,SATS,AngTaSom_Weekly_Branch_KHR,30-Jun-18
+000929,Soeung Songly           ,??? ?????,01-Feb-90,S1002                   ,5,GCA,01-Nov-16,148,SATS,AngTaSom_Weekly_Branch_KHR,30-Jun-18
+001159,Chhorn Pheang           ,?? ???,08-Jun-88,N101143674              ,3,Teller,01-Sep-17,148,SATS,AngTaSom_Weekly_Branch_KHR,30-Jun-18
+001043,Chuon Vanna             ,??? ?????,05-May-89,S1082,5,GCA,20-Mar-17,148,SATS,AngTaSom_Weekly_Branch_KHR,30-Jun-18
+001054,Mang Phey               ,???? ??,07-Dec-93,S1013                   ,5,GCA,05-Dec-16,148,SATS,AngTaSom_Weekly_Branch_KHR,30-Jun-18
+001059,Chey Sophyra            ,??? ???????,01-Apr-93,S0830                   ,1,DBM,08-Feb-14,148,SATS,AngTaSom_Weekly_Branch_KHR,30-Jun-18
+001048,Heng Sovannak           ,??? ???????,NULL,S0339,4,SCA,NULL,149,SKSP,Kompongspeu_Weekly_Branch_KHR,30-Jun-18
+001069,Em Chetra               ,?? ??????,NULL,S0820,4,SCA,NULL,149,SKSP,Kompongspeu_Weekly_Branch_KHR,30-Jun-18
+001197,Heng Menghoeurng        ,??? ???????,05-May-95,S1197,5,GCA,22-Sep-17,149,SKSP,Kompongspeu_Weekly_Branch_KHR,30-Jun-18
+000729,Yi Kinin                ,?? ?????,02-Mar-85,S0810                   ,4,SCA,15-Jun-16,149,SKSP,Kompongspeu_Weekly_Branch_KHR,30-Jun-18
+000820,Kuon Linda              ,??? ?????,12-Mar-97,S0887                   ,3,Teller,04-Oct-16,149,SKSP,Kompongspeu_Weekly_Branch_KHR,30-Jun-18
+000959,Pheun Heng              ,??? ???,15-Jul-90,S0017,1,DBM,25-Oct-12,149,SKSP,Kompongspeu_Weekly_Branch_KHR,30-Jun-18
+000983,Seu Bros                ,??? ?????,13-Jan-99,N030691857              ,5,GCA,13-Mar-17,149,SKSP,Kompongspeu_Weekly_Branch_KHR,30-Jun-18
+001035,Phan Phearom            ,??? ??????,05-May-92,S0125                   ,4,SCA,NULL,149,SKSP,Kompongspeu_Weekly_Branch_KHR,30-Jun-18
+001003,Khun Sokneng            ,??? ??????,09-Apr-94,S0316,4,SCA,27-Oct-14,149,SKSP,Kompongspeu_Weekly_Branch_KHR,30-Jun-18
+000540,Pheun Khim              ,????? ???,20-Feb-92,S0728                   ,5,GCA,23-Feb-16,149,SKSP,Kompongspeu_Weekly_Branch_KHR,30-Jun-18
+000555,Son Kimsat              ,????? ??????,09-Jun-98,S0834                   ,5,GCA,07-Jun-16,149,SKSP,Kompongspeu_Weekly_Branch_KHR,30-Jun-18
+000008,Hay Buntheoun           ,?? ???????,13-Apr-91,S0392                   ,5,GCA,09-Feb-15,149,SKSP,Kompongspeu_Weekly_Branch_KHR,30-Jun-18
+000006,Ti Makara               ,?? ????,12-Mar-82,S0350                   ,5,GCA,08-Jan-15,149,SKSP,Kompongspeu_Weekly_Branch_KHR,30-Jun-18
+000007,Nel Ran                 ,??? ???,04-Dec-91,S0412                   ,5,GCA,02-Mar-15,149,SKSP,Kompongspeu_Weekly_Branch_KHR,30-Jun-18
+000001,May Kosal               ,??? ?????,07-Sep-94,S0194                   ,5,GCA,09-Jun-14,149,SKSP,Kompongspeu_Weekly_Branch_KHR,30-Jun-18
+001349,Mean Samnang            ,??? ?????,05-Nov-94,S1302,5,GCA,19-Feb-18,149,SKSP,Kompongspeu_Weekly_Branch_KHR,30-Jun-18
+001356,KOUY TOUCH              ,??? ???,25-Mar-94,S1350,5,GCA,28-May-18,150,SPDT,HeadOffice_Weekly_Branch_KHR,30-Jun-18
+001345,TEP CHANREAKSMEY        ,??? ?????????,15-Apr-97,N051518263              ,5,GCA,20-May-18,150,SPDT,HeadOffice_Weekly_Branch_KHR,30-Jun-18
+001334,KHOURN KOSAL            ,??? ????,11-Nov-98,S1304,5,GCA,23-Feb-18,150,SPDT,HeadOffice_Weekly_Branch_KHR,30-Jun-18
+001211,BUNA SOVANARITH         ,??????? ????????????,20-Jul-95,S1252,5,GCA,10-Dec-17,150,SPDT,HeadOffice_Weekly_Branch_KHR,30-Jun-18
+000001,VY SOMORL               ,?? ??????,26-Jul-92,S0470                   ,5,GCA,04-Jun-15,150,SPDT,HeadOffice_Weekly_Branch_KHR,30-Jun-18
+000005,HAM KAKDA               ,?? ??????,02-Apr-93,S0000                   ,5,GCA,25-May-16,150,SPDT,HeadOffice_Weekly_Branch_KHR,30-Jun-18
+000009,CHORN MAO               ,?? ??,09-Jan-92,S0150                   ,5,GCA,10-Mar-14,150,SPDT,HeadOffice_Weekly_Branch_KHR,30-Jun-18
+000012,SENG DARA               ,??? ?????,01-Jan-89,S0016                   ,1,DBM,17-Sep-12,150,SPDT,HeadOffice_Weekly_Branch_KHR,30-Jun-18
+000490,NAI SOKHA               ,?? ????,15-May-97,S0718                   ,5,GCA,17-Feb-16,150,SPDT,HeadOffice_Weekly_Branch_KHR,30-Jun-18
+000341,SOUN NAROM              ,??? ??????,31-Aug-91,S0041                   ,5,GCA,11-Feb-15,150,SPDT,HeadOffice_Weekly_Branch_KHR,30-Jun-18
+000350,PAL SOMNANG             ,????? ?????,16-Jun-88,S0319                   ,5,GCA,03-Nov-14,150,SPDT,HeadOffice_Weekly_Branch_KHR,30-Jun-18
+000132,YEN YAN                 ,???? ????,01-Jun-90,S0843,5,GCA,01-Aug-16,150,SPDT,HeadOffice_Weekly_Branch_KHR,30-Jun-18
+000059,KONG LA                 ,??? ??,22-Aug-88,S0078                   ,5,GCA,26-Aug-13,150,SPDT,HeadOffice_Weekly_Branch_KHR,30-Jun-18
+001011,SVAY NHEL               ,??????? ????,01-Sep-80,S50186                  ,0,BM,25-Jan-17,150,SPDT,HeadOffice_Weekly_Branch_KHR,30-Jun-18
+001012,CHUOB SOPHEAKTRA        ,??? ??????????,03-Oct-91,S1039,5,GCA,09-Jan-17,150,SPDT,HeadOffice_Weekly_Branch_KHR,30-Jun-18
+001019,CHEY SAMPHORS           ,??? ???????,03-May-95,S0000                   ,5,GCA,25-Jan-17,150,SPDT,HeadOffice_Weekly_Branch_KHR,30-Jun-18
+001020,THAB TOLA               ,????? ????,13-Oct-90,S0302                   ,5,GCA,16-Feb-15,150,SPDT,HeadOffice_Weekly_Branch_KHR,30-Jun-18
+000961,SAO PHALLA              ,?? ?????,27-Dec-92,S0886,5,GCA,05-Oct-16,150,SPDT,HeadOffice_Weekly_Branch_KHR,30-Jun-18
+001171,TORKP PHEARIN           ,??? ?????,06-Jun-94,S1183,5,GCA,11-Sep-17,150,SPDT,HeadOffice_Weekly_Branch_KHR,30-Jun-18
+001058,DOEM SOMEURNG           ,??? ?????,13-Sep-85,S0047                   ,5,GCA,20-Jan-14,150,SPDT,HeadOffice_Weekly_Branch_KHR,30-Jun-18
+001061,IL                      ,?,NULL,NULL,5,GCA,NULL,150,SPDT,HeadOffice_Weekly_Branch_KHR,30-Jun-18
+001118,Chhit Amra              ,??? ????,13-Sep-93,996,1,DBM,09-Feb-15,151,SKSV,KienSvay_Weekly_Branch_KHR,30-Jun-18
+001192,Heng Saron              ,??? ?????,08-Apr-93,N/A                     ,5,GCA,26-Jun-17,151,SKSV,KienSvay_Weekly_Branch_KHR,30-Jun-18
+001158,Chenda Veng A           ,?????? ??????,04-May-93,S0539,1,DBM,20-Oct-15,151,SKSV,KienSvay_Weekly_Branch_KHR,30-Jun-18
+001162,En Thy                  ,?? ??,25-May-87,0,0,BM,08-Apr-13,151,SKSV,KienSvay_Weekly_Branch_KHR,30-Jun-18
+000489,You Sokly               ,?? ?????,05-Dec-71,F50122                  ,7,Other,01-Sep-15,151,SKSV,KienSvay_Weekly_Branch_KHR,30-Jun-18
+000005,Khat Oun                ,?????? ???,04-Nov-94,354,5,GCA,02-Jun-15,151,SKSV,KienSvay_Weekly_Branch_KHR,30-Jun-18
+000004,Ath Sreymom             ,??? ???????,15-Jun-92,50156,3,Teller,13-Jun-16,151,SKSV,KienSvay_Weekly_Branch_KHR,30-Jun-18
+001206,Pen Oun                 ,???? ???,16-Mar-99,S1211,5,GCA,20-Oct-17,151,SKSV,KienSvay_Weekly_Branch_KHR,30-Jun-18
+001254,Seng Sokhoeurn          ,??? ?????,08-May-95,S1241,5,GCA,27-Nov-17,151,SKSV,KienSvay_Weekly_Branch_KHR,30-Jun-18
+001255,Teng Borey              ,???? ????,01-Feb-94,S1234,5,GCA,22-Nov-17,151,SKSV,KienSvay_Weekly_Branch_KHR,30-Jun-18
+001265,Yon Sithan              ,????? ??????,02-Feb-92,S1283,5,GCA,18-Jan-18,151,SKSV,KienSvay_Weekly_Branch_KHR,30-Jun-18
+001628,Sok Pov                 ,??? ??,09-Sep-88,S0357                   ,1,DBM,02-Feb-15,152,SKCH,KompongChhnang_Weekly_Branch_KHR,30-Jun-18
+001849,Hi Chanthla             ,??? ????????,18-Aug-97,S1089,5,GCA,20-Feb-17,152,SKCH,KompongChhnang_Weekly_Branch_KHR,30-Jun-18
+001850,Thorn Thary             ,?? ????,07-Jun-96,S1065,5,GCA,20-Feb-17,152,SKCH,KompongChhnang_Weekly_Branch_KHR,30-Jun-18
+001964,Nov Bora                ,??? ?????,10-Aug-97,S0071                   ,5,GCA,27-Jan-17,152,SKCH,KompongChhnang_Weekly_Branch_KHR,30-Jun-18
+001937,Bung Vibin              ,???? ?????,14-Nov-92,N/A                     ,5,GCA,02-Jun-17,152,SKCH,KompongChhnang_Weekly_Branch_KHR,30-Jun-18
+002127,Hang Sokheng            ,???? ??????,18-Sep-98,S1317,5,GCA,19-Mar-18,152,SKCH,KompongChhnang_Weekly_Branch_KHR,30-Jun-18
+002155,Heng Kim Long           ,??? ??????,18-Oct-98,S1357,5,GCA,24-May-18,152,SKCH,KompongChhnang_Weekly_Branch_KHR,30-Jun-18
+001965,Dun Sokdin              ,??? ??????,18-Apr-93,S0071                   ,5,GCA,NULL,152,SKCH,KompongChhnang_Weekly_Branch_KHR,30-Jun-18
+002030,Chhin Savai             ,??? ????,15-Apr-92,S1176,5,GCA,21-Aug-17,152,SKCH,KompongChhnang_Weekly_Branch_KHR,30-Jun-18
+002061,Chin Sokchea            ,??? ?????,07-May-95,S1237,5,GCA,20-Nov-17,152,SKCH,KompongChhnang_Weekly_Branch_KHR,30-Jun-18
+002063,Choun Rum               ,??? ???,10-Apr-93,S1238,5,GCA,16-Nov-17,152,SKCH,KompongChhnang_Weekly_Branch_KHR,30-Jun-18
+000004,Dum Puth                ,??? ???,13-Jan-91,S0792                   ,6,Cashier,11-May-16,152,SKCH,KompongChhnang_Weekly_Branch_KHR,30-Jun-18
+000001,Chhong Chheang          ,??? ???,13-Mar-94,S0337                   ,1,DBM,15-Dec-14,152,SKCH,KompongChhnang_Weekly_Branch_KHR,30-Jun-18
+000002,Sour Sombok             ,??? ?????,01-Sep-94,S0331                   ,5,GCA,01-Dec-14,152,SKCH,KompongChhnang_Weekly_Branch_KHR,30-Jun-18
+000014,Ul Tang i               ,???? ???????,10-Aug-97,S1052,5,GCA,30-Jan-17,152,SKCH,KompongChhnang_Weekly_Branch_KHR,30-Jun-18
+000010,Dam Sarom               ,??? ??????,07-May-90,S0161                   ,5,GCA,01-Apr-15,152,SKCH,KompongChhnang_Weekly_Branch_KHR,30-Jun-18
+000008,Thor Thea               ,?? ??,19-Apr-90,S0881                   ,5,GCA,22-Aug-16,152,SKCH,KompongChhnang_Weekly_Branch_KHR,30-Jun-18
+000006,Seng Sona               ,??? ????,15-Feb-92,S1006,5,GCA,24-Oct-16,152,SKCH,KompongChhnang_Weekly_Branch_KHR,30-Jun-18
+000258,Sea Ratha               ,?? ?????,16-Jan-95,S0463                   ,5,GCA,04-Jan-16,152,SKCH,KompongChhnang_Weekly_Branch_KHR,30-Jun-18
+000018,Khim Dany               ,??? ????,11-Nov-98,S1035                   ,5,GCA,12-Dec-16,152,SKCH,KompongChhnang_Weekly_Branch_KHR,30-Jun-18
+000027,Ngeth Temsomethea       ,???? ?????????,30-Sep-94,NULL,5,GCA,30-Aug-16,152,SKCH,KompongChhnang_Weekly_Branch_KHR,30-Jun-18
+000056,Chhoek Thun             ,??? ???,03-Jun-94,S0625                   ,5,GCA,18-Jan-16,153,SPUS,Pursat_Weekly_Branch_KHR,30-Jun-18
+000083,Seun Phearun            ,???? ?????,04-Sep-94,S00047                  ,5,GCA,08-Jan-15,153,SPUS,Pursat_Weekly_Branch_KHR,30-Jun-18
+000316,Kver Math               ,???? ?????,10-Jul-93,S0802                   ,5,GCA,05-May-16,153,SPUS,Pursat_Weekly_Branch_KHR,30-Jun-18
+000626,Ty Sotom                ,?? ?????,07-Apr-90,S0255                   ,1,DBM,01-Sep-14,153,SPUS,Pursat_Weekly_Branch_KHR,30-Jun-18
+001165,Mel Sophakdey           ,???? ???????,15-Dec-96,S0883                   ,5,GCA,30-Jan-17,153,SPUS,Pursat_Weekly_Branch_KHR,30-Jun-18
+001081,Sam Lin                 ,?? ???,07-Apr-90,S0                      ,10,unknown,05-Jun-17,153,SPUS,Pursat_Weekly_Branch_KHR,30-Jun-18
+000929,So Daret                ,?? ??????,16-Aug-89,S0543                   ,3,Teller,02-Nov-15,153,SPUS,Pursat_Weekly_Branch_KHR,30-Jun-18
+000007,Los Nes                 ,???? ???,09-Jan-91,S0703                   ,5,GCA,08-Feb-16,153,SPUS,Pursat_Weekly_Branch_KHR,30-Jun-18
+000010,Suon Sokchea            ,??? ?????,13-Apr-90,S0274                   ,5,GCA,11-Sep-14,153,SPUS,Pursat_Weekly_Branch_KHR,30-Jun-18
+001665,Bo Pean                 ,?? ???,01-Oct-95,S1308,5,GCA,02-Mar-18,153,SPUS,Pursat_Weekly_Branch_KHR,30-Jun-18
+001657,Bil Sinan               ,???? ??????,08-Dec-93,S1296,5,GCA,19-Feb-18,153,SPUS,Pursat_Weekly_Branch_KHR,30-Jun-18
+001218,hot Sophal              ,???? ????,10-Nov-88,s160                    ,1,DBM,08-Jan-14,153,SPUS,Pursat_Weekly_Branch_KHR,30-Jun-18
+001215,Van Vet                 ,????? ????,22-Jul-92,S0169                   ,10,unknown,08-Jan-14,153,SPUS,Pursat_Weekly_Branch_KHR,30-Jun-18
+001216,Soem Sophai             ,???? ????,22-Jul-92,S0169                   ,10,unknown,05-May-14,153,SPUS,Pursat_Weekly_Branch_KHR,30-Jun-18
+001217,Nov Saovibot            ,?? ?????????,09-Jun-93,S1118                   ,10,unknown,10-Apr-17,153,SPUS,Pursat_Weekly_Branch_KHR,30-Jun-18
+001279,Vong Makara             ,???? ????,03-Mar-94,S1145,5,GCA,NULL,153,SPUS,Pursat_Weekly_Branch_KHR,30-Jun-18
+001280,Yos Bunra               ,?? ???????,04-Jun-96,S1157,5,GCA,07-Jul-17,153,SPUS,Pursat_Weekly_Branch_KHR,30-Jun-18
+001451,Phai Borann             ,?? ???????,03-Sep-88,N160390130              ,0,BM,24-Feb-14,153,SPUS,Pursat_Weekly_Branch_KHR,30-Jun-18
+001462,Soa Rady                ,?? ?????,01-Dec-91,N160410245              ,5,GCA,02-Oct-17,153,SPUS,Pursat_Weekly_Branch_KHR,30-Jun-18
+001676,Heang Sochan            ,???? ???????,19-Aug-91,S1086,5,GCA,29-May-18,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+001677,Ny Seyha                ,?? ????,09-Mar-97,S0000                   ,5,GCA,13-Mar-17,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+001678,Sim Soklyta             ,???? ???????,19-Jan-96,S0000                   ,3,Teller,01-Mar-17,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+001679,Em Piseth               ,?? ???????,28-May-97,S0000                   ,5,GCA,13-Mar-17,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+001723,Uon Saveang             ,???? ?????,04-Jun-94,S0315                   ,5,GCA,22-Oct-14,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+001726,Nan Somnang             ,??? ?????,11-Aug-86,S0829                   ,5,GCA,16-Mar-15,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+001727,Seut Phanit             ,??? ?????,01-Aug-94,S0427                   ,5,GCA,18-Mar-15,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+001473,Oeun Sovan              ,??? ??????,03-Mar-89,S0116                   ,1,DBM,08-Jan-14,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+002191,Choeurn Sophai          ,??? ????,06-Sep-95,S1202,5,GCA,09-Oct-17,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+001870,Soeurm Dalin            ,??? ?????,07-Nov-95,S00000                  ,6,Cashier,02-Jun-17,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+001871,Sien Narin              ,??? ?????,01-Jul-95,S00000                  ,6,Cashier,02-Jun-17,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+001845,Mork Kimheang           ,???? ??? ????,13-Jan-94,S1134,5,GCA,29-May-18,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+002382,kim Rithy               ,??? ?????,25-Sep-98,S00000                  ,5,GCA,07-May-18,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+002389,Rorn Borey              ,??? ????,02-Jul-92,S00000                  ,5,GCA,02-Jun-17,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+002223,Khoem Bunet             ,??? ???????,01-Jan-92,S1232,5,GCA,16-Nov-17,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+002338,Sang Visal              ,???? ?????,21-Jun-95,S1262,5,GCA,18-Dec-17,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+002345,SOK Kim eang            ,??? ??????,01-May-98,S1301,5,GCA,19-Feb-18,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+002346,che sopheak             ,?? ?????????,30-Nov-95,S0299,1,DBM,06-Oct-14,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+002378,thorng phearum          ,??? ?????,09-Dec-94,S000000214              ,1,DBM,06-Oct-14,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+000001,Leng Rathanak           ,??? ????,30-Jan-92,S0589                   ,5,GCA,21-Dec-15,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+000883,Sou Darith              ,??? ???????,10-Feb-96,S0704                   ,5,GCA,08-Feb-16,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+000667,Voeng Sara              ,??? ?????,04-Jul-81,S0609                   ,5,GCA,04-Jan-16,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+000030,Chen Sophorn            ,??? ?????,01-May-88,S0141                   ,5,GCA,24-Feb-14,154,SBTB,BatTamBong_Weekly_Branch_KHR,30-Jun-18
+000903,IM AI                   ,???? ??,02-Jul-93,S0776                   ,5,GCA,04-Apr-16,155,SSRP,Siemreap_Weekly_Branch_KHR,30-Jun-18
+000010,NEOU VUTHA              ,?? ??????,03-Feb-89,S0351                   ,5,GCA,12-Jan-15,155,SSRP,Siemreap_Weekly_Branch_KHR,30-Jun-18
+000009,DY CHANNY               ,?? ??????,11-Aug-97,S1239,5,GCA,27-Nov-17,155,SSRP,Siemreap_Weekly_Branch_KHR,30-Jun-18
+001530,SEANG SOUSDEY           ,???? ??????,03-Nov-98,S1196,5,GCA,26-Sep-17,155,SSRP,Siemreap_Weekly_Branch_KHR,30-Jun-18
+001517,VANG SREYPOV            ,???? ??????,06-Apr-95,N/A                     ,3,Teller,02-Oct-17,155,SSRP,Siemreap_Weekly_Branch_KHR,30-Jun-18
+001614,KHORN KIMNEAN           ,?? ??????,30-Apr-96,S1299,5,GCA,14-Feb-18,155,SSRP,Siemreap_Weekly_Branch_KHR,30-Jun-18
+001472,ORN HOM                 ,?? ??,04-Sep-96,S1140,5,GCA,12-Jun-17,155,SSRP,Siemreap_Weekly_Branch_KHR,30-Jun-18
+001384,BUN SOHIM               ,???? ??????,12-Aug-87,S0282,1,DBM,29-Sep-14,155,SSRP,Siemreap_Weekly_Branch_KHR,30-Jun-18
+000008,Vy Somorl               ,?? ??????,26-Jul-92,S0358                   ,5,GCA,NULL,401,PPDT,PAWN_SHOP_PDT_Branch_KHR,30-Jun-18
+000011,Chuob Sopheaktra        ,??? ??????????,03-Oct-91,S0869                   ,5,GCA,NULL,401,PPDT,PAWN_SHOP_PDT_Branch_KHR,30-Jun-18
+000001,SOUN NAROM              ,??? ??????,31-Aug-91,S0041                   ,5,GCA,NULL,401,PPDT,PAWN_SHOP_PDT_Branch_KHR,30-Jun-18
+000045,KHUORN KOSAL            ,??? ????,11-Nov-98,S1304,5,GCA,23-Feb-18,401,PPDT,PAWN_SHOP_PDT_Branch_KHR,30-Jun-18
+000047,TEP CHANREAKSMEY        ,??? ?????????,15-Apr-97,S1343,5,GCA,20-May-97,401,PPDT,PAWN_SHOP_PDT_Branch_KHR,30-Jun-18
+000059,Yun Vannak              ,??? ?????,20-Sep-94,S0416,5,GCA,01-Jul-17,402,PCCR,PAWN_SHOP_CCR_Branch_KHR,30-Jun-18
+000074,Dol Vichhai             ,??? ????,11-Sep-96,S1155,5,GCA,NULL,402,PCCR,PAWN_SHOP_CCR_Branch_KHR,30-Jun-18
+000078,Thaong Phanith          ,??? ?????,20-Jan-93,S1141,5,GCA,19-Jun-17,402,PCCR,PAWN_SHOP_CCR_Branch_KHR,30-Jun-18
+000001,Kim kheang              ,??? ??????,16-Aug-94,NULL,5,GCA,NULL,402,PCCR,PAWN_SHOP_CCR_Branch_KHR,30-Jun-18
+000001,Koy Sokcheat            ,?? ??????,05-Sep-94,S0225                   ,0,BM,04-Aug-14,403,PKTH,PAWN_SHOP_KTH_Branch_KHR,30-Jun-18
+000002,Seng Sreypoch           ,??? ????????,09-Nov-94,S0181                   ,9,ACC,05-May-14,403,PKTH,PAWN_SHOP_KTH_Branch_KHR,30-Jun-18
+000004,Heuon Hong              ,??? ???,12-May-97,S1280                   ,10,unknown,23-Jan-18,403,PKTH,PAWN_SHOP_KTH_Branch_KHR,30-Jun-18
+000005,Thol Menghor            ,??? ???????,04-Nov-98,S1246                   ,10,unknown,04-Dec-17,403,PKTH,PAWN_SHOP_KTH_Branch_KHR,30-Jun-18
+000003,Pen Bunrith             ,???? ?????????,06-Mar-87,S0611                   ,10,unknown,10-Mar-16,403,PKTH,PAWN_SHOP_KTH_Branch_KHR,30-Jun-18
+000004,Sok Meng                ,??? ????,02-Mar-91,S0492,5,GCA,11-Jun-15,404,PKPT,PAWN_SHOP_KPT_Branch_KHR,30-Jun-18
+000001,Lang Monorith           ,??? ????????,12-Jan-90,S0146,5,GCA,24-Feb-14,404,PKPT,PAWN_SHOP_KPT_Branch_KHR,30-Jun-18
+000009,Phok Sarom              ,??? ?????,30-Oct-89,S1240,5,GCA,29-Nov-17,404,PKPT,PAWN_SHOP_KPT_Branch_KHR,30-Jun-18
+000008,Noem Sitha              ,??? ?????,12-Dec-86,S0727                   ,5,GCA,23-Feb-16,405,PPCH,PAWN_SHOP_PCH_Branch_KHR,30-Jun-18
+000012,Lean Engla              ,??? ?????,07-Jun-18,S1337,5,GCA,25-Apr-18,405,PPCH,PAWN_SHOP_PCH_Branch_KHR,30-Jun-18
+000001,York Soklim             ,??? ??????,16-Nov-95,S1096,5,GCA,13-Mar-17,405,PPCH,PAWN_SHOP_PCH_Branch_KHR,30-Jun-18
+000001,Ty Lina                 ,?? ????,09-Aug-88,N190818435              ,0,BM,29-Jun-15,406,PBMC,PAWN_SHOP_BMC_Branch_KHR,30-Jun-18
+000002,Pall Sophea             ,????? ????,01-Feb-94,N190494760              ,9,ACC,20-Jun-16,406,PBMC,PAWN_SHOP_BMC_Branch_KHR,30-Jun-18
+000004,Vuth Lik                ,??? ??,20-Jun-98,N190709018              ,5,GCA,05-Dec-17,406,PBMC,PAWN_SHOP_BMC_Branch_KHR,30-Jun-18
+000003,Sakoly Sopunlouk        ,???????? ???????,12-Feb-99,S1091,5,GCA,13-Mar-17,406,PBMC,PAWN_SHOP_BMC_Branch_KHR,30-Jun-18
+000005,Chhorn Chem             ,?? ???,07-Jul-93,S0779,5,GCA,01-Dec-15,406,PBMC,PAWN_SHOP_BMC_Branch_KHR,30-Jun-18
+000014,Lat Sitha               ,???? ?????,05-Mar-98,S1355,5,GCA,21-May-18,406,PBMC,PAWN_SHOP_BMC_Branch_KHR,30-Jun-18
+000016,Soeurng Thanak          ,??? ????,02-Mar-00,S1356,5,GCA,21-May-18,406,PBMC,PAWN_SHOP_BMC_Branch_KHR,30-Jun-18
+000017,IL                      ,???????,NULL,NULL,5,GCA,21-May-18,406,PBMC,PAWN_SHOP_BMC_Branch_KHR,30-Jun-18
+000015,IL                      ,???? ?????,NULL,NULL,5,GCA,21-May-18,406,PBMC,PAWN_SHOP_BMC_Branch_KHR,30-Jun-18
+000006,SENG DARA               ,??? ?????,01-Jan-89,S0016                   ,1,DBM,17-Sep-12,501,PDT,HeadOffice_Branch_KHR,30-Jun-18
+002324,SUN SOMNANG             ,???? ?????,01-Feb-92,S0463                   ,5,GCA,27-May-15,501,PDT,HeadOffice_Branch_KHR,30-Jun-18
+002320,DOEM SAMOEURNG          ,??? ?????,13-Sep-85,S0047                   ,5,GCA,20-Jan-15,501,PDT,HeadOffice_Branch_KHR,30-Jun-18
+001844,KONG LA                 ,??? ??,22-Aug-88,S0078                   ,5,GCA,26-Aug-13,501,PDT,HeadOffice_Branch_KHR,30-Jun-18
+002021,HAM KAKDA               ,?? ??????,02-Apr-93,S0000                   ,5,GCA,25-May-16,501,PDT,HeadOffice_Branch_KHR,30-Jun-18
+002900,Group 1                 ,?????,14-Apr-88,30341249,5,GCA,NULL,501,PDT,HeadOffice_Branch_KHR,30-Jun-18
+003587,SVAY NHEL               ,????? ????,01-Jan-80,S50186                  ,0,BM,25-Jan-17,501,PDT,HeadOffice_Branch_KHR,30-Jun-18
+003593,Sao Phalla              ,?? ?????,27-Dec-92,S0961                   ,4,SCA,05-Dec-16,501,PDT,HeadOffice_Branch_KHR,30-Jun-18
+003596,Sok Channrith           ,??? ?????????,06-Apr-91,S0448                   ,4,SCA,27-Apr-15,501,PDT,HeadOffice_Branch_KHR,30-Jun-18
+003566,PHOM PHEAKDEY           ,??? ?????,12-Mar-91,S0588,5,GCA,NULL,501,PDT,HeadOffice_Branch_KHR,30-Jun-18
+003599,Kong Panha              ,??? ?????,01-Oct-90,S0856                   ,4,SCA,04-Aug-16,501,PDT,HeadOffice_Branch_KHR,30-Jun-18
+003011,Heng Saron              ,??? ?????,08-Apr-93,S1143,4,SCA,26-Jun-17,502,KSV,KienSvay_Branch_KHR,30-Jun-18
+002213,Khat Oun                ,????? ???,04-Nov-94,S0466,4,SCA,02-Jun-15,502,KSV,KienSvay_Branch_KHR,30-Jun-18
+001322,Suon Sopheap            ,??? ?????,03-Jan-80,N020537423              ,0,BM,18-Apr-18,502,KSV,KienSvay_Branch_KHR,30-Jun-18
+001272,Son Riem                ,????? ???,08-Jul-94,807,6,Cashier,13-Jun-16,502,KSV,KienSvay_Branch_KHR,30-Jun-18
+001274,Nov Thida               ,?? ????,18-Sep-89,50011,9,ACC,04-Oct-12,502,KSV,KienSvay_Branch_KHR,30-Jun-18
+001431,Sath Chanaun            ,??? ????????,01-Sep-87,S0237                   ,9,ACC,11-Aug-14,503,KSP,KompongSPeu_Branch_KHR,30-Jun-18
+001438,Dot Vannarith           ,??? ??????????,19-Oct-87,S0011                   ,0,BM,03-Sep-12,503,KSP,KompongSPeu_Branch_KHR,30-Jun-18
+002070,Heng Sovannak           ,??? ???????,11-Jan-96,S0339                   ,4,SCA,22-Dec-15,503,KSP,KompongSPeu_Branch_KHR,30-Jun-18
+002246,Khun Sokneng            ,??? ??????,09-Apr-94,S0316                   ,4,SCA,27-Oct-14,503,KSP,KompongSPeu_Branch_KHR,30-Jun-18
+000008,Phan Phearom            ,??? ??????,05-May-92,S0125                   ,4,SCA,27-Jan-14,503,KSP,KompongSPeu_Branch_KHR,30-Jun-18
+000434,Sok Sothea              ,??? ??????,10-Jan-94,S0410                   ,4,SCA,02-May-15,503,KSP,KompongSPeu_Branch_KHR,30-Jun-18
+004810,Kuon Linda              ,??? ?????,12-Mar-97,S0887                   ,3,Teller,04-Oct-16,503,KSP,KompongSPeu_Branch_KHR,30-Jun-18
+004820,Em Chetra               ,??? ??????,08-Jul-96,S0820                   ,4,SCA,16-Oct-14,503,KSP,KompongSPeu_Branch_KHR,30-Jun-18
+004823,Muy Monita              ,??? ???????,25-Jul-95,122,9,ACC,17-Jan-15,503,KSP,KompongSPeu_Branch_KHR,30-Jun-18
+003025,Chhun Makra             ,??? ????,01-Feb-98,S0997                   ,5,GCA,01-Nov-16,504,SUG,Suong_Branch_KHR,30-Jun-18
+002978,Chann Vireak            ,???? ????,20-Feb-94,S 0574                  ,4,SCA,28-Dec-12,504,SUG,Suong_Branch_KHR,30-Jun-18
+000388,Mao Navy                ,??? ????,09-Oct-90,S0679                   ,7,Other,01-Feb-16,504,SUG,Suong_Branch_KHR,30-Jun-18
+000485,Chan Sopheap            ,??????????,02-Mar-90,S0134                   ,9,ACC,19-Feb-14,504,SUG,Suong_Branch_KHR,30-Jun-18
+000837,Chan Sim                ,???? ????,15-Feb-93,S075                    ,5,GCA,12-Jan-14,504,SUG,Suong_Branch_KHR,30-Jun-18
+000999,Nay Sovichet            ,?? ?????????,09-Jan-94,S0684                   ,5,GCA,23-Oct-16,504,SUG,Suong_Branch_KHR,30-Jun-18
+001003,Seng Samnang            ,??? ?????,10-May-90,S0513                   ,6,Cashier,18-Aug-15,504,SUG,Suong_Branch_KHR,30-Jun-18
+001125,Kao Kimseng             ,?? ??????,21-Aug-88,S1153                   ,0,BM,03-Jul-17,504,SUG,Suong_Branch_KHR,30-Jun-18
+000014,Nou Sarat               ,??? ???????,06-Sep-88,S0504                   ,4,SCA,13-Jul-15,504,SUG,Suong_Branch_KHR,30-Jun-18
+000012,Nay Sovichet            ,?? ?????????,09-Jan-94,S1023,4,SCA,23-Dec-16,504,SUG,Suong_Branch_KHR,30-Jun-18
+000010,Chann Vireak            ,???? ????,20-Feb-94,S 0037                  ,4,SCA,08-Dec-12,504,SUG,Suong_Branch_KHR,30-Jun-18
+000002,Chek Chann              ,??? ????,02-Dec-95,S1111,4,SCA,29-Mar-17,504,SUG,Suong_Branch_KHR,30-Jun-18
+001644,Lang Dalen              ,??? ?????,12-Sep-92,S0421                   ,3,Teller,11-Mar-15,504,SUG,Suong_Branch_KHR,30-Jun-18
+001879,Vith Mov                ,????? ????,08-Apr-89,S0087                   ,9,ACC,24-Oct-13,505,ATS,AngTaSom_Branch_KHR,30-Jun-18
+001904,Peang Chanthorn         ,??? ??????,04-Aug-95,S0457                   ,4,SCA,22-May-15,505,ATS,AngTaSom_Branch_KHR,30-Jun-18
+000533,Ouk Odorm               ,???? ?????,09-Sep-94,S0168                   ,4,SCA,05-May-14,505,ATS,AngTaSom_Branch_KHR,30-Jun-18
+004681,Toch Bona               ,?????   ????,05-Mar-90,S0853                   ,4,SCA,15-Aug-16,505,ATS,AngTaSom_Branch_KHR,30-Jun-18
+004714,Ny Seyha                ,??  ????,03-Aug-96,S0852                   ,4,SCA,09-Aug-16,505,ATS,AngTaSom_Branch_KHR,30-Jun-18
+004716,Pum Vuthy               ,??? ??????,27-Oct-88,S000                    ,0,BM,02-May-17,505,ATS,AngTaSom_Branch_KHR,30-Jun-18
+003272,Sun Vanny               ,????? ?????,25-Jan-91,S0439                   ,9,ACC,01-Apr-15,506,KCH,KompongChhnang_Branch_KHR,30-Jun-18
+003273,Kim Vichet              ,??? ???????,01-Jul-80,N 040204281             ,0,BM,01-Aug-14,506,KCH,KompongChhnang_Branch_KHR,30-Jun-18
+003313,Ul Tang I               ,???? ???????,10-Aug-97,S1052                   ,7,Other,27-Jan-17,506,KCH,KompongChhnang_Branch_KHR,30-Jun-18
+001011,Sorn Sothie             ,??? ??????,07-May-93,S0111                   ,9,ACC,08-Jan-14,506,KCH,KompongChhnang_Branch_KHR,30-Jun-18
+000905,Chin Sokchea            ,??? ?????,07-May-95,S1237                   ,4,SCA,20-Nov-17,506,KCH,KompongChhnang_Branch_KHR,30-Jun-18
+000014,Bung Vibin              ,?????? ?????,14-Nov-92,S0752                   ,4,SCA,02-May-17,506,KCH,KompongChhnang_Branch_KHR,30-Jun-18
+002191,Pheng Sitha             ,??? ?????,14-Apr-93,S0204                   ,3,Teller,30-Jun-14,506,KCH,KompongChhnang_Branch_KHR,30-Jun-18
+000011,Sou Savin               ,??? ?????,20-Feb-92,S0113                   ,9,ACC,08-Jan-14,507,PUS,Pursat_Branch_KHR,30-Jun-18
+000960,Sam Lin                 ,?? ???,07-Apr-90,S1136                   ,4,SCA,05-Jun-17,507,PUS,Pursat_Branch_KHR,30-Jun-18
+000565,Van Vet                 ,????? ????,03-Aug-92,S0170                   ,4,SCA,05-May-14,507,PUS,Pursat_Branch_KHR,30-Jun-18
+003445,Soem Sophai             ,???? ????,22-Jul-92,S0960                   ,1,DBM,05-May-14,507,PUS,Pursat_Branch_KHR,30-Jun-18
+003450,Phai Borann             ,?? ???????,03-Sep-88,S                       ,0,BM,24-Feb-14,507,PUS,Pursat_Branch_KHR,30-Jun-18
+003270,Nou Samphas             ,?? ???????,23-Mar-95,S0346                   ,6,Cashier,08-Jan-15,507,PUS,Pursat_Branch_KHR,30-Jun-18
+004510,Yut Seap                ,????????,01-Jun-62,N170139837              ,7,Other,NULL,508,BTB,BatTamBong_Branch_KHR,30-Jun-18
+004484,Nom Tongyee             ,?? ?????,13-Nov-89,S0000                   ,3,Teller,24-Oct-16,508,BTB,BatTamBong_Branch_KHR,30-Jun-18
+004610,Thorng Phearum          ,??? ?????,09-Dec-94,214,1,DBM,06-Oct-14,508,BTB,BatTamBong_Branch_KHR,30-Jun-18
+004572,Pheap Chantha           ,??? ?????,08-Jan-93,S00000                  ,1,DBM,20-Jul-15,508,BTB,BatTamBong_Branch_KHR,30-Jun-18
+004574,Chen Sophorn            ,??? ??????,01-May-88,S0141                   ,4,SCA,24-Feb-14,508,BTB,BatTamBong_Branch_KHR,30-Jun-18
+004453,Oeun Sovan              ,??? ??????,03-Mar-89,S0116                   ,1,DBM,08-Jan-14,508,BTB,BatTamBong_Branch_KHR,30-Jun-18
+004454,An Chanthour            ,??? ?????,28-Sep-92,S0290                   ,6,Cashier,06-Oct-14,508,BTB,BatTamBong_Branch_KHR,30-Jun-18
+004455,Rorn Chanthy            ,??? ??????,25-Nov-92,S0857                   ,3,Teller,15-Aug-16,508,BTB,BatTamBong_Branch_KHR,30-Jun-18
+004456,Chham Sovann            ,?? ??????,02-Feb-88,S0425                   ,7,Other,17-Mar-15,508,BTB,BatTamBong_Branch_KHR,30-Jun-18
+004457,Pram Mala               ,????? ?????,01-Jan-93,S0438                   ,7,Other,01-Apr-15,508,BTB,BatTamBong_Branch_KHR,30-Jun-18
+004452,Sorn Chankimnavuth      ,?? ?????????????,03-Jun-87,S50004                  ,0,BM,19-Dec-11,508,BTB,BatTamBong_Branch_KHR,30-Jun-18
+004439,Nan Samnang             ,??? ?????,11-Aug-86,S0829                   ,5,GCA,16-Mar-15,508,BTB,BatTamBong_Branch_KHR,30-Jun-18
+000011,Uon Saveang             ,???? ?????,04-Jun-94,S0315                   ,4,SCA,22-Oct-14,508,BTB,BatTamBong_Branch_KHR,30-Jun-18
+000003,Seut Phanit             ,??? ?????,01-Aug-94,S0427                   ,4,SCA,18-Mar-15,508,BTB,BatTamBong_Branch_KHR,30-Jun-18
+000002,CHHANG RATANA           ,??? ????,05-Jul-92,S0793                   ,6,Cashier,11-May-16,509,SRP,SiemReap_Branch_KHR,30-Jun-18
+000001,PHANG MANY              ,??? ?????,12-Apr-93,S0291                   ,9,ACC,06-Oct-14,509,SRP,SiemReap_Branch_KHR,30-Jun-18
+002508,KHOEUN LYKHANG          ,??? ?????,13-Nov-83,S1107                   ,0,BM,10-Apr-17,509,SRP,SiemReap_Branch_KHR,30-Jun-18
+002509,THEANG THEARY           ,??? ????,12-Jun-94,S0336                   ,4,SCA,11-Dec-14,509,SRP,SiemReap_Branch_KHR,30-Jun-18
+002511,NAO SEA                 ,?? ???,25-Mar-86,S1148                   ,4,SCA,27-Jun-17,509,SRP,SiemReap_Branch_KHR,30-Jun-18
+002522,Heang Sreyneang         ,???? ???????,12-Dec-90,N/A                     ,9,ACC,13-Sep-17,509,SRP,SiemReap_Branch_KHR,30-Jun-18
+000001,khat Sophea             ,???? ????,22-May-93,S0217                   ,4,SCA,04-Aug-14,510,SVR,SVayRieng_MFI_Branch_KHR,30-Jun-18
+000012,Pin Daravuth            ,??? ????????,12-Jul-94,S0325                   ,4,SCA,10-Nov-14,510,SVR,SVayRieng_MFI_Branch_KHR,30-Jun-18
+000007,Y Sodorn                ,??? ????,07-Nov-90,S0403                   ,4,SCA,19-Feb-15,510,SVR,SVayRieng_MFI_Branch_KHR,30-Jun-18
+000100,Uk Sreynet              ,???? ???????,16-Apr-93,S0216                   ,9,ACC,04-Aug-14,510,SVR,SVayRieng_MFI_Branch_KHR,30-Jun-18
+000102,Phan Phalla             ,??? ?????,05-Jul-91,S0148                   ,0,BM,03-Mar-14,510,SVR,SVayRieng_MFI_Branch_KHR,30-Jun-18
+000205,Mam Kea                 ,??? ??,09-Dec-96,ID 090715071            ,6,Cashier,14-Jun-17,510,SVR,SVayRieng_MFI_Branch_KHR,30-Jun-18
