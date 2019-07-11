@@ -25,6 +25,8 @@
                             </a>
                         </div>
                         <div class="clearfix"></div>
+
+                        Hello workd
                         <br />
                         <!-- sidebar menu -->
                         <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
