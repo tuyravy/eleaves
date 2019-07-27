@@ -5,7 +5,7 @@
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                      <h2><i class="fa fa-floppy-o" aria-hidden="true"></i><span style="margin-left:10px;">Reports Eleaves</span></h2>
+                      <h2><i class="fa fa-floppy-o" aria-hidden="true"></i><span style="margin-left:10px;color:#73879C;">Reports Eleaves</span></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -24,8 +24,11 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                    <div align='center'>
-                       <form class="form-inline">
+                  <div class="row">
+                  <fieldset class="scheduler-border">
+                    <legend></legend> 
+                   
+                     <form class="form-inline">
                       <div class="form-group">
                         <label for="exampleInputName2">StaffName:</label>
                         <select class="form-control" name="staffname">
@@ -38,21 +41,22 @@
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail2">Reportdate</label>
-                        <input type="text" class="form-control" id="datestart" name="datestart" placeholder="<?php echo date('Y-m-d');?>">
+                        <input type="text" class="form-control" id="datestart" name="datestart" placeholder="<?php echo date('Y-m-d');?>" autocomplete="off">
                       </div>
                        <div class="form-group">
                         <label for="exampleInputEmail2">To</label>
-                        <input type="text" class="form-control" id="dateend" name="dateend" placeholder="<?php echo date('Y-m-d');?>">
+                        <input type="text" class="form-control" id="dateend" name="dateend" placeholder="<?php echo date('Y-m-d');?>" autocomplete="off">
                       </div>
                         
-                      <button type="submit" class="btn btn-primary" style="margin-top:5px;" >Submit</button>
+                      <button type="submit" class="btn btn-primary" style="margin-top:5px;"><i class="fa fa-search"></i> Submit</button>
                     </form>
-                    </div>
-                    <br/>
-                
+                   
+                  </fieldset>
+                  </div>
                    
                   <div class="row">   
-                   
+                  <fieldset class="scheduler-border">
+                    <legend></legend> 
                     <table id="datatable-buttons" class="table table-striped table-bordered">
                       <thead>
                         <tr>
@@ -60,9 +64,9 @@
                           <th>Position</th>
                           <th>Gender</th>
                           <th>Request Date</th>
-                          <th>Leave_Start</th>
-                          <th>Leave_End</th>
-                          <th>Leave_Types</th>
+                          <th>Leave Start</th>
+                          <th>Leave End</th>
+                          <th>Leave Types</th>
                           <th>Duration</th>
                           <th>Status</th>
                           
@@ -112,7 +116,7 @@
                          
                       </tbody>
                     </table>
-                         
+                    </fieldset>  
                      </div>   
                    </div>
                 </div>
@@ -189,7 +193,36 @@
               
               
         <!-- /page content -->
+  <style>
+    .nopadding {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    fieldset.scheduler-border {
+      border: 2pt groove #ffff !important;
+      padding: 0 1em 1em 1em !important;
+      margin: 0 0 1.5em 0 !important;
+      color:#73879C !important;
+      -webkit-box-shadow:  0px 0px 0px 0px #000 !important;
+              box-shadow:  0px 0px 0px 0px #000 !important;
+      }
 
+      legend.scheduler-border {
+      font-size: 1.2em !important;
+      font-weight: bold !important;
+      text-align: left !important;
+      color:#73879C !important;
+      }
+      legend{
+          font-size: 1em !important;
+          color: #777;
+      }
+      fieldset
+      {
+          width:100% !important;
+          
+      }
+ </style> 
 <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
 <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
@@ -238,67 +271,7 @@
             
         });          
     </script>
-   <script>
-      $(document).ready(function() {
-        var handleDataTableButtons = function() {
-          if ($("#datatable-buttons").length) {
-            $("#datatable-buttons").DataTable({
-              dom: "Bfrtip",
-              buttons: [
-                {
-                  extend: "copy",
-                  className: "btn-sm"
-                },
-                {
-                  extend: "csv",
-                  className: "btn-sm"
-                },
-                {
-                  extend: "excel",
-                  className: "btn-sm"
-                },
-                {
-                  extend: "pdfHtml5",
-                  className: "btn-sm"
-                },
-                
-              ],
-              responsive: true
-            });
-          }
-        };
 
-        TableManageButtons = function() {
-          "use strict";
-          return {
-            init: function() {
-              handleDataTableButtons();
-            }
-          };
-        }();
-
-        $('#datatable').dataTable();
-        $('#datatable-keytable').DataTable({
-          keys: true
-        });
-
-        $('#datatable-responsive').DataTable();
-
-        $('#datatable-scroller').DataTable({
-          ajax: "js/datatables/json/scroller-demo.json",
-          deferRender: true,
-          scrollY: 380,
-          scrollCollapse: true,
-          scroller: true
-        });
-
-        var table = $('#datatable-fixed-header').DataTable({
-          fixedHeader: true
-        });
-
-        TableManageButtons.init();
-      });
-    </script>
     <!-- /Datatables -->
    <!--<?php echo site_url('Request_leaves_Controller/setapprovelleaves');?>/<?php echo $row->le_id;?>-->
     

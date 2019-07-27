@@ -416,12 +416,28 @@ class user extends CI_Controller {
     }
     public function listofstaff()
     {
+        $Utility=new Utility();       
+        
+        if(isset($_GET["per_page"]))
+        {
+            $page=$_GET["per_page"];
+        }else{
+            $page=0;
+        };
+
         $brcode=$this->session->userdata('branch_code');
         $role=$this->session->userdata('role');
+        $company_id=$this->session->userdata('company_id');
         $systemid=$this->session->userdata('system_id');
         $subcode=$this->session->userdata('subbranch');
         $config=$this->Config_model->getconfig('ex');
-        $data['listofstaff']=$this->staff_model->getallstaff($brcode,$role,$systemid,$subcode,$config->keys);
+        $base_url= base_url()."index.php/liststaff";
+        $data['total_rows'] = $this->staff_model->TotalStaff($brcode,$role,$systemid,$company_id,$subcode,$config->keys,$page);
+        $total_rows= $this->staff_model->TotalStaff($brcode,$role,$systemid,$company_id,$subcode,$config->keys,$page);
+        $Utility->pagination_config($total_rows,$base_url);  
+
+       
+        $data['listofstaff']=$this->staff_model->getallstaff($brcode,$role,$systemid,$company_id,$subcode,$config->keys,$page);
         $data['title'] = lang('system_titel');
         $data['menulist']=$this->menu_model->getUsermenu();
         $data['submenu']=$this->menu_model->getsubMenu();
@@ -430,6 +446,18 @@ class user extends CI_Controller {
         $this->load->view('master_page',$data);
     }
    
+    public function UserAccessrights(){
+
+        $data['title'] = lang('system_titel');
+        $data['branch']=$this->users_model->getBranch();
+        $data['menulist']=$this->menu_model->getUsermenu();
+        $data['submenu']=$this->menu_model->getsubMenu();
+        $data['titlepage']="Home Page";
+        $data['views']='users/useroption/UserAccessrights';
+        $this->load->view('master_page',$data);
+
+    }
+
     public function setinactive($id)
     {
         $data=array
@@ -469,16 +497,57 @@ class user extends CI_Controller {
        redirect('create_users');
    }
     
+   //Folder user useroption for new function 
    public function listusers()
-   {
+   { 
+        $Utility=new Utility();       
+        $data['total_rows'] = $this->users_model->TotalUser();
+        if(isset($_GET["per_page"]))
+        {
+            $page=$_GET["per_page"];
+        }else{
+            $page=0;
+        };
+        
+        $base_url= base_url()."index.php/listusers";
+        $total_rows= $this->users_model->TotalUser();
+        $Utility->pagination_config($total_rows,$base_url);
+
         $data['title'] = lang('system_titel');
-        $data['users']=$this->users_model->getUser();
+        $data['users']=$this->users_model->getUser($page);
         $data['menulist']=$this->menu_model->getUsermenu();
         $data['submenu']=$this->menu_model->getsubMenu();
+
         $data['titlepage']="Home Page";
-        $data['views']='users/create/listofuser';
+        $data['views']='users/useroption/user';
         $this->load->view('master_page',$data);
    }
+   //Folder user useroption for new function 
+   public function addusers()
+   { 
+        $Utility=new Utility();       
+        $data['total_rows'] = $this->users_model->TotaladdUser();
+        if(isset($_GET["per_page"]))
+        {
+            $page=$_GET["per_page"];
+        }else{
+            $page=0;
+        };
+        
+        $base_url= base_url()."index.php/user/addusers";
+        $total_rows= $this->users_model->TotaladdUser();
+        $Utility->pagination_config($total_rows,$base_url);
+
+        $data['title'] = lang('system_titel');
+        $data['users']=$this->users_model->getaddUser($page);
+        $data['menulist']=$this->menu_model->getUsermenu();
+        $data['submenu']=$this->menu_model->getsubMenu();
+
+        $data['titlepage']="Home Page";
+        $data['views']='users/useroption/adduser';
+        $this->load->view('master_page',$data);
+   }
+
    public function editusers($id)
    {
         $data['title'] = lang('system_titel');
@@ -817,9 +886,12 @@ class user extends CI_Controller {
     {
         $this->load->helper('url');
         $this->load->helper('form');
-         $sid=trim($this->input->post("systemid"));
+        $sid=trim($this->input->post("systemid"));
         $email=$this->input->post("email");
-        $row=$this->users_model->getStaffNotHaveInUserbysystemid($sid);
+        $brcode=$this->input->post("brcode");
+
+        $row=$this->users_model->getStaffNotHaveInUserbysystemid($sid,$brcode);
+       
         $data=array
             (
                 "system_id"=>$row->system_id,
@@ -847,8 +919,8 @@ class user extends CI_Controller {
         $this->db->insert("users",$data);
         $to=$email;
         $tocc="ravy@sahakrinpheap.com.kh";
-        $this->autosenttouser($row->staff_nameeng,$row->shortcode,$row->brcode,str_replace(' ','',$row->staff_nameeng),$row->system_id,date("Y-m-d"),$row->position_nameeng,$tocc,$to,$this->session->userdata('full_name'));
-        return redirect('usercontroler');
+        $this->autosenttouser($row->staff_nameeng,$row->shortcode,$row->brcode,str_replace(' ','',$row->staff_nameeng),$row->system_id,date("Y-m-d"),$tocc,$to,$this->session->userdata('full_name'));
+        return redirect('user/addusers');
     }
     public function autosenttouser($StaffName,$brname,$BrCode,$username,$sid,$datechange,$tocc,$to,$createby)
     {
@@ -1021,7 +1093,7 @@ class user extends CI_Controller {
                                         </table>
 
                             </div></body>";
-                $this->sendMail($messagemanager,$tocc,$tomanager,$subject);
+                $this->sendMail($messagemanager,$ccfrom,$tomanager,$subject);
                
 
     }

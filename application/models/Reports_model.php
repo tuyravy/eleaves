@@ -6,7 +6,7 @@ class Reports_model extends CI_Model
     {
         parent::__construct();  
     }
-    public function GetReportsLeaves($startdate,$enddate,$sid,$brcode,$role,$limitrow,$userid)
+    public function GetReportsLeaves($startdate,$enddate,$sid,$company_id,$brcode,$role,$limitrow,$userid)
     {
         /*
             1:role=>1 General User
@@ -21,7 +21,7 @@ class Reports_model extends CI_Model
             case 1:
                 $result=$this->db->query("select * from leaves s
                 inner join staff st on s.sid=st.system_id
-                where s.sid='".$sid."' order by s.requestdate desc limit 10 offset ".$limitrow."");
+                where s.sid='".$sid."' and s.brcode=st.brcode and st.company_id='".$company_id."' order by s.requestdate desc limit 10 offset ".$limitrow."");
                 return $result->result();
             break;
             case 2:
@@ -30,26 +30,26 @@ class Reports_model extends CI_Model
             case 3:
                         $result=$this->db->query("select * from leaves s
                         inner join staff st on s.sid=st.system_id
-                        where st.brcode='".$brcode."' order by s.requestdate desc limit 10 offset ".$limitrow."");
+                        where st.brcode='".$brcode."' and s.brcode=st.brcode  and st.company_id=".$company_id." order by s.requestdate desc limit 10 offset ".$limitrow."");
                         return $result->result();
             break;
             case 4:
                         $result=$this->db->query("select * from leaves s
                         inner join staff st on s.sid=st.system_id
-                        where s.employee='".$userid."' order by s.requestdate desc limit 10 offset ".$limitrow."");
+                        where s.employee='".$userid."'and s.brcode=st.brcode  and st.company_id=".$company_id."  order by s.requestdate desc limit 10 offset ".$limitrow."");
                         return $result->result();
             break;
             case 5:
                         $result=$this->db->query("select * from leaves s
                         inner join staff st on s.sid=st.system_id
-                        where s.sid='".$sid."' order by s.requestdate desc limit 10 offset ".$limitrow."");
+                        where s.sid='".$sid."' and s.brcode=st.brcode and st.company_id=".$company_id." order by s.requestdate desc limit 10 offset ".$limitrow."");
                         return $result->result();
 
             break;
             case 6:
                         $result=$this->db->query("select * from leaves s
                         inner join staff st on s.sid=st.system_id
-                        where s.sid='".$sid."' order by s.requestdate desc limit 10 offset ".$limitrow."");
+                        where s.sid='".$sid."' and s.brcode=st.brcode and st.company_id=".$company_id." order by s.requestdate desc limit 10 offset ".$limitrow."");
                         return $result->result();
             break;
 
@@ -117,7 +117,7 @@ class Reports_model extends CI_Model
 
     }
     /*      submit by date for get leaves reprots detail  */
-    public function GetReportsLeavesbydate($startdate,$enddate,$sid,$brcode,$role,$limitrow,$userid)
+    public function GetReportsLeavesbydate($startdate,$enddate,$sid,$company_id,$brcode,$role,$limitrow,$userid)
     {
         /*
             1:role=>1 General User
@@ -133,8 +133,8 @@ class Reports_model extends CI_Model
                 $result=$this->db->query("select * from leaves s
                 inner join staff st on s.sid=st.system_id
                 where s.sid='".$sid."' and s.startdate between '".$startdate."' and '".$enddate."'
-                and s.enddate between '".$startdate."'and '".$enddate."'
-                order by s.requestdate desc limit 10 offset ".$limitrow."");
+                and s.enddate between '".$startdate."'and '".$enddate."' and st.company_id=".$company_id."
+                order by s.requestdate desc limit 10 offset ".$limitrow." ");
                
                 //$this->output->enable_profiler(TRUE);
                 return $result->result();
@@ -183,7 +183,7 @@ class Reports_model extends CI_Model
                         $result=$this->db->query("select * from leaves s
                         inner join staff st on s.sid=st.system_id
                         where st.brcode in(".$brcontroler.") and s.startdate between '".$startdate."' and '".$enddate."'
-                        and s.enddate between '".$startdate."'and '".$enddate."'
+                        and s.enddate between '".$startdate."'and '".$enddate."' and st.company_id=".$company_id."
                         order by s.requestdate desc limit 10 offset ".$limitrow."");
                     
                         //$this->output->enable_profiler(TRUE);
@@ -193,7 +193,7 @@ class Reports_model extends CI_Model
                         $result=$this->db->query("select * from leaves s
                         inner join staff st on s.sid=st.system_id
                         where s.employee='".$userid."' and s.startdate between '".$startdate."' and '".$enddate."'
-                        and s.enddate between '".$startdate."'and '".$enddate."'
+                        and s.enddate between '".$startdate."'and '".$enddate."' and st.company_id=".$company_id."
                         order by s.requestdate desc limit 10 offset ".$limitrow."");
                     
                         //$this->output->enable_profiler(TRUE);
@@ -204,6 +204,7 @@ class Reports_model extends CI_Model
                     inner join staff st on s.sid=st.system_id
                     where s.sid='".$sid."' and s.startdate between '".$startdate."' and '".$enddate."'
                     and s.enddate between '".$startdate."'and '".$enddate."'
+                    and st.company_id=".$company_id."
                     order by s.requestdate desc limit 10 offset ".$limitrow."");
                 
                     //$this->output->enable_profiler(TRUE);
@@ -218,7 +219,7 @@ class Reports_model extends CI_Model
 
     }
     /* Get leaves balance by staff */ 
-    public function GetLeavesBalance($brcode,$role,$sid,$subcode,$limitrow)
+    public function GetLeavesBalance($brcode,$role,$sid,$company_id,$subcode,$limitrow)
     {
         /*
             1:role=>1 General User
@@ -250,6 +251,7 @@ class Reports_model extends CI_Model
                                         WHERE st.system_id=".$sid."
                                         AND st.flag=1
                                         AND st.active=1
+                                        and st.company_id=".$company_id."
                                         limit 10 offset ".$limitrow.";
                                         ");
                
@@ -279,6 +281,7 @@ class Reports_model extends CI_Model
                                         WHERE st.brcode in('".$brcode."','".$subcode."')
                                         AND st.flag=1
                                         AND st.active=1
+                                        and st.company_id=".$company_id."
                                         limit 10 offset ".$limitrow.";
                                         ");
                 //echo $result->result();
@@ -304,6 +307,7 @@ class Reports_model extends CI_Model
                                         WHERE st.rm_id=".$this->getMyrmID($sid)."
                                         AND st.flag=1
                                         AND st.active=1
+                                        and st.company_id=".$company_id."
                                         limit 10 offset ".$limitrow.";
                                         ");
                 //echo $result->result();
@@ -334,6 +338,7 @@ class Reports_model extends CI_Model
                                     staff st
                                     WHERE st.system_id=".$sid."
                                     AND st.flag=1
+                                    and st.company_id=".$company_id."
                                     AND st.active=1
                                     limit 10 offset ".$limitrow.";
                                     ");
@@ -359,6 +364,7 @@ class Reports_model extends CI_Model
                                     staff st
                                     WHERE st.system_id=".$sid."
                                     AND st.flag=1
+                                    and st.company_id=".$company_id."
                                     AND st.active=1
                                     limit 10 offset ".$limitrow.";
                                     ");
@@ -372,7 +378,7 @@ class Reports_model extends CI_Model
 
     }
  /* total leaves balance by staff */ 
- public function TotalLeavesBalance($sid,$role,$brcode,$subcode,$userid)
+ public function TotalLeavesBalance($sid,$company_id,$role,$brcode,$subcode,$userid)
  {
      /*
          1:role=>1 General User
@@ -395,6 +401,7 @@ class Reports_model extends CI_Model
                                      staff st
                                      WHERE st.system_id=".$sid."
                                      AND st.flag=1
+                                     and st.company_id=".$company_id."
                                      AND st.active=1;
                                      ");
             
@@ -416,6 +423,7 @@ class Reports_model extends CI_Model
                                      staff st
                                      WHERE st.brcode in('".$brcode."','".$subcode."')
                                      AND st.flag=1
+                                     and st.company_id=".$company_id."
                                      AND st.active=1;
                                      ");
              //echo $result->result();
@@ -434,6 +442,7 @@ class Reports_model extends CI_Model
                                      staff st
                                      WHERE st.rm_id=".$this->getMyrmID($sid)."
                                      AND st.flag=1
+                                     and st.company_id=".$company_id."
                                      AND st.active=1;
                                      ");
              //echo $result->result();
@@ -454,6 +463,7 @@ class Reports_model extends CI_Model
                                  staff st
                                  WHERE st.system_id=".$sid."
                                  AND st.flag=1
+                                 and st.company_id=".$company_id."
                                  AND st.active=1;
                                  ");
         
@@ -472,6 +482,7 @@ class Reports_model extends CI_Model
                                  staff st
                                  WHERE st.system_id=".$sid."
                                  AND st.flag=1
+                                 and st.company_id=".$company_id."
                                  AND st.active=1;
                                  ");
         
@@ -489,7 +500,7 @@ class Reports_model extends CI_Model
 
     /*---------------Get approvd Leaves-----------*/
      /*      submit by date for get leaves reprots detail  */
-     public function GetApporvedLeaves($startdate,$enddate,$sid,$brcode,$role,$limitrow)
+     public function GetApporvedLeaves($startdate,$enddate,$sid,$company_id,$brcode,$role,$limitrow)
      {
          /*
              1:role=>1 General User
@@ -506,6 +517,8 @@ class Reports_model extends CI_Model
                  inner join staff st on s.sid=st.system_id
                  where s.sid='".$sid."' and s.startdate between '".$startdate."' and '".$enddate."'
                  and s.enddate between '".$startdate."'and '".$enddate."'
+                 and le.brcode=st.brcode
+                 and st.company_id=".$company_id."
                  order by s.requestdate desc limit 10 offset ".$limitrow."");
                 
                  //$this->output->enable_profiler(TRUE);
@@ -524,7 +537,10 @@ class Reports_model extends CI_Model
                         INNER JOIN tbl_branch btl ON btl.brCode=st.brcode
                         WHERE st.rm_id=".$this->getMyrmID($sid)." AND le.status=1 
                         AND le.sid!=".$sid." AND st.flag=1
+                        
                         and st.position_nameeng not in('Branch Manager') 
+                        and le.brcode=st.brcode
+                        and st.company_id=".$company_id."
                         order by le.requestdate desc limit 10 offset ".$limitrow."
                         ");
                 
@@ -535,8 +551,11 @@ class Reports_model extends CI_Model
                      $result=$this->db->query("
                         SELECT * FROM `leaves` le INNER JOIN staff st ON st.system_id=le.sid 
                         INNER JOIN `types` ty ON ty.id=le.type 
-                        INNER JOIN tbl_branch btl ON btl.brCode=st.brcode
-                        WHERE st.hid=".$this->GetStaffheadofID($sid)." AND le.status=1 
+                        INNER JOIN tbl_branch btl 
+                        ON btl.brCode=st.brcode
+                        WHERE st.hid='".$this->GetStaffheadofID($sid,$company_id)."' AND le.status=1 
+                        and le.brcode=st.brcode
+                        and st.company_id=".$company_id."
                         AND le.sid!=".$sid." AND st.flag=1 order by le.requestdate desc limit 10 offset ".$limitrow."
                         ");
                  
@@ -549,6 +568,8 @@ class Reports_model extends CI_Model
                         INNER JOIN `types` ty ON ty.id=le.type 
                         INNER JOIN tbl_branch btl ON btl.brCode=st.brcode
                         WHERE st.hid=".$this->getRmtoDCEO($sid)." AND le.status=1 
+                        and le.brcode=st.brcode
+                        and st.company_id=".$company_id."
                         AND le.sid!=".$sid." AND st.flag=1 order by le.requestdate desc limit 10 offset ".$limitrow.";
                         ");
                 
@@ -561,34 +582,36 @@ class Reports_model extends CI_Model
  
      }
      /*--------------Get Hid----------*/
-     public function GetheadofID($sid,$role)
+     public function GetheadofID($sid,$role,$company_id)
      {
          if($role=1)
          {
-            $result=$this->db->query("select hid FROM staff WHERE system_id=".$sid."");
+            $result=$this->db->query("select hid FROM staff WHERE system_id=".$sid." and company_id=".$company_id." ");
             foreach($result->result() as $row)
             {
                 return $row->hid;
             }
          }else{
-         $result=$this->db->query("select m_id FROM manager WHERE sid=".$sid."");
+         $result=$this->db->query("select m_id FROM manager WHERE sid=".$sid." and company_id=".$company_id." ");
             foreach($result->result() as $row)
             {
                 return $row->m_id;
             }
         }
      }
-     public function GetStaffheadofID($sid)
+     public function GetStaffheadofID($sid,$company_id)
      {
-         $result=$this->db->query("select m_id FROM manager WHERE sid=".$sid."");
+         $result=$this->db->query("select m_id FROM manager WHERE sid=".$sid." and company_id=".$company_id."");
          foreach($result->result() as $row)
          {
              return $row->m_id;
          }
      }
      /*---------Get to not approvel---*/
-     public function Totalnumrownotapprove($sid,$role,$brcode)
+     public function Totalnumrownotapprove($sid,$role,$brcode,$company_id)
      {
+         $hid=$this->GetheadofID($sid,$role,$company_id);
+         $rm_id=$this->getRmtoDCEO($sid);
          switch($role)
          {
              case 1:
@@ -596,7 +619,9 @@ class Reports_model extends CI_Model
                             SELECT count(*) as totalrow FROM `leaves` le INNER JOIN staff st ON st.system_id=le.sid 
                             INNER JOIN `types` ty ON ty.id=le.type 
                             INNER JOIN tbl_branch btl ON btl.brCode=st.brcode
-                            WHERE st.hid=".$this->GetheadofID($sid,$role)." AND le.status=1 
+                            WHERE st.hid='".$hid."' AND le.status=1 
+                             and le.brcode=st.brcode
+                             and st.company_id=".$company_id."
                             AND le.sid!=".$sid." AND st.flag=1");
                 foreach($res->result() as $row)
                 {
@@ -607,15 +632,18 @@ class Reports_model extends CI_Model
              break;
              case 3:
              $year=date('Y');
+            
              $result=$this->db->query("                                    
                                      SELECT 
                                         count(*) as totalrow
                                      FROM `leaves` le
                                      INNER JOIN staff st ON le.sid=st.system_id
                                      INNER JOIN `types` ty ON ty.id=le.type
-                                     INNER JOIN manager r ON r.m_id=".$this->getRmtoDCEO($sid)."
+                                     INNER JOIN manager r ON r.m_id=".$rm_id."
                                      WHERE 
                                      le.status=2
+                                     and le.brcode=st.brcode
+                                     and st.company_id=".$company_id."
                                      AND st.flag=1 AND st.active=1
                                      and st.brcode=".$brcode."
                                      ;                                    
@@ -636,10 +664,12 @@ class Reports_model extends CI_Model
                                                 FROM `leaves` le
                                                 INNER JOIN staff st ON le.sid=st.system_id
                                                 INNER JOIN `types` ty ON ty.id=le.type
-                                                INNER JOIN manager r ON r.m_id=".$this->getRmtoDCEO($sid)."
+                                                INNER JOIN manager r ON r.m_id=".$rm_id."
                                                 WHERE 
                                                 le.status=1
+                                                and le.brcode=st.brcode
                                                 AND st.flag=1 AND st.active=1
+                                                and st.company_id=".$company_id."
                                                 and st.position_nameeng not in('Branch Manager')
                                                 and st.rm_id=".$this->getMyrmID($sid)."
                                                 ;");
@@ -656,8 +686,10 @@ class Reports_model extends CI_Model
                         SELECT count(*) as totalrow FROM `leaves` le INNER JOIN staff st ON st.system_id=le.sid 
                         INNER JOIN `types` ty ON ty.id=le.type 
                         INNER JOIN tbl_branch btl ON btl.brCode=st.brcode
-                        WHERE st.hid=".$this->GetheadofID($sid,$role)." AND le.status=1 
-                        AND le.sid!=".$sid." AND st.flag=1;
+                        WHERE st.hid='".$hid."' AND le.status=1 
+                         and le.brcode=st.brcode
+                         and st.company_id=".$company_id."
+                         AND le.sid!=".$sid." AND st.flag=1;
                         ");
                         foreach($result->result() as $row)
                             {
@@ -672,11 +704,13 @@ class Reports_model extends CI_Model
                                                 FROM `leaves` le
                                                 INNER JOIN staff st ON le.sid=st.system_id
                                                 INNER JOIN `types` ty ON ty.id=le.type
-                                                INNER JOIN manager r ON r.m_id=".$this->getRmtoDCEO($sid)."
+                                                INNER JOIN manager r ON r.m_id=".$rm_id."
                                                 WHERE 
                                                 le.status=1
-                                                AND st.flag=1 AND st.active=1                                                
-                                                and st.hid=".$this->getRmtoDCEO($sid)."
+                                                and le.brcode=st.brcode
+                                                AND st.flag=1 AND st.active=1    
+                                                and st.company_id=".$company_id."                                            
+                                                and st.hid=".$rm_id."
                                                 and le.sid!=".$sid."
                                                 ;");
                         
@@ -691,12 +725,12 @@ class Reports_model extends CI_Model
          
      }
     /*-----------Get Totalnumrow---*/
-    public function Totalnumrow($sid,$role,$brcode,$userid)
+    public function Totalnumrow($sid,$company_id,$role,$brcode,$userid)
     {
         switch($role)
         {
             case 1:
-                $res=$this->db->query("select count(*) as totalrow from leaves where sid='".$sid."'");
+                $res=$this->db->query("select count(*) as totalrow from leaves where sid='".$sid."' and brcode='".$brcode."'");
                 foreach($res->result() as $row)
                 {
                     return $row->totalrow;
@@ -708,7 +742,7 @@ class Reports_model extends CI_Model
                     $res=$this->db->query("
                     select count(*) as totalrow from leaves s
                     inner join staff st on s.sid=st.system_id
-                    where st.brcode=".$brcode."");
+                    where st.brcode=".$brcode." and st.company_id='".$company_id."' ");
                     foreach($res->result() as $row)
                     {
                         return $row->totalrow;
@@ -718,21 +752,21 @@ class Reports_model extends CI_Model
                         $res=$this->db->query("
                         select count(*) as totalrow from leaves s
                         inner join staff st on s.sid=st.system_id
-                        where s.employee=".$userid."");
+                        where s.employee=".$userid." and st.company_id='".$company_id."'");
                         foreach($res->result() as $row)
                         {
                             return $row->totalrow;
                         }
             break;
             case 5:
-                    $res=$this->db->query("select count(*) as totalrow from leaves where sid='".$sid."'");
+                    $res=$this->db->query("select count(*) as totalrow from leaves where sid='".$sid."' and brcode='".$brcode."'");
                     foreach($res->result() as $row)
                     {
                         return $row->totalrow;
                     }
             break;
             case 6:
-                    $res=$this->db->query("select count(*) as totalrow from leaves where sid='".$sid."'");
+                    $res=$this->db->query("select count(*) as totalrow from leaves where sid='".$sid."' and brcode='".$brcode."'");
                     foreach($res->result() as $row)
                     {
                         return $row->totalrow;
@@ -741,12 +775,12 @@ class Reports_model extends CI_Model
         }
         
     }
-    public function Totalnumrowbydate($sid,$startdate,$enddate,$role,$brcode,$userid)
+    public function Totalnumrowbydate($sid,$company_id,$startdate,$enddate,$role,$brcode,$userid)
     {
         switch($role)
         {
             case 1:
-                    $res=$this->db->query("select count(*) as totalrow from leaves where sid='".$sid."'
+                    $res=$this->db->query("select count(*) as totalrow from leaves where sid='".$sid."' and brcode='".$brcode."'
                     and startdate between '".$startdate."' and '".$enddate."'
                     and enddate between '".$startdate."'and '".$enddate."'");
                     foreach($res->result() as $row)
@@ -760,7 +794,7 @@ class Reports_model extends CI_Model
                     $result=$this->db->query("select count(*) as totalrow from leaves s
                     inner join staff st on s.sid=st.system_id
                     where st.brcode='".$brcode."' and s.startdate between '".$startdate."' and '".$enddate."'
-                    and s.enddate between '".$startdate."'and '".$enddate."'
+                    and s.enddate between '".$startdate."'and '".$enddate."' and st.company_id='".$company_id."'
                     ");
                     foreach($result->result() as $row)
                     {
@@ -771,7 +805,7 @@ class Reports_model extends CI_Model
                     $result=$this->db->query("select count(*) as totalrow from leaves s
                     inner join staff st on s.sid=st.system_id
                     where s.employee='".$userid."' and s.startdate between '".$startdate."' and '".$enddate."'
-                    and s.enddate between '".$startdate."'and '".$enddate."'
+                    and s.enddate between '".$startdate."'and '".$enddate."' and st.company_id='".$company_id."'
                     ");
                     foreach($result->result() as $row)
                     {
@@ -781,7 +815,7 @@ class Reports_model extends CI_Model
             case 5:
                     $res=$this->db->query("select count(*) as totalrow from leaves where sid='".$sid."'
                     and startdate between '".$startdate."' and '".$enddate."'
-                    and enddate between '".$startdate."'and '".$enddate."'");
+                    and enddate between '".$startdate."'and '".$enddate."' and brcode='".$brcode."'");
                     foreach($res->result() as $row)
                     {
                         return $row->totalrow;
@@ -827,7 +861,7 @@ class Reports_model extends CI_Model
     }
     /*-----------Get history approved--------------*/
 
-    public function Gethistoryapproved($brcode,$role,$sid,$subcode,$limitrow)
+    public function Gethistoryapproved($brcode,$role,$sid,$company_id,$subcode,$limitrow)
     {
         /*
             1:role=>1 General User
@@ -837,6 +871,7 @@ class Reports_model extends CI_Model
             5:role=>5 Head Off Department
             6:role=>5 DCEO
         */
+        $hid=$this->GetheadofID($sid,$role,$company_id);
         switch($role)
         {
             case 1:
@@ -859,7 +894,7 @@ class Reports_model extends CI_Model
                                         FROM `leaves` le
                                         INNER JOIN staff st ON le.sid=st.system_id
                                         INNER JOIN `types` ty ON ty.id=le.type      
-                                        INNER JOIN manager r on r.m_id=".$this->GetheadofID($sid,$role)."                  
+                                        INNER JOIN manager r on r.m_id=".$hid."                  
                                         WHERE le.sid=".$sid."
                                         AND le.status=2
                                         AND st.flag=1 AND st.active=1

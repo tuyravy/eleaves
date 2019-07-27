@@ -60,7 +60,7 @@
        define('ENVIRONMENT', 'development');
 } else {
     define('ENVIRONMENT', 'production');
-}*/
+}
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
@@ -70,7 +70,7 @@
  * By default development will show errors but testing and live will hide them.
  */
  
-define('ENVIRONMENT', 'production');
+// define('ENVIRONMENT', 'production');
 
 switch (ENVIRONMENT)
 {

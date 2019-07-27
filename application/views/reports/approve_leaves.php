@@ -5,7 +5,7 @@
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2><i class="icon-ok"></i><span style="margin-left:5px;">Approvel Eleaves</span></h2>
+                    <h2><i class="fa fa-check"></i><span style="margin-left:5px;color:#73879C">Approvel Eleaves</span></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -24,10 +24,10 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                    
+                   <div class="table-responsive">
                     <table id="datatable-buttons" class="table table-striped table-bordered">
                       <thead>
-                        <tr style="border-bottom:3pt solid #22d4ae;"> 
+                        <tr style="border-bottom:2pt solid #22d4ae;"> 
                           <th>Staff Name</th>
                           <th>BrName</th>
                           <th>Position</th>
@@ -78,6 +78,7 @@
                         
                       </tbody>
                     </table>
+                  </div>
                     <div class="pull-right">
                                 <div style="margin-top: 25px;margin-bottom: -12px;">
                                   <label>Total <span class="label label-default"><?= $total_rows; ?></span>records</label>

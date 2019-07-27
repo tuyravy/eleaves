@@ -3,7 +3,7 @@
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2><i class="fa fa-floppy-o" aria-hidden="true"></i><span style="margin-left:10px;">Reports Eleaves</span></h2>
+                    <h2><i class="fa fa-floppy-o" aria-hidden="true"></i><span style="margin-left:10px;color:#73879C">Reports Eleaves</span></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -22,109 +22,125 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                  <div class="pull-right">
-                    <button class="btn btn-primary" onclick="javascript:printDiv('reports')" id="btnPrint"><span class="glyphicon glyphicon-print"></span></button>
-                    <p></p>
-                  </div>
-                  <div>
-                    <form class="form-inline" action="<?= site_url('reports/ereportbydate');?>" method="post">
-                      <div class="form-group">
-                        <label for="exampleInputName2">Start</label>
-                        <input type="text" class="form-control" name="datestart" id="datestart" placeholder="Start">
+                  <div class="row">
+                  <fieldset class="scheduler-border">
+                    <legend></legend> 
+                   
+
+                      <div class="pull-right">
+                        <button class="btn btn-primary" onclick="javascript:printDiv('reports')" id="btnPrint"><span class="glyphicon glyphicon-print"></span></button>
+                        <p></p>
                       </div>
-                      <div class="form-group">
-                        <label for="exampleInputEmail2">End</label>
-                        <input type="text" class="form-control" name="dateend" id="dateend" placeholder="End">
-                      </div>
-                      <button type="submit" class="btn btn-success" style="margin-top:5px;"><i class="fa fa-share-square"></i><span style="margin-left:5px;">Submit</span></button>
-                      <a href="<?= site_url('reports/ereports'); ?>" style="margin-top:5px;" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Refresh Page"><span class="glyphicon glyphicon-refresh"></span></a>
-                    </form>
-                  </div>
-                  <div id="reports">
-                      <div class="row" id="logoreports" style="display:none">
-                            <div class="col-md-6">
-                                  <img src="<?php echo base_url();?>public/img/logo_simple.png" class="img-responsive" alt="Cinque Terre">
+                      <div>
+                        <form class="form-inline" action="<?= site_url('reports/ereportbydate');?>" method="post">
+                          <div class="form-group">
+                            <label for="exampleInputName2">Start</label>
+                            <?php if(isset($start)){?>
+                              <input type="text" class="form-control" name="datestart" id="datestart" value="<?php echo $start;?> "placeholder="Start" autocomplete="off">
+                            <?php }else{?>
+                              <input type="text" class="form-control" name="datestart" id="datestart" placeholder="Start" autocomplete="off">
+                            <?php }?>
+                           </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail2">End</label>
+                            <?php if(isset($end)){?>
+                              <input type="text" class="form-control" name="dateend" id="dateend" placeholder="End"  value="<?php echo $end;?>" autocomplete="off">
+                            <?php }else{?>
+                              <input type="text" class="form-control" name="dateend" id="dateend" placeholder="End" autocomplete="off">
+                            <?php }?>
                             </div>
-                              <div class="col-md-6" id="textcenter">
-                                  <h2 id="in" style="font-size:25px;text-align:center">សហគ្រិនភាព ម៉ាយក្រូហ្វាយនែន ភិអិលស៊ី</h2>
-                                  <h2 id="in1" style="text-align:center;">SAHAKRINPHEAP S.T MICROFINANCE PLC</h2>
-                                  <h2 id="in2" style="text-align:center;">Eleaves Reports</h2>
-                                  <p id="in3" style="text-align:center">Reports Date:
-                                  <?php if(isset($start)){echo $start;}else{echo $start;}?>
-                                    <span style="margin-left:10px;">
-                                        To:<span style="margin-left:10px;">
-                                          <?php if(isset($end)){echo $end;}else{echo $end;}?>
-                                          </span>
-                                    </span>
-                                  </p>
-                              </div>   
-                      </div> 
-                      <table class="table table-bordered">
-                        <thead style="boder;border-bottom:3pt solid #22d4ae;">
-                          <th>Staff Name</th>
-                          <th>Position</th>
-                          <th>Gender</th>
-                          <th>Request Date</th>
-                          <th>Leave Start</th>
-                          <th>Leave End</th>
-                          <th>Leave Type</th>
-                          <th>Duration</th>
-                          <th>Status</th>
-                          <th>View</th>
-                        </thead>
-                        <tbody  id="reportsleaves">
-                        <?php foreach($reports as $row){?>
-                        <tr >
-                          <td><?php echo $row->staff_nameeng;?></td>
-                          <td><?php echo $row->position_nameeng;?></td>
-                          <td><?php echo $row->sex;?></td>
-                          <td><?php echo $row->requestdate;?></td>
-                          <td><?php echo $row->startdate;?></td>
-                          <td><?php echo $row->enddate;?></td>
-                          <td><?php switch($row->status){
-                                case 1:
-                                echo "Padding";                          
-                                break;
-                                case 2:
-                                echo "Approved";
-                                break;
-                                case 3:
-                                echo "Rejected";
-                              };
-                                
-                                ?>
-                          </td>
-                          <td><?php echo $row->duration;?></td>
-                          <td><?php echo $row->enddate;?></td>
-                          <td style="text-align:center">
-                            <a id="viewdesplay" href="<?= site_url("reports/viewdetail"."/".$row->lid."/".$row->startdate."/".$row->enddate);?>" data-toggle="tooltip" data-placement="top" title="មើលពត៌មានលំអិត">
-                              <span class="glyphicon glyphicon-folder-open"></span>
-                            </a>
-                          </td>
-                        </tr>
-                        <?php }?>
-                        </tbody>
-                      </table>
-                      <div class="col-sm-12" id="foldershow" style="display:none;">
-                                <p>ថ្ងៃទី.......ខែ.....ឆ្នាំ..<?php echo date('Y');?></p>
-                                <p style="margin-left:40px;">ហត្ថលេខា</p>
-                                <p>................................</p>
-                                <p><span style="margin-left:30px;"><?php echo $this->session->userdata('fullname');?></span></p>
-                              <br/>
-
+                          <button type="submit" class="btn btn-success" style="margin-top:5px;"><i class="fa fa-share-square"></i><span style="margin-left:5px;">Submit</span></button>
+                          <a href="<?= site_url('reports/ereports'); ?>" style="margin-top:5px;" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Refresh Page"><span class="glyphicon glyphicon-refresh"></span></a>
+                        </form>
                       </div>
-                  </div>
+                      
+                      <div id="reports">
+                          <div class="row" id="logoreports" style="display:none">
+                                <div class="col-md-6">
+                                      <img src="<?php echo base_url();?>public/img/logo_simple.png" class="img-responsive" alt="Cinque Terre">
+                                </div>
+                                  <div class="col-md-6" id="textcenter">
+                                      <h2 id="in" style="font-size:25px;text-align:center">សហគ្រិនភាព ម៉ាយក្រូហ្វាយនែន ភិអិលស៊ី</h2>
+                                      <h2 id="in1" style="text-align:center;">SAHAKRINPHEAP S.T MICROFINANCE PLC</h2>
+                                      <h2 id="in2" style="text-align:center;">Eleaves Reports</h2>
+                                      <p id="in3" style="text-align:center">Reports Date:
+                                      <?php if(isset($start)){echo $start;}else{echo $start;}?>
+                                        <span style="margin-left:10px;">
+                                            To:<span style="margin-left:10px;">
+                                              <?php if(isset($end)){echo $end;}else{echo $end;}?>
+                                              </span>
+                                        </span>
+                                      </p>
+                                  </div>   
+                          </div> 
+                          <div class="table-responsive">
+                          <table class="table table-bordered">
+                            <thead style="boder;border-bottom:2pt solid #22d4ae;">
+                              <th>Staff Name</th>
+                              <th>Position</th>
+                              <th>Gender</th>
+                              <th>Request Date</th>
+                              <th>Leave Start</th>
+                              <th>Leave End</th>
+                              <th>Leave Type</th>
+                              <th>Duration</th>
+                              <th>Status</th>
+                              <th>View</th>
+                            </thead>
+                            <tbody  id="reportsleaves">
+                            <?php foreach($reports as $row){?>
+                            <tr >
+                              <td><?php echo $row->staff_nameeng;?></td>
+                              <td><?php echo $row->position_nameeng;?></td>
+                              <td><?php echo $row->sex;?></td>
+                              <td><?php echo $row->requestdate;?></td>
+                              <td><?php echo $row->startdate;?></td>
+                              <td><?php echo $row->enddate;?></td>
+                              <td><?php switch($row->status){
+                                    case 1:
+                                    echo "Padding";                          
+                                    break;
+                                    case 2:
+                                    echo "Approved";
+                                    break;
+                                    case 3:
+                                    echo "Rejected";
+                                  };
+                                    
+                                    ?>
+                              </td>
+                              <td><?php echo $row->duration;?></td>
+                              <td><?php echo $row->enddate;?></td>
+                              <td style="text-align:center">
+                                <a id="viewdesplay" href="<?= site_url("reports/viewdetail"."/".$row->lid."/".$row->startdate."/".$row->enddate);?>" data-toggle="tooltip" data-placement="top" title="មើលពត៌មានលំអិត">
+                                  <span class="glyphicon glyphicon-folder-open"></span>
+                                </a>
+                              </td>
+                            </tr>
+                            <?php }?>
+                            </tbody>
+                          </table>
+                         </div>
+                          <div class="col-sm-12" id="foldershow" style="display:none;">
+                                    <p>ថ្ងៃទី.......ខែ.....ឆ្នាំ..<?php echo date('Y');?></p>
+                                    <p style="margin-left:40px;">ហត្ថលេខា</p>
+                                    <p>................................</p>
+                                    <p><span style="margin-left:30px;"><?php echo $this->session->userdata('fullname');?></span></p>
+                                  <br/>
 
-                  <div class="pull-right">
-                    <div style="margin-top: 25px;margin-bottom: -12px;">
-                        <label>Total <span class="label label-default"><?= $total_rows; ?></span>records</label>
-                    </div>  
-                    <br/>
-                    <?php echo $this->pagination->create_links(); ?>
-                  </div>
+                          </div>
+                      </div>
 
-                  </div>
-              </div>
+                      <div class="pull-right">
+                        <div style="margin-top: 25px;margin-bottom: -12px;">
+                            <label>Total <span class="label label-default"><?= $total_rows; ?></span>records</label>
+                        </div>  
+                        <br/>
+                        <?php echo $this->pagination->create_links(); ?>
+                      </div>
+                    </fieldset>   
+                    </div>   
+                  </div>               
             </div>
         <!-- /page content -->
 
@@ -155,6 +171,36 @@
       margin: 10%;
   }
 </style>
+ <style>
+ .nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+ fieldset.scheduler-border {
+  border: 2pt groove #ffff !important;
+  padding: 0 1em 1em 1em !important;
+  margin: 0 0 1.5em 0 !important;
+  color:#73879C !important;
+  -webkit-box-shadow:  0px 0px 0px 0px #000 !important;
+          box-shadow:  0px 0px 0px 0px #000 !important;
+  }
+
+  legend.scheduler-border {
+  font-size: 1.2em !important;
+  font-weight: bold !important;
+  text-align: left !important;
+  color:#73879C !important;
+  }
+  legend{
+      font-size: 1em !important;
+      color: #777;
+  }
+  fieldset
+  {
+      width:100% !important;
+      
+  }
+ </style> 
 <script>
     var jqOld = jQuery.noConflict();
     jqOld(function() {

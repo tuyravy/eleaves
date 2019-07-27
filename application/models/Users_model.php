@@ -954,13 +954,81 @@ class users_model extends CI_Model
         }
         
     }
-    public function getUser()
+
+    //Get user detail
+    public function getUser($page)
     {
-        $result=$this->db->from('users')
-                        ->where('flag',1)
-                        ->get();
+        $result=$this->db->query("
+                            select u.user_id,tb.brName,tb.brcode,s.staff_nameeng,u.username,s.position_nameeng from users u 
+                            left join staff s on s.system_id=u.system_id
+                            inner join tbl_branch tb on tb.brCode=s.brcode
+                            where s.flag=1 and u.flag=1 and tb.flag=1 and s.active=1 order by tb.brcode limit 10 offset ".$page.""
+                        );                        
+                       
         return $result->result();
     }
+    //Total user detail
+    public function TotalUser(){
+        $result=$this->db->query('
+                            select count(*) as totalrow from users u 
+                            left join staff s on s.system_id=u.system_id
+                            inner join tbl_branch tb on tb.brCode=s.brcode
+                            where s.flag=1 and u.flag=1 and tb.flag=1 and s.active=1'
+                        );                        
+                       
+        foreach($result->result() as $row)
+        {
+            return $row->totalrow;
+        }
+    }
+
+    //Get staff for add user
+    public function getaddUser($page)
+    {
+        $result=$this->db->query("
+                            select 
+                            distinct(s.system_id+s.brcode) as id,
+                            u.user_id,
+                            s.system_id,
+                            tb.brName,
+                            tb.brcode,
+                            s.staff_nameeng,
+                            u.username,
+                            s.position_nameeng 
+                        from staff s
+                        inner join tbl_branch tb on tb.brCode=s.brcode
+                        left join users u on s.system_id=u.system_id and s.brcode=u.branch_code
+                        where s.flag=1 and tb.flag=1 and s.active=1 
+                        and u.username IS NULL                        
+                        and s.position_nameeng not in('Branch Accountant','Deputy Branch Manager','General Credit Officer','Specialist Credit Officer',
+                        'Branch Cleaner','Branch Guard','Branch Cashier','Branch Teller','Branch Manager')
+                         order by tb.brcode limit 10 offset ".$page.""
+                        );                        
+                       
+        return $result->result();
+    }
+
+    //Total user for add user
+    public function TotaladdUser(){
+        $result=$this->db->query("
+                                select 
+                               count(*) as totalrow
+                            from staff s
+                            inner join tbl_branch tb on tb.brCode=s.brcode
+                            left join users u on s.system_id=u.system_id and s.brcode=u.branch_code
+                            where s.flag=1 and tb.flag=1 and s.active=1 and u.username IS NULL 
+                            and s.position_nameeng not in('Branch Accountant','Deputy Branch Manager','General Credit Officer','Specialist Credit Officer',
+                            'Branch Cleaner','Branch Guard','Branch Cashier','Branch Teller','Branch Manager')
+                           "
+                            
+                        );                        
+                       
+        foreach($result->result() as $row)
+        {
+            return $row->totalrow;
+        }
+    }
+
     public function getUserCompare()
     {
 
@@ -1102,7 +1170,7 @@ class users_model extends CI_Model
             return $row;
         }
     }
-    public function getStaffNotHaveInUserbysystemid($sid)
+    public function getStaffNotHaveInUserbysystemid($sid,$brcode)
     {
 
         $result=$this->db->query("select
@@ -1116,11 +1184,11 @@ class users_model extends CI_Model
                                     s.system_id
                                 from staff s
                                 inner join tbl_branch tbl on s.brcode=tbl.brcode
-                                where s.system_id not in(select system_id from users)
-                                and s.brcode in('100','500')
-                                and s.system_id not in('1','159')
+                                where s.system_id not in(select system_id from users where users.branch_code=s.brcode)                                
+                                
                                 and s.active=1
                                 and s.system_id='".$sid."'
+                                and tbl.brcode='".$brcode."'
                                 union all
                                 select
                                     tbl.shortcode,
@@ -1139,7 +1207,9 @@ class users_model extends CI_Model
                                 where s.system_id not in(select system_id from users)
                                 and s.position_nameeng in('Branch Manager')
                                 and s.system_id='".$sid."'
+                                and tbl.brcode='".$brcode."'
                                 and s.active=1;");
+        
         foreach($result->result() as $row)
         {
             return $row;

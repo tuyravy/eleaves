@@ -58,6 +58,8 @@ class Login extends CI_Controller {
              $password=trim($password);
         }
         $users=$this->Login_model->getUsers($login,$password);
+       
+        
         if($users==true)
         {
             foreach($users as $res){
@@ -67,6 +69,7 @@ class Login extends CI_Controller {
                         array(
                             'user_id'=>$res->user_id, 
                             'branch_code'=>$res->branch_code,
+                            'company_id'=>$res->company_id,
                             'full_name'=>$res->full_name,
                             'full_name_kh'=>$res->full_name_kh,
                             'username'=>$res->username,
@@ -75,6 +78,7 @@ class Login extends CI_Controller {
                             'menu_option'=>$res->menu_option,
                             'role'=>$res->role,
                             'system_id'=>$res->system_id,
+                            'logo'=>$res->logo,
                             'hid'=>$res->hid,
                             'types'=>$res->types,
                             'subbranch'=>$res->subbranch

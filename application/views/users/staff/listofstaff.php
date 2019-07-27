@@ -28,10 +28,10 @@
                 
                    
                   <div class="row">   
-                   
+                  <div class="table-responsive">
                     <table id="datatable-buttons" class="table table-striped table-bordered">
                       <thead>
-                        <tr style="border-bottom:3pt solid #22d4ae;">
+                        <tr style="border-bottom:2pt solid #22d4ae;white-space: nowrap;overflow: hidden;">
                           <th>Staff Name</th>
                           <th>Position</th>
                           <th>BrName</th>
@@ -40,11 +40,10 @@
                           <th>Date of Brith</th>
                           <th>Phone Number</th>
                           <th>Degree</th>
-                          <th>Status</th>
+                          <th style="text-align:center">Status</th>
                           <th>Action</th>
                         </tr>
-                      </thead>
-                      
+                      </thead>                     
 
                       <tbody>
                        <?php 
@@ -60,15 +59,16 @@
                           <td><?php echo $row->date_of_birth;?></td>
                           <td><?php echo $row->phone_number;?></td>
                           <td><?php echo $row->degree;?></td>
-                          <td><?php switch($row->active)
+                          <td><span class="badge bg-green"><?php switch($row->active)
                                 {
                             case 1:
-                                echo "បុគ្លលិក";
+                                echo "Staff Active";
                             
                             break;
                             case 0:
-                                echo "លាឈប់ពីការងារ";
+                                echo "Staff In-Active";
                                 }?>
+                              </span>
                           </td>
                           
                           <td align="center">
@@ -93,7 +93,14 @@
                         <?php }?> 
                       </tbody>
                     </table>
-                         
+                        <div class="pull-right">
+                            <div style="margin-top: 25px;margin-bottom: -12px;">
+                                <label>Total <span class="label label-default"><?= $total_rows; ?></span>records</label>
+                            </div>  
+                            <br/>
+                            <?php echo $this->pagination->create_links(); ?>
+                        </div>
+                  </div>
                      </div>   
                    </div>
                 </div>
@@ -126,35 +133,11 @@
                 
 
                 
-              
+         </div>     
               
         <!-- /page content -->
 
-<script type="text/javascript">
-$(function() {
-    $('input[name="datestart"]').daterangepicker({
-        singleDatePicker: true,
-        showDropdowns: true
-        
-    },
-    
-    function(start, end, label) {
-        var years = moment().diff(start, 'years');
-        
-    });
-});
-$(function() {
 
-    $('input[name="dateend"]').daterangepicker({
-        singleDatePicker: true,
-        showDropdowns: true
-    },
-    function(start, end, label) {
-        var years = moment().diff(start, 'years');
-        
-    });
-});
-</script>
     <script>
         $(document).ready(function()
         {
@@ -190,68 +173,7 @@ $(function() {
             
         });          
     </script>
-   <script>
-      $(document).ready(function() {
-        var handleDataTableButtons = function() {
-          if ($("#datatable-buttons").length) {
-            $("#datatable-buttons").DataTable({
-              dom: "Bfrtip",
-              buttons: [
-                {
-                  extend: "copy",
-                  className: "btn-sm"
-                },
-                {
-                  extend: "csv",
-                  className: "btn-sm"
-                },
-                {
-                  extend: "excel",
-                  className: "btn-sm"
-                },
-                {
-                  extend: "pdfHtml5",
-                  className: "btn-sm"
-                },
-                
-              ],
-              responsive: true
-            });
-          }
-        };
-
-        TableManageButtons = function() {
-          "use strict";
-          return {
-            init: function() {
-              handleDataTableButtons();
-            }
-          };
-        }();
-
-        $('#datatable').dataTable();
-        $('#datatable-keytable').DataTable({
-          keys: true
-        });
-
-        $('#datatable-responsive').DataTable();
-
-        $('#datatable-scroller').DataTable({
-          ajax: "js/datatables/json/scroller-demo.json",
-          deferRender: true,
-          scrollY: 380,
-          scrollCollapse: true,
-          scroller: true
-        });
-
-        var table = $('#datatable-fixed-header').DataTable({
-          fixedHeader: true
-        });
-
-        TableManageButtons.init();
-      });
-    </script>
-    <!-- /Datatables -->
+  
    <!--<?php echo site_url('Request_leaves_Controller/setapprovelleaves');?>/<?php echo $row->le_id;?>-->
     
 

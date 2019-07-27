@@ -6,12 +6,13 @@ class Manager_model extends CI_Model
     {
          parent::__construct();         
     }
-    public function getManagerName($systemid,$role)
+    public function getManagerName($systemid,$role,$company_id)
     {
         
         $mid=$this->db->select('hid')
                       ->from('staff')
                       ->where('system_id',$systemid)
+                      ->where('company_id',$company_id)
                       ->where('flag',1)
                       ->get();
         if($mid->num_rows()>0)

@@ -22,81 +22,85 @@
                           <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
-                      
-                    <div align="center">
-                       
-                        <ul class="nav nav-tabs" role="tablist">
-                        <li><a href="<?= site_url('reports/leaveshistory');?>">History Approved</a></li>
-                        <li class="active"><a href="<?= site_url('reports/leavesreject');?>">History Rejected</a></li>
-                        </ul>
-                        
-                        <div class="tab-content">
-                          <div role="tabpanel" class="tab-pane active" id="profile">
+                    <div class="row">
+                    <fieldset class="scheduler-border">
+                        <legend></legend> 
+                        <div class="table-responsive">
+                        <div align="center">                       
+                            <ul class="nav nav-tabs" role="tablist">
+                            <li><a href="<?= site_url('reports/leaveshistory');?>">History Approved</a></li>
+                            <li class="active"><a href="<?= site_url('reports/leavesreject');?>">History Rejected</a></li>
+                            </ul>
+                            
+                            <div class="tab-content">
+                              <div role="tabpanel" class="tab-pane active" id="profile">
 
-                          <table id="datatable-buttons" class="table table-striped table-bordered">
-                                    <thead>
-                                      <tr style="border-bottom:3pt solid #22d4ae;">
-                                        <th>StaffName</th>
-                                        <th>Position</th>
-                                        <th>Gender</th>
-                                        <th>Request_Date</th>
-                                        <th>Leave_Start</th>
-                                        <th>Leave_End</th>
-                                        <th>Leave_Types</th>
-                                        <th>Duration</th>
-                                        <th>ApprovedDate</th>
-                                        <th>Rejected by</th>
-                                        <th>Action</th>
-                                      </tr>
-                                    </thead>
-                                    
-                                      
-                                  <tbody>
-                                    <?php                                         
+                              <table id="datatable-buttons" class="table table-striped table-bordered">
+                                        <thead>
+                                          <tr style="border-bottom:2pt solid #22d4ae;">
+                                            <th>StaffName</th>
+                                            <th>Position</th>
+                                            <th>Gender</th>
+                                            <th>Request_Date</th>
+                                            <th>Leave_Start</th>
+                                            <th>Leave_End</th>
+                                            <th>Leave_Types</th>
+                                            <th>Duration</th>
+                                            <th>ApprovedDate</th>
+                                            <th>Rejected by</th>
+                                            <th>Action</th>
+                                          </tr>
+                                        </thead>
+                                        
                                           
-                                          foreach($reject as $row){
-                                      ?>
-                                      <tr id="tbody">
-                                        <td><?php echo $row->staff_nameeng;?></td>
-                                        <td><?php echo $row->position_nameeng;?></td>
-                                        <td><?php echo $row->sex;?></td>
-                                        <td><?php echo $row->requestdate;?></td>
-                                        <td><?php echo $row->startdate;?></td>
-                                        <td><?php echo $row->enddate;?></td>
-                                        <td><?php echo $row->name;?></td>
-                                        <td><?php echo $row->duration;?></td>
-                                        <td><?php echo $row->approvaldate;?></td>
-                                        <td><?php echo $row->rmname;?></td>
-                                        <td>
-                                          <?php $role=$this->session->userdata('role');
-                                              if($role==1 || $role==3){
-                                              }else{
-                                            ?>
-                                          <a href="#" id="setapproval" data-id='<?php echo $row->lid; ?>'>
-                                              <span class="glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="top" title="Re-Approve leaves"></span> 
-                                          </a>
-                                          <a href="<?php echo site_url('reports/viewleaves')?>/<?php echo $row->sid;?>/<?php echo $row->lid;?>/<?php echo $row->startdate;?>/<?php echo $row->enddate;?>" id="detail" data-id='<?php echo $row->lid; ?>'>
-                                              <span class="glyphicon glyphicon-file" data-toggle="tooltip" data-placement="top" title="View detail"></span> 
-                                          </a> 
+                                      <tbody>
+                                        <?php                                         
+                                              
+                                              foreach($reject as $row){
+                                          ?>
+                                          <tr id="tbody">
+                                            <td><?php echo $row->staff_nameeng;?></td>
+                                            <td><?php echo $row->position_nameeng;?></td>
+                                            <td><?php echo $row->sex;?></td>
+                                            <td><?php echo $row->requestdate;?></td>
+                                            <td><?php echo $row->startdate;?></td>
+                                            <td><?php echo $row->enddate;?></td>
+                                            <td><?php echo $row->name;?></td>
+                                            <td><?php echo $row->duration;?></td>
+                                            <td><?php echo $row->approvaldate;?></td>
+                                            <td><?php echo $row->rmname;?></td>
+                                            <td>
+                                              <?php $role=$this->session->userdata('role');
+                                                  if($role==1 || $role==3){
+                                                  }else{
+                                                ?>
+                                              <a href="#" id="setapproval" data-id='<?php echo $row->lid; ?>'>
+                                                  <span class="glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="top" title="Re-Approve leaves"></span> 
+                                              </a>
+                                              <a href="<?php echo site_url('reports/viewleaves')?>/<?php echo $row->sid;?>/<?php echo $row->lid;?>/<?php echo $row->startdate;?>/<?php echo $row->enddate;?>" id="detail" data-id='<?php echo $row->lid; ?>'>
+                                                  <span class="glyphicon glyphicon-file" data-toggle="tooltip" data-placement="top" title="View detail"></span> 
+                                              </a> 
+                                                <?php }?>
+                                            </td>
+                                          </tr>
                                             <?php }?>
-                                        </td>
-                                      </tr>
-                                        <?php }?>
-                                    </tbody>
-                                  </table>
-                                  <div class="pull-right">
-                                      <div style="margin-top: 25px;margin-bottom: -12px;">
-                                          <label>Total <span class="label label-default"><?= $total_rows; ?></span>records</label>
-                                      </div>  
-                                      <br/>
-                                    <?php echo $this->pagination->create_links();?>
-                                  </div>
-                  
+                                        </tbody>
+                                      </table>
+                                      <div class="pull-right">
+                                          <div style="margin-top: 25px;margin-bottom: -12px;">
+                                              <label>Total <span class="label label-default"><?= $total_rows; ?></span>records</label>
+                                          </div>  
+                                          <br/>
+                                        <?php echo $this->pagination->create_links();?>
+                                      </div>
+                      
+                              </div>
+                            </div>
                           </div>
                         </div>
+                      </fieldset>
                     </div>
-
-                    </div>
+               
                 </div>
               </div>
   <!-- Small modal -->
@@ -122,6 +126,37 @@
                 </div>
 <!-- /page content -->
    
+<style>
+      .nopadding {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    fieldset.scheduler-border {
+    border: 2pt groove #ffff !important;
+    padding: 0 1em 1em 1em !important;
+    margin: 0 0 1.5em 0 !important;
+    color:#73879C !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000 !important;
+            box-shadow:  0px 0px 0px 0px #000 !important;
+    }
+
+    legend.scheduler-border {
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    color:#73879C !important;
+    }
+    legend{
+        font-size: 1em !important;
+        color: #777;
+    }
+    fieldset
+    {
+        width:100% !important;
+        
+    }
+</style> 
+
 <script language="javascript" type="text/javascript">
         function printDiv(divID) {
             //Get the HTML of div

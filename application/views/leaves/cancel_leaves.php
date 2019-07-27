@@ -1,12 +1,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
  <script src="<?php echo base_url();?>dist/sweetalert.js"></script>
  <link rel="stylesheet" href="<?php echo base_url();?>dist/sweetalert.css">
             <div class="clearfix"></div>
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2><i class="fa fa-eye" aria-hidden="true"></i><span style="margin-left:10px;">Views Eleaves</span></h2>
+                    <h2><i class="fa fa-eye" aria-hidden="true"></i><span style="margin-left:10px;color:#73879C;">Views Eleaves</span></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -25,10 +24,10 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                   
+                  <div class="table-responsive">
                     <table id="datatable-buttons" class="table table-striped table-bordered">
-                      <thead>
-                        <tr style="border-bottom:3pt solid #22d4ae;">
+                      <thead class="active">
+                        <tr style="border-bottom:2pt solid #22d4ae;">
                           <th>StaffName</th>
                           <th>Position</th>
                           <th>BrName</th>
@@ -154,6 +153,7 @@
                         
                       </tbody>
                     </table>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -296,7 +296,7 @@ function getleavetype($sid)
                         ->get();
        return $result->result();
    }
-   public function getLeavesrequest()
+   public function getLeavesrequest($company_id)
    {
     switch($role=$this->session->userdata('role'))
     {
@@ -304,10 +304,13 @@ function getleavetype($sid)
             
              $sid=$this->session->userdata('system_id');
              $result=$this->db->from('leaves')
-                        ->join('staff','staff.system_id=leaves.sid')
+                        ->join('staff','staff.system_id=leaves.sid','staff.brcode=leaves.brcode')
+                        
+                        
                         ->join('types','types.id=leaves.type')
-                        ->join('tbl_branch','tbl_branch.brCode=staff.brcode')
+                        ->join('tbl_branch','tbl_branch.brCode=staff.brCode')
                         ->where('leaves.sid',$sid)
+                        ->where('staff.company_id',$company_id)
                         ->order_by('leaves.status','DSCE')
                         ->where_in('leaves.status',array('1'))
                         ->get();
@@ -319,9 +322,10 @@ function getleavetype($sid)
             $brcode=$this->session->userdata('branch_code');
             $subbrcode=$this->session->userdata('subbranch');
             $result=$this->db->from('leaves')
-                        ->join('staff','staff.system_id=leaves.sid')
+                        ->join('staff','staff.system_id=leaves.sid','staff.brcode=leaves.brcode')
                         ->join('types','types.id=leaves.type')
                         ->join('tbl_branch','tbl_branch.brCode=staff.brcode')
+                        ->where('staff.company_id',$company_id)
                         ->where_in('staff.brcode',array($brcode,$subbrcode))
                         ->order_by('leaves.status','DSCE')
                         ->where_in('leaves.status',array('1'))
@@ -332,10 +336,11 @@ function getleavetype($sid)
         case 4:
             $userid=$this->session->userdata('user_id');
             $result=$this->db->from('leaves')
-                        ->join('staff','staff.system_id=leaves.sid')
+                        ->join('staff','staff.system_id=leaves.sid','staff.brcode=leaves.brcode')
                         ->join('types','types.id=leaves.type')
                         ->join('tbl_branch','tbl_branch.brCode=staff.brcode')
                         ->where('leaves.employee',$userid)
+                        ->where('staff.company_id',$company_id)
                         ->order_by('leaves.status','DSCE')
                         ->where_in('leaves.status',array('1'))
                         ->get();
@@ -345,10 +350,11 @@ function getleavetype($sid)
         case 5:
             $sid=$this->session->userdata('system_id');
              $result=$this->db->from('leaves')
-                        ->join('staff','staff.system_id=leaves.sid')
+                        ->join('staff','staff.system_id=leaves.sid','staff.brcode=leaves.brcode')
                         ->join('types','types.id=leaves.type')
                         ->join('tbl_branch','tbl_branch.brCode=staff.brcode')
                         ->where('leaves.sid',$sid)
+                        ->where('staff.company_id',$company_id)
                         ->order_by('leaves.status','DSCE')
                         ->where_in('leaves.status',array('1'))
                         ->get();
@@ -357,10 +363,11 @@ function getleavetype($sid)
          case 6:
             $sid=$this->session->userdata('system_id');
              $result=$this->db->from('leaves')
-                        ->join('staff','staff.system_id=leaves.sid')
+                        ->join('staff','staff.system_id=leaves.sid','staff.brcode=leaves.brcode')
                         ->join('types','types.id=leaves.type')
                         ->join('tbl_branch','tbl_branch.brCode=staff.brcode')
                         ->where('leaves.sid',$sid)
+                        ->where('staff.company_id',$company_id)
                         ->order_by('leaves.status','DSCE')
                         ->where_in('leaves.status',array('1'))
                         ->get();

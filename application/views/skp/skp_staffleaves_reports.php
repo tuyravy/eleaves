@@ -2,10 +2,10 @@
        
   <div class="">
     <div class="clearfix"></div>
-      <div class="col-md-12 col-sm-12 col-xs-12">
+      <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
           <div class="x_panel">
             <div class="x_title">
-                <h2><i class="fa fa-floppy-o" aria-hidden="true"></i><span style="margin-left:10px;">Reports Eleaves</span></h2>
+                <h2><i class="fa fa-floppy-o" aria-hidden="true"></i><span style="margin-left:10px;color:#73879C">Reports Eleaves</span></h2>
                 <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -23,8 +23,10 @@
                     </ul>
                     <div class="clearfix"></div>
                   </div>
-                  <div class="x_content">
-                    <div align='center'>
+                  <div class="x_content​">
+                  <fieldset class="scheduler-border">
+                    <legend></legend> 
+                    <div>
                         <form class="form-inline" action="<?php echo site_url("reports/monthlyreport");?>" method="post">
                           <div class="form-group">
                             <label for="exampleInputName2">Reportdate Start</label>
@@ -37,10 +39,11 @@
                             value="<?php if(isset($dateend)){ echo $enddate=date('Y-m-d',strtotime($dateend));}else{echo date('Y-m-d');} ?>">
                           </div>
                           <button type="submit" class="btn btn-primary" style="margin-top:5px;">
-                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            <i class="fa fa-search" aria-hidden="true"></i>
                             <span style="margin-left:5px;">Submit</span></button>
                         </form>
                     </div>
+                  
                     <br/>
                     <form class="form-inline" action="<?php echo site_url("Exports");?>" method="post">  
 
@@ -54,12 +57,15 @@
                             <input type="hidden" class="form-control" id="enddate" name="enddate" required="required" placeholder="<?php echo date("Y-m-d"); ?>"
                             value="<?php if(isset($dateend)){ echo $enddate=date('Y-m-d',strtotime($dateend));}else{echo date('Y-m-d');} ?>">
                           </div>                  
-                      <button type="submit" name="download" class="btn btn-success"><i class="fa fa-file-excel-o" aria-hidden="true"></i>
+                      <button type="submit" name="download" class="btn btn-success"><i class="fa fa-download" aria-hidden="true"></i>
                       <span style="margin-left:5px;">Download</span></button>
+                      <p style="color:red;">ប្រសិនបើចង់បានរបាយការណ៍លំអិតសូមធ្វើការជ្រើសរើសថ្ងៃខែឆ្នាំរបាយការណ៍ និង យកពាក្យ Donwload សូមអរគុណ!</p>
                     </form>
                    
-                   <p style="color:red;">ប្រសិនបើចង់បានរបាយការណ៍លំអិតសូមធ្វើការជ្រើសរើសថ្ងៃខែឆ្នាំរបាយការណ៍ និង យកពាក្យ Donwload សូមអរគុណ!</p>
-                   
+                    </fieldset>   
+                    <fieldset class="scheduler-border">
+                    <legend></legend> 
+                    <div class="table-responsive">
                     <table id="datatable-buttons" class="table table-striped table-bordered">
                       <thead>
                         <tr>
@@ -75,7 +81,7 @@
                             <th>Status</th>       
                         </tr>
                        </thead>
-                      <tbod>
+                      <tbody>
                       <?php 
                         foreach($monthlyreports as $row)
                         {
@@ -96,8 +102,9 @@
                         }
                        ?>
                       </tbody>
-                    </table>                         
-                     
+                    </table>    
+                    </div>                     
+                    </fieldset>
                 </div>
               </div>
             </div>
@@ -107,7 +114,36 @@
     <style>#in{text-align: center;}</style>
     <!--==============Mesage approvel-->
     <!-- Small modal -->
-                
+    <style>
+ .nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+ fieldset.scheduler-border {
+  border: 2pt groove #ffff !important;
+  padding: 0 1em 1em 1em !important;
+  margin: 0 0 1.5em 0 !important;
+  color:#73879C !important;
+  -webkit-box-shadow:  0px 0px 0px 0px #000 !important;
+          box-shadow:  0px 0px 0px 0px #000 !important;
+  }
+
+  legend.scheduler-border {
+  font-size: 1.2em !important;
+  font-weight: bold !important;
+  text-align: left !important;
+  color:#73879C !important;
+  }
+  legend{
+      font-size: 1em !important;
+      color: #777;
+  }
+  fieldset
+  {
+      width:100% !important;
+      
+  }
+ </style>          
   <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
   <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
   <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
@@ -123,70 +159,5 @@
   </script>
 
 
-  
-<script>
-      $(document).ready(function() {
-        var handleDataTableButtons = function() {
-          if ($("#datatable-buttons").length) {
-            $("#datatable-buttons").DataTable({
-              dom: "Bfrtip",
-              buttons: [
-                {
-                  extend: "copy",
-                  className: "btn-sm"
-                },
-                {
-                  extend: "csv",
-                  className: "btn-sm"
-                },
-                {
-                  extend: "excel",
-                  className: "btn-sm"
-                },
-                {
-                  extend: "pdfHtml5",
-                  className: "btn-sm"
-                },
-                {
-                  extend: "print",
-                  className: "btn-sm"
-                },
-              ],
-              responsive: true
-            });
-          }
-        };
-
-        TableManageButtons = function() {
-          "use strict";
-          return {
-            init: function() {
-              handleDataTableButtons();
-            }
-          };
-        }();
-
-        $('#datatable').dataTable();
-        $('#datatable-keytable').DataTable({
-          keys: true
-        });
-
-        $('#datatable-responsive').DataTable();
-
-        $('#datatable-scroller').DataTable({
-          ajax: "js/datatables/json/scroller-demo.json",
-          deferRender: true,
-          scrollY: 380,
-          scrollCollapse: true,
-          scroller: true
-        });
-
-        var table = $('#datatable-fixed-header').DataTable({
-          fixedHeader: true
-        });
-
-        TableManageButtons.init();
-      });
-    </script>
    
     

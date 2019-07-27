@@ -56,12 +56,15 @@ class login_model extends CI_Model
                             users.menu_option,
                             users.subbranch,
                             users.role as role,
+                            users.logo,
+                            users.logo_title,
                             staff.hid,
+                            staff.company_id,
                             users.types,
                             trim(users.username),
                             trim(users.password)
                             from users 
-                            inner join staff on users.system_id=staff.system_id
+                            inner join staff on users.system_id=staff.system_id and users.branch_code=staff.brcode
                             where
                             trim(users.username)='".$login."'
                             and trim(users.password)='".$password."'

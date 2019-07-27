@@ -65,6 +65,7 @@ class Controler extends CI_Controller {
        /*4:Run Create balance leaves*/
        $ct=$this->Csv_model->createbalanceleave();
        $sff=$this->Controler_model->Runimport_tblStaff();
+       
     }
     public function AddRmName()
     {

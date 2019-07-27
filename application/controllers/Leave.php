@@ -29,12 +29,13 @@ class leave extends CI_Controller {
         $sid=$this->session->userdata('system_id');
         $role = $this->session->userdata('role');        
         $subcode = $this->session->userdata('subbranch');
+        $company_id=$this->session->userdata('company_id');
         //$data['balance'] = $this->reports_model->gelAllleavesbalance($brcode, $role, $sid, $subcode);        
         $data['leavetypes']=$this->leaves_model->getleavetype($sid);
         //$data['leavetypes']=$this->leavetype_model->getleavetype();
         $data['menulist']=$this->menu_model->getUsermenu();
         $data['submenu']=$this->menu_model->getsubMenu();
-        $data['managername']=$this->Manager_model->getManagerName($sid,$role);
+        $data['managername']=$this->Manager_model->getManagerName($sid,$role,$company_id);
         $data['titlepage']="Home Page";
         $data['views']='leaves/leaves_request';
         $this->load->view('master_page',$data);
@@ -124,7 +125,8 @@ class leave extends CI_Controller {
     public function cancelleaves()
     {
        
-        $data['eleaverequest']=$this->leaves_model->getLeavesrequest();
+        $company_id=$this->session->userdata('company_id');
+        $data['eleaverequest']=$this->leaves_model->getLeavesrequest($company_id);
         $data['title'] = lang('system_titel');
         $data['menulist']=$this->menu_model->getUsermenu();
         $data['submenu']=$this->menu_model->getsubMenu();

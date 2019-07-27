@@ -26,9 +26,10 @@ class reports extends CI_Controller {
         $sid=$this->session->userdata('system_id');
         $role = $this->session->userdata('role'); 
         $userid = $this->session->userdata('user_id'); 
+        $company_id=$this->session->userdata('company_id');
         $data['start']=date("Y-m-d");
         $data['end']=date("Y-m-d");
-        $data['total_rows'] = $this->Reports_model->Totalnumrow($sid,$role,$brcode,$userid);
+        $data['total_rows'] = $this->Reports_model->Totalnumrow($sid,$company_id,$role,$brcode,$userid);
         if(isset($_GET["per_page"]))
         {
             $page=$_GET["per_page"];
@@ -37,9 +38,9 @@ class reports extends CI_Controller {
         };
         
         $base_url= base_url()."index.php/reports/ereports";
-        $total_rows= $this->Reports_model->Totalnumrow($sid,$role,$brcode,$userid);
+        $total_rows= $this->Reports_model->Totalnumrow($sid,$company_id,$role,$brcode,$userid);
         $Utility->pagination_config($total_rows,$base_url);
-        $data['reports']=$this->Reports_model->GetReportsLeaves(null,null,$sid,$brcode,$role,$page,$userid);
+        $data['reports']=$this->Reports_model->GetReportsLeaves(null,null,$sid,$company_id,$brcode,$role,$page,$userid);
         $data['staff']=$this->staff_model->getstaff($brcode,$subcode);
         $data['title'] = lang('system_titel');
         $data['menulist']=$this->menu_model->getUsermenu();
@@ -60,7 +61,8 @@ class reports extends CI_Controller {
         $sid=$this->session->userdata('system_id');
         $role = $this->session->userdata('role'); 
         $userid = $this->session->userdata('user_id'); 
-        $data['total_rows']= $this->Reports_model->Totalnumrowbydate($sid,$startdate,$enddate,$role,$brcode,$userid);
+        $company_id=$this->session->userdata('company_id');
+        $data['total_rows']= $this->Reports_model->Totalnumrowbydate($sid,$company_id,$startdate,$enddate,$role,$brcode,$userid);
         if(isset($_GET["per_page"]))
         {
             $per_page=$_GET["per_page"];
@@ -68,9 +70,9 @@ class reports extends CI_Controller {
             $per_page=0;
         };
         $base_url = base_url()."index.php/reports/ereportbydate";
-        $total_rows= $this->Reports_model->Totalnumrowbydate($sid,$startdate,$enddate,$role,$brcode,$userid);
+        $total_rows= $this->Reports_model->Totalnumrowbydate($sid,$company_id,$startdate,$enddate,$role,$brcode,$userid);
         $Utility->pagination_config($total_rows,$base_url);
-        $data['reports']=$this->Reports_model->GetReportsLeavesbydate($startdate,$enddate,$sid,$brcode,$role,$per_page,$userid);
+        $data['reports']=$this->Reports_model->GetReportsLeavesbydate($startdate,$enddate,$sid,$company_id,$brcode,$role,$per_page,$userid);
         $data['staff']=$this->staff_model->getstaff($brcode,$subcode);
         $data['title'] = lang('system_titel');
         $data['menulist']=$this->menu_model->getUsermenu();
@@ -106,7 +108,8 @@ class reports extends CI_Controller {
         $subcode = $this->session->userdata('subbranch');
         $userid = $this->session->userdata('user_id'); 
         $data["sid"]= $this->session->userdata('system_id');
-        $data['total_rows'] = $this->Reports_model->TotalLeavesBalance($sid,$role,$brcode,$subcode,$userid);
+        $company_id=$this->session->userdata('company_id');
+        $data['total_rows'] = $this->Reports_model->TotalLeavesBalance($sid,$company_id,$role,$brcode,$subcode,$userid);
         
         $per_page = $this->uri->segment(3) ? $this->uri->segment(3):1;
         if($per_page=='' || $per_page==1)
@@ -117,9 +120,9 @@ class reports extends CI_Controller {
             $per_page=$_GET['per_page'];
         }
         $base_url= base_url()."index.php/reports/balanceleaves";
-        $total_rows =$this->Reports_model->TotalLeavesBalance($sid,$role,$brcode,$subcode,$userid);
+        $total_rows =$this->Reports_model->TotalLeavesBalance($sid,$company_id,$role,$brcode,$subcode,$userid);
         $Utility->pagination_config($total_rows,$base_url);
-        $data['balance'] = $this->Reports_model->GetLeavesBalance($brcode, $role, $sid, $subcode,$per_page);
+        $data['balance'] = $this->Reports_model->GetLeavesBalance($brcode, $role, $sid,$company_id, $subcode,$per_page);
         $data['title'] = lang('system_titel');
         $data['menulist']=$this->menu_model->getUsermenu();
         $data['submenu']=$this->menu_model->getsubMenu();
@@ -138,7 +141,9 @@ class reports extends CI_Controller {
         $role = $this->session->userdata('role');
         $sid = $this->session->userdata('system_id');
         $subcode = $this->session->userdata('subbranch');
-        $data['total_rows'] = $this->Reports_model->Totalnumrownotapprove($sid,$role,$brcode);
+        $company_id=$this->session->userdata('company_id');
+
+        $data['total_rows'] = $this->Reports_model->Totalnumrownotapprove($sid,$company_id,$role,$brcode);
         
         if(isset($_GET["per_page"]))
         {
@@ -147,9 +152,9 @@ class reports extends CI_Controller {
             $per_page=0;
         };
         $base_url= base_url()."index.php/reports/approveleaves";
-        $total_rows =$this->Reports_model->Totalnumrownotapprove($sid,$role,$brcode);
+        $total_rows =$this->Reports_model->Totalnumrownotapprove($sid,$company_id,$role,$brcode);
         $Utility->pagination_config($total_rows,$base_url);
-        $data['app']=$this->Reports_model->GetApporvedLeaves(null,null,$sid,$brcode,$role,$per_page);
+        $data['app']=$this->Reports_model->GetApporvedLeaves(null,null,$sid,$company_id,$brcode,$role,$per_page);
         $data['title'] = lang('system_titel');
         $data['menulist']=$this->menu_model->getUsermenu();
         $data['submenu']=$this->menu_model->getsubMenu();
@@ -254,7 +259,8 @@ class reports extends CI_Controller {
         $role=$this->session->userdata('role');
         $userid=$this->session->userdata('user_id');
         $sid=$this->session->userdata('system_id');
-        $data['total_rows'] = $this->Reports_model->totaleleaveshistory($sid,$role,$brcode);
+        $company_id=$this->session->userdata('company_id');
+        $data['total_rows'] = $this->Reports_model->totaleleaveshistory($sid,$company_id,$role,$brcode);
         if(isset($_GET["per_page"]))
         {
             $per_page=$_GET["per_page"];
@@ -265,7 +271,7 @@ class reports extends CI_Controller {
         $baseurl= base_url()."index.php/reports/leaveshistory";
         $total_rows=$this->Reports_model->totaleleaveshistory($sid,$role,$brcode);
         $Utility->pagination_config($total_rows,$baseurl);
-        $data['approved']=$this->Reports_model->Gethistoryapproved($brcode,$role,$sid,$subcode,$per_page);
+        $data['approved']=$this->Reports_model->Gethistoryapproved($brcode,$role,$sid,$company_id,$subcode,$per_page);
         $data['title'] = lang('system_titel');
         $data['menulist']=$this->menu_model->getUsermenu();
         $data['submenu']=$this->menu_model->getsubMenu();

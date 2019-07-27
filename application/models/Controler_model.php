@@ -125,14 +125,93 @@ class Controler_model extends CI_Model
                         ->where('m_id',$hid)
                         ->get();
         $listarray=array();
+        $listbrcode="";
         $hid=0;
+        $brcode=0;
+        $company_id=0;
         foreach($result->result() as $k=>$val)
         {
-          $listarray=explode(",",$val->listofpostion);
-          $hid=$val->m_id;
+          if($val->types==2){
+            $brcode=1;
+            $listarray=explode(",",$val->listofpostion);
+            $hid=$val->m_id;
+            $company_id=$val->company_id;
+            
+          }else if($val->types==3){
+
+            $brcode=2;
+            $listarray=explode(",",$val->listofpostion);
+            $listbrcode=$val->listofbranch;
+            $hid=$val->m_id;
+            $company_id=$val->company_id;
+          }
+          else{
+
+            $listarray=explode(",",$val->listofpostion);
+            $hid=$val->m_id;
+            $company_id=$val->company_id;
+          }
+         
         
         }
-        
+        if($brcode==1){
+
+            
+            foreach($listarray as $re)
+            {    
+          
+              $res=$this->db->from('staff_process')
+                         
+                         ->where('staff_process.flag',1)
+                         ->where('staff_process.active',1)
+                         ->where('staff_process.brcode',$re)
+                         ->get();
+                 foreach($res->result() as $rs)
+                 {
+
+                    $dataupdate=array
+                    (
+                        'hid'=>$hid,
+                        'company_id'=>$company_id
+                    );
+                    $this->db->where('system_id',$rs->system_id);
+                    $this->db->where('brcode',$rs->brcode);
+                    $this->db->update('staff_process',$dataupdate);
+                    
+                }
+            }
+            
+
+
+        }else if($brcode==2){
+
+            foreach($listarray as $re)
+            {    
+          
+                $res=$this->db->from('staff_process')
+                                ->join('positions','positions.description=staff_process.position_nameeng')
+                                ->where('staff_process.flag',1)
+                                ->where('staff_process.active',1)
+                                ->where('positions.pid',$re)
+                                ->where_in('staff_process.brcode',$listbrcode)
+                                ->get();                                
+                 foreach($res->result() as $rs)
+                 {
+
+                    $dataupdate=array
+                    (
+                        'hid'=>$hid,
+                        'company_id'=>$company_id
+                    );
+                    $this->db->where('system_id',$rs->system_id);
+                    $this->db->where('brcode',$rs->brcode);
+                    $this->db->update('staff_process',$dataupdate);
+                    
+                }
+            }
+
+
+        }else{
         
          foreach($listarray as $re)
            {    
@@ -148,9 +227,12 @@ class Controler_model extends CI_Model
                     if($rs->level==1){
                         $dataupdate=array
                             (
-                                'hid'=>5//level head
+                                'hid'=>5,//level head,
+                                'company_id'=>$company_id
+                                
                             );
                         $this->db->where('system_id',$rs->system_id);
+                        $this->db->where('brcode',$rs->brcode);
                         $this->db->update('staff_process',$dataupdate);
                     }
                     else{
@@ -159,9 +241,11 @@ class Controler_model extends CI_Model
                         {
                             $dataupdate=array
                             (
-                                'hid'=>0
+                                'hid'=>0,
+                                'company_id'=>$company_id
                             );
                         $this->db->where('system_id',$rs->system_id);
+                        $this->db->where('brcode',$rs->brcode);
                         $this->db->update('staff_process',$dataupdate);
                             
                         }
@@ -169,9 +253,11 @@ class Controler_model extends CI_Model
                             
                             $dataupdate=array
                                 (
-                                    'hid'=>$hid
+                                    'hid'=>$hid,
+                                    'company_id'=>$company_id
                                 );
                             $this->db->where('system_id',$rs->system_id);
+                            $this->db->where('brcode',$rs->brcode);
                             $this->db->update('staff_process',$dataupdate);
                             
                             
@@ -223,6 +309,7 @@ class Controler_model extends CI_Model
             */
            }
          }
+        }
         
     }
     public function gethid()

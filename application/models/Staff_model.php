@@ -72,6 +72,7 @@ class staff_model extends CI_Model
                $result=$this->db->from('staff')
                         ->where('flag',1)
                         ->where('hid',$re->m_id)
+                        ->where_in('staff.brcode',array($brcode,$subbrcode))
                         ->get();
                 return $result->result();
               }
@@ -90,9 +91,9 @@ class staff_model extends CI_Model
         
         
     }
-    public function GetheadofID($sid)
+    public function GetheadofID($sid,$company_id)
      {
-         $result=$this->db->query("select m_id FROM manager WHERE sid=".$sid."");
+         $result=$this->db->query("select m_id FROM manager WHERE sid=".$sid." and company_id=".$company_id."");
          foreach($result->result() as $row)
          {
              return $row->m_id;
@@ -107,29 +108,86 @@ class staff_model extends CI_Model
                     return $row->rid;
                 }
             }
-    public function getallstaff($brcode,$role,$systemid,$subcode,$config)
-    {
-       switch($role)
+    
+    public function TotalStaff($brcode,$role,$systemid,$company_id,$subcode,$config,$page){
+
+        switch($role)
        {
            case 1:
-            
+
+                    $res=$this->db->query("select count(*) as totalrow FROM staff inner join tbl_branch on tbl_branch.brcode=staff.brcode WHERE staff.flag=1 ");
+                    foreach($res->result() as $row)
+                    {
+                        return $row->totalrow;
+                    }
            break;
            case 2:
            break;
            case 3:
-                    $res=$this->db->query("SELECT * FROM staff inner join tbl_branch on tbl_branch.brcode=staff.brcode WHERE staff.brcode IN('".$subcode."','".$brcode."') AND staff.flag=1");
+                    $res=$this->db->query("select count(*) as totalrow FROM staff inner join tbl_branch on tbl_branch.brcode=staff.brcode WHERE staff.brcode IN('".$subcode."','".$brcode."') AND staff.flag=1");
+                    foreach($res->result() as $row)
+                    {
+                        return $row->totalrow;
+                    }
+           break;
+           case 4:
+                    $res=$this->db->query("select count(*) as totalrow FROM staff inner join tbl_branch on tbl_branch.brcode=staff.brcode WHERE staff.rm_id='".$this->getRm($systemid)."' AND staff.flag=1 AND staff.position_nameeng='Branch Manager'");
+                    foreach($res->result() as $row)
+                    {
+                        return $row->totalrow;
+                    }
+           break;
+           case 5:
+                    $res=$this->db->query("select count(*) as totalrow FROM staff inner join tbl_branch on tbl_branch.brcode=staff.brcode WHERE staff.hid='".$this->GetheadofID($systemid,$company_id)."' AND staff.flag=1");
+                    foreach($res->result() as $row)
+                    {
+                        return $row->totalrow;
+                    }
+           break;
+           case 6:
+                    $res=$this->db->query("select count(*) as totalrow FROM staff inner join tbl_branch on tbl_branch.brcode=staff.brcode WHERE staff.hid=5 OR staff.rm_id=5 AND staff.flag=1");
+                    foreach($res->result() as $row)
+                    {
+                        return $row->totalrow;
+                    }
+           
+           break;
+
+       } 
+
+    }
+    public function getallstaff($brcode,$role,$systemid,$company_id,$subcode,$config,$page)
+    
+    {
+        
+         $hid=$this->GetheadofID($systemid,$company_id);
+        
+       switch($role)
+       {
+           case 1:
+
+                    $res=$this->db->query("select * FROM staff inner join tbl_branch on tbl_branch.brcode=staff.brcode WHERE staff.flag=1 order by staff.brcode limit 10 offset ".$page." ");
+                    return $res->result();
+           break;
+           case 2:
+           break;
+           case 3:
+                    $res=$this->db->query("select * FROM staff inner join tbl_branch on tbl_branch.brcode=staff.brcode WHERE staff.brcode IN('".$subcode."','".$brcode."') AND staff.flag=1 order by staff.brcode limit 10 offset ".$page."");
                     return $res->result();
            break;
            case 4:
-                    $res=$this->db->query("SELECT * FROM staff inner join tbl_branch on tbl_branch.brcode=staff.brcode WHERE staff.rm_id=".$this->getRm($systemid)." AND staff.flag=1 AND staff.position_nameeng='Branch Manager';");
+                    $res=$this->db->query("select * FROM staff inner join tbl_branch on tbl_branch.brcode=staff.brcode WHERE staff.rm_id=".$this->getRm($systemid)." and staff.flag=1 AND staff.position_nameeng='Branch Manager' order by staff.brcode limit 10 offset ".$page." ;");
                     return $res->result();
            break;
            case 5:
-                    $res=$this->db->query("SELECT * FROM staff inner join tbl_branch on tbl_branch.brcode=staff.brcode WHERE staff.hid=".$this->GetheadofID($systemid)." AND staff.flag=1;");
+                    
+                    $res=$this->db->query("select * FROM staff inner join tbl_branch on tbl_branch.brcode=staff.brcode WHERE staff.hid=".$hid." and staff.flag=1  order by staff.brcode limit 10 offset ".$page.";");
+                      
+                    // $this->output->enable_profiler(TRUE);
                     return $res->result();
            break;
            case 6:
-                    $res=$this->db->query("SELECT * FROM staff inner join tbl_branch on tbl_branch.brcode=staff.brcode WHERE staff.hid=5 OR staff.rm_id=5 AND staff.flag=1");
+                    $res=$this->db->query("select * FROM staff inner join tbl_branch on tbl_branch.brcode=staff.brcode WHERE staff.hid=5 OR staff.rm_id=5 AND staff.flag=1  order by staff.brcode limit 10 offset ".$page."");
                     return $res->result();
            
            break;
