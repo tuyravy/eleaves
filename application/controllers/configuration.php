@@ -16,7 +16,7 @@ class Configuration extends CI_Controller {
          include('Utility.php');
          $this->load->model('users_model');
     }
-    public function email(){
+    public function semail(){
 
         $data['title'] = lang('system_titel');
         $data['menulist']=$this->menu_model->getUsermenu();
