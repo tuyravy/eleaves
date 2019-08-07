@@ -341,5 +341,26 @@ class config_model extends CI_Model
         
     }
    
+    public function gethremail(){
+        $result=$this->db->get("hr_email");
+        return $result->result();
+    }
+
+    public function getemailadministrator(){
+        $result=$this->db->get("email_administrator");
+        return $result->result();
+
+    }
+    public function getbranchlist(){
+        $result=$this->db->get("tbl_branch");
+        return $result->result();
+    }
+    public function email_config(){
+        $result=$this->db->get("email_config");
+        foreach($result->result() as $row){
+            return $row;
+        }
+       
+    }
 }
 ?>

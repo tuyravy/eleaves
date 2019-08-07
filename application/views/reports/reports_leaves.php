@@ -57,11 +57,11 @@
                       <div id="reports">
                           <div class="row" id="logoreports" style="display:none">
                                 <div class="col-md-6">
-                                      <img src="<?php echo base_url();?>public/img/logo_simple.png" class="img-responsive" alt="Cinque Terre">
+                                      <img src="<?php echo base_url();?><?php echo $this->session->userdata('logo_title');?>" id="logo" class="img-responsive" alt="Cinque Terre">
                                 </div>
                                   <div class="col-md-6" id="textcenter">
-                                      <h2 id="in" style="font-size:25px;text-align:center">សហគ្រិនភាព ម៉ាយក្រូហ្វាយនែន ភិអិលស៊ី</h2>
-                                      <h2 id="in1" style="text-align:center;">SAHAKRINPHEAP S.T MICROFINANCE PLC</h2>
+                                      <!-- <h2 id="in" style="font-size:25px;text-align:center">សហគ្រិនភាព ម៉ាយក្រូហ្វាយនែន ភិអិលស៊ី</h2>
+                                      <h2 id="in1" style="text-align:center;">SAHAKRINPHEAP S.T MICROFINANCE PLC</h2> -->
                                       <h2 id="in2" style="text-align:center;">Eleaves Reports</h2>
                                       <p id="in3" style="text-align:center">Reports Date:
                                       <?php if(isset($start)){echo $start;}else{echo $start;}?>
@@ -224,7 +224,9 @@
               divElements + "</body>";
               document.getElementById("foldershow").style.display= "inline-block";   
               document.getElementById("logoreports").style.display= "inline-block";  
-              document.getElementById("textcenter").style.margin = "0px 100px 10px 210px";
+              document.getElementById("textcenter").style.margin = "0px 100px 10px 380px";
+              document.getElementById("logo").style.display= "inline-block"; 
+              document.getElementById("logo").style.margin = "0px 100px 10px 250px";     
               var table=document.getElementById("reportsleaves");
               var r=0;
               while(row=table.rows[r++])

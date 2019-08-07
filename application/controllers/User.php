@@ -136,53 +136,7 @@ class user extends CI_Controller {
         $this->db->where("system_id",$id);
         $this->db->update("staff",$data);
     }
-    public function configmanager()
-    {
-        $Utility=new Utility();
-        $data['title'] = lang('system_titel');
-        $data['menulist']=$this->menu_model->getUsermenu();
-        $data['submenu']=$this->menu_model->getsubMenu();
-        $data['total_rows']=$this->users_model->Totalmanager();
-        $page = $this->uri->segment(3) ? $this->uri->segment(3):1;
-        if(isset($_GET['per_page']))
-        {
-            $page=$_GET['per_page'];
-        }else
-        {
-            $page=0;
-        }
-        $data['manager']=$this->users_model->getmanager($page);
-        $base_url= base_url()."index.php/user/configmanager";
-        $total_rows= $this->users_model->Totalmanager();
-        $Utility->pagination_config($total_rows,$base_url);        
-        $data['titlepage']="Home Page";
-        $data['views']='users/option/configmanager';
-        $this->load->view('master_page',$data);
-    }
-    public function configrm()
-    {
-        $Utility=new Utility();
-        $data['title'] = lang('system_titel');
-        $data['menulist']=$this->menu_model->getUsermenu();
-        $data['submenu']=$this->menu_model->getsubMenu();
-        $data['total_rows']=$this->users_model->Totalmanager();
-        $page = $this->uri->segment(3) ? $this->uri->segment(3):1;
-        if(isset($_GET['per_page']))
-        {
-            $page=$_GET['per_page'];
-        }else
-        {
-            $page=0;
-        }
-        $data['manager']=$this->users_model->getconfigrm($page);
-        $data['branch']=$this->users_model->GetBranchcheck();  
-        $base_url= base_url()."index.php/user/configrm";
-        $total_rows= $this->users_model->Totalconfigrm();
-        $Utility->pagination_config($total_rows,$base_url);        
-        $data['titlepage']="Home Page";
-        $data['views']='users/option/configrm';
-        $this->load->view('master_page',$data);
-    }
+   
     public function BranchCheck()
     {
             
@@ -374,6 +328,24 @@ class user extends CI_Controller {
         echo json_encode($data);
 
     }
+    public function findUser($query){
+
+        $data=$this->users_model->findUser($query);
+        echo json_encode($data);
+
+    }
+    public function findAllUser($query){
+        
+        $data=$this->users_model->findAllUser($query);
+        echo json_encode($data);
+
+    }
+
+    public function findStaff($query){
+        $data=$this->users_model->findStaff($query);
+        echo json_encode($data);
+    }
+    
     public function setrequestchange($sid)
     {
         $data=array("rechange"=>1);
@@ -458,6 +430,17 @@ class user extends CI_Controller {
 
     }
 
+    public function setinactiveUser($id){
+
+        $data=array
+            (
+            'flag'=>0
+            );
+        $this->db->where('user_id',$id);
+        $this->db->update('users',$data);
+        redirect('listusers');
+    }
+
     public function setinactive($id)
     {
         $data=array
@@ -468,6 +451,7 @@ class user extends CI_Controller {
         $this->db->update('staff',$data);
         redirect('liststaff');
     }
+
     public function setactive($id)
     {
         $data=array
@@ -512,7 +496,7 @@ class user extends CI_Controller {
         $base_url= base_url()."index.php/listusers";
         $total_rows= $this->users_model->TotalUser();
         $Utility->pagination_config($total_rows,$base_url);
-
+        $data['level']=$this->users_model->getlevel();
         $data['title'] = lang('system_titel');
         $data['users']=$this->users_model->getUser($page);
         $data['menulist']=$this->menu_model->getUsermenu();
@@ -806,14 +790,21 @@ class user extends CI_Controller {
             $this->db->update('users',$data);
             return redirect('usercontroler');
     }
-    public function setrefreshpassword($sid)
+    public function setrefreshpassword($sid,$brcode)
     {
+        $data=array("password"=>"skp@007",
+                        "reset_password"=>1,
+                        "keys"=>1);
+            $this->db->where('flag',1);
+            $this->db->where('system_id',$sid);
+            $this->db->where('branch_code',$brcode);
+            $this->db->update('users',$data);
         //$sid=$this->input->post("sid");
-        $email=$this->users_model->getbysystem_id($sid);
+        $email=$this->users_model->getbysystem_id($sid,$brcode);
         $date=date("Y-m-d");
-        $tocc="tuyravey99@gmail.com";
+        $tocc="ravy@sahakrinpheap.com.kh";
         $this->sendtouser($email->full_name,$email->BrName,$email->brcode,$email->username,$sid,date("d - M- Y",strtotime($date)),$email->positionname,$tocc,$email->email);
-        return redirect('usercontroler');
+        return redirect('listusers');
     }
     public function staffcontroler()
     {
@@ -1275,44 +1266,29 @@ class user extends CI_Controller {
     }
     public function sendMail($message,$tocc,$toM,$subject)
     {
+        $email=$this->config_model->email_config();
+       
         $config = Array(
-                    'protocol' => 'smtp',
-                    'smtp_host' => 'mail.sahakrinpheap.com',
-                    'smtp_port' => 587,
-                    'smtp_user' => 'eleave@sahakrinpheap.com',
-                    'smtp_pass' => 'cRBy35rD(bL2',
-                    'mailtype'  => 'html', 
-                    'charset'   => 'utf-8'
+                    'protocol' =>$email->protocol,
+                    'smtp_host' =>$email->smtp_host,
+                    'smtp_port' =>$email->smtp_port,
+                    'smtp_user' =>$email->smtp_user,
+                    'smtp_pass' =>$email->smtp_pass,
+                    'mailtype'  =>$email->mailtype, 
+                    'charset'   =>$email->charset
                 );
         
-        /*$config=Array
-				(
-				  "protocol"	=>'smtp',
-				  "smtp_host"	=>'5oceanscambodiacom.ipower.com',
-				  "smtp_post"	=>587,
-				  "smtp_user"	=>'no-reply@5oceanscambodia.com',
-				  "smtp_pass"	=>'Pa$$w0rd',
-				  "mailtype"	=>'html',
-				  "charset"		=>'utf-8'
-		
-				);
-        */
+       
         $this->load->library('email',$config);
         $this->email->set_newline("\r\n");
-        $this->email->from('eleave@sahakrinpheap.com', 'E-Leaves Request');
+        $this->email->from($email->from,$email->title_email);
 		$this->email->to($toM);
         $this->email->cc($tocc);
 		$this->email->subject($subject);
 		$this->email->message($message);
-        $result = $this->email->send();
-        /*if($this->email->send()){
-            //Success email Sent
-            echo $this->email->print_debugger();
-         }else{
-            //Email Failed To Send
-            echo $this->email->print_debugger();
-         }
-        */
+		$result = $this->email->send();
+      
+        
     }
    }
 ?>

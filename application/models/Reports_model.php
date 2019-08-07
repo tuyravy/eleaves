@@ -651,7 +651,7 @@ class Reports_model extends CI_Model
                                      ");
             
              //$this->output->enable_profiler(TRUE);
-             foreach($resultres->result() as $row)
+             foreach($result->result() as $row)
                 {
                     return $row->totalrow;
                 }

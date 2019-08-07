@@ -147,7 +147,7 @@ function getleavetype($sid)
 
            }
    }
-   public function setleaves($sid,$leavestart,$leavesend,$leavetype,$userid,$note,$morning,$afternoon,$duration)
+   public function setleaves($sid,$brcode,$company_id,$leavestart,$leavesend,$leavetype,$userid,$note,$morning,$afternoon,$duration)
    {
         
         $insert_data=array
@@ -161,6 +161,8 @@ function getleavetype($sid)
             'type2'=>0,
             'status'=>1,
             'employee'=>$userid,
+            'brcode'=>$brcode,
+            'company_id'=>$company_id,
             'cause'=>$note,
             'startdatetype'=>$morning,
             'enddatetype'=>$afternoon,
@@ -227,12 +229,14 @@ function getleavetype($sid)
             return $row->email;
         }
    }
-   public function checkleaverequst($sid,$start,$end)
+   public function checkleaverequst($sid,$brcode,$company_id,$start,$end)
    {
        $result=$this->db->from('leaves')
                         ->where('startdate>=',$start)
                         ->where('startdate<=',$end)
                         ->where('sid',$sid)
+                        ->where('brcode',$brcode)
+                        ->where('company_id',$company_id)
                         ->where_in('status',array(1,2))
                         ->get();
        foreach($result->result() as $row)
@@ -279,10 +283,12 @@ function getleavetype($sid)
        }
        
    }
-   public function getlid($sid)
+   public function getlid($sid,$brcode,$company_id)
    {
        $result=$this->db->from('leaves')
                         ->where('sid',$sid)
+                        ->where('brcode',$brcode)
+                        ->where('company_id',$company_id)
                         ->where('status',1)
                         ->get();
         return $result->result();

@@ -66,6 +66,42 @@ class users_model extends CI_Model
         return $result->result();
     }
     
+    public function staffInfo($user_id,$system_id,$brcode){
+
+      
+
+        if($user_id=="NULL" && $system_id!="NULL" && $brcode!="NULL"){
+
+            $result=$this->db->from('users')
+            ->join('staff','staff.system_id=users.system_id')
+            ->join('tbl_branch','tbl_branch.brCode=users.branch_code')
+            ->where('users.flag',1)
+            ->where('users.system_id',$system_id)
+            ->where('tbl_branch.brCode',$brcode)
+            ->get();
+            foreach($result->result() as $row){
+                return $row;
+            }    
+
+        }
+
+        if($user_id!="NULL" && $system_id=="NULL" && $brcode=="NULL"){
+
+            $result=$this->db->from('users')
+            ->join('staff','staff.system_id=users.system_id')
+            ->join('tbl_branch','tbl_branch.brCode=users.branch_code')
+            ->where('users.flag',1)
+            ->where('users.user_id',$user_id)
+            ->get();
+            foreach($result->result() as $row){
+                return $row;
+            }           
+
+        }
+
+
+    }
+
     public function Totallistofuser()
     {
         $result=$this->db->query("
@@ -445,6 +481,56 @@ class users_model extends CI_Model
         return $result->result();
 
     }
+
+    public function findUser($query){
+
+        if($query=="All"){
+            $result=$this->db->query("
+                            select 
+                            distinct(s.system_id+s.brcode) as id,
+                            u.user_id,
+                            s.system_id,
+                            tb.brName,
+                            tb.brcode,
+                            s.staff_nameeng,
+                            u.username,
+                            s.position_nameeng 
+                        from staff s
+                        inner join tbl_branch tb on tb.brCode=s.brcode
+                        left join users u on s.system_id=u.system_id and s.brcode=u.branch_code
+                        where s.flag=1 and tb.flag=1 and s.active=1 
+                        and u.username IS NULL                        
+                        and s.position_nameeng not in('Branch Accountant','Deputy Branch Manager','General Credit Officer','Specialist Credit Officer',
+                        'Branch Cleaner','Branch Guard','Branch Cashier','Branch Teller','Branch Manager')
+                        "
+                        );             
+        }else{
+                    $result=$this->db->query("
+                    select 
+                    distinct(s.system_id+s.brcode) as id,
+                    u.user_id,
+                    s.system_id,
+                    tb.brName,
+                    tb.brcode,
+                    s.staff_nameeng,
+                    u.username,
+                    s.position_nameeng 
+                from staff s
+                inner join tbl_branch tb on tb.brCode=s.brcode
+                left join users u on s.system_id=u.system_id and s.brcode=u.branch_code
+                where s.flag=1 and tb.flag=1 and s.active=1 
+                and u.username IS NULL                        
+                and s.position_nameeng not in('Branch Accountant','Deputy Branch Manager','General Credit Officer','Specialist Credit Officer',
+                'Branch Cleaner','Branch Guard','Branch Cashier','Branch Teller','Branch Manager')
+                and s.staff_nameeng like '%".$query."%' "
+                );    
+        }
+                            
+                       
+        return $result->result();
+
+    }
+
     public function staffRequestchangealready($BRCODE)
     {
         $result=$this->db->query("
@@ -954,12 +1040,67 @@ class users_model extends CI_Model
         }
         
     }
+    public function getlevel(){
 
+        $result=$this->db->get("level");
+        return $result->result();
+    }
+
+    public function findAllUser($query){
+
+        if($query=="All"){
+
+            $result=$this->db->query("
+                select u.user_id,tb.brName,tb.brcode,s.staff_nameeng,u.username,s.position_nameeng from users u 
+                left join staff s on s.system_id=u.system_id
+                inner join tbl_branch tb on tb.brCode=s.brcode
+                where s.flag=1 and u.flag=1 and tb.flag=1 and s.active=1"
+                );    
+
+        }else{
+
+                $result=$this->db->query("
+                select u.user_id,tb.brName,tb.brcode,s.staff_nameeng,u.username,s.position_nameeng from users u 
+                left join staff s on s.system_id=u.system_id
+                inner join tbl_branch tb on tb.brCode=s.brcode
+                where s.flag=1 and u.flag=1 and tb.flag=1 and s.active=1
+                and s.staff_nameeng like '%".$query."%'"
+                );    
+            
+        }
+                            
+   
+        return $result->result();
+    }
+    public function findStaff($query){
+
+        if($query=="All"){
+
+            $result=$this->db->query("
+                select u.staff_nameeng,tb.brName,tb.brcode,u.position_nameeng,u.dateemployee,u.date_of_birth,u.system_id,u.sex as gender,u.phone_number,u.degree,u.active from staff u                 
+                inner join tbl_branch tb on tb.brCode=u.brcode
+                where u.flag=1 and tb.flag=1 and u.active=1"
+                );    
+
+        }else{
+
+                $result=$this->db->query("
+                select u.staff_nameeng,tb.brName,tb.brcode,u.position_nameeng,u.dateemployee,u.date_of_birth,u.system_id,u.sex as gender,u.phone_number,u.degree,u.active from staff u                 
+                inner join tbl_branch tb on tb.brCode=u.brcode
+                where u.flag=1 and tb.flag=1 and u.active=1
+                and u.staff_nameeng like '%".$query."%'"
+                );    
+            
+        }
+                            
+   
+        return $result->result();
+    }
     //Get user detail
     public function getUser($page)
     {
         $result=$this->db->query("
-                            select u.user_id,tb.brName,tb.brcode,s.staff_nameeng,u.username,s.position_nameeng from users u 
+                            select s.system_id,u.user_id,tb.brName,tb.brcode,s.staff_nameeng,u.username,s.position_nameeng from users u 
                             left join staff s on s.system_id=u.system_id
                             inner join tbl_branch tb on tb.brCode=s.brcode
                             where s.flag=1 and u.flag=1 and tb.flag=1 and s.active=1 order by tb.brcode limit 10 offset ".$page.""
@@ -1149,7 +1290,7 @@ class users_model extends CI_Model
         }
         
     }
-    public function getbysystem_id($sid)
+    public function getbysystem_id($sid,$brcode)
     {
         $result=$this->db->query("select
                             tb.BrName as BrName,
@@ -1159,16 +1300,21 @@ class users_model extends CI_Model
                             s.staff_nameeng as staff_name,
                             u.username as username,
                             u.email as email,
+                            u.user_id,
                             s.position_nameeng as positionname
                         from users u
                         inner join staff s on u.system_id=s.system_id
                         inner join tbl_branch tb on tb.brCode=s.brcode
-                        where u.system_id='".$sid."'");
-        
-        foreach($result->result() as $row)
-        {
-            return $row;
+                        where u.system_id='".$sid."' and tb.brcode='".$brcode."'");
+        if(count($result->result())>0){
+            foreach($result->result() as $row)
+            {
+                return $row;
+            }
+        }else{
+            return 0;
         }
+        
     }
     public function getStaffNotHaveInUserbysystemid($sid,$brcode)
     {

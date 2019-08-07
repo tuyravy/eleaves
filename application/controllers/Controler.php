@@ -7,6 +7,7 @@ class Controler extends CI_Controller {
          $this->load->model('menu_model');
          $this->load->model('Reports_model');
          $this->load->model('Controler_model');
+         $this->load->model('config_model');
          $this->load->model('Csv_model');
          include('Utility.php');
          if(!$this->session->userdata('user_id'))

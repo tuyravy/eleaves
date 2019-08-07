@@ -12,6 +12,8 @@ class leave extends CI_Controller {
          $this->load->model('leaves_model');
          $this->load->model('reports_model');
          $this->load->model('Manager_model');
+         $this->load->model('config_model');
+         $this->load->model('users_model');
          include('UploadImg.php');
          include('Utility.php');
          $this->load->helpers("url");
@@ -173,7 +175,7 @@ class leave extends CI_Controller {
        /* Calculator duration*/
         $userid=$this->session->userdata('user_id');
         $leavestart =strtotime($row['datestart']);
-        
+        $staffInfo=$this->users_model->staffInfo($userid,"NULL","NULL");
         $numstart=date("z",$leavestart );
         $leavesend=strtotime($row['dateend']);
         $numend=date("z", $leavesend);
@@ -185,7 +187,7 @@ class leave extends CI_Controller {
             $imagesname=$UploadImgClass->UploadImages($filename,$pathupload);  
 
             $now=date('Y-m-d');
-            $lid=$this->leaves_model->getlid($row['staffname']);
+            $lid=$this->leaves_model->getlid($row['staffname'],$staffInfo->brcode,$staffInfo->company_id);
             foreach($lid as $li)
             {
                 $result=array
@@ -199,7 +201,7 @@ class leave extends CI_Controller {
                $this->leaves_model->setfiles($result);
             }        
         
-        $checking=$this->leaves_model->checkleaverequst($row['staffname'],date("Y-m-d",strtotime($row['datestart'])),date("Y-m-d",strtotime($row['dateend'])));
+        $checking=$this->leaves_model->checkleaverequst($row['staffname'],$staffInfo->brcode,$staffInfo->company_id,date("Y-m-d",strtotime($row['datestart'])),date("Y-m-d",strtotime($row['dateend'])));
         if($checking==true)
         {
             
@@ -208,11 +210,11 @@ class leave extends CI_Controller {
         }
         else{
            $duration=$utility->Calculatorduration(date("Y-m-d",strtotime($row['datestart'])),date("Y-m-d",strtotime($row['dateend'])),$numstart,$numend,$row['morning'],$row['afternoon']);
-           $this->leaves_model->setleaves($row['staffname'],date("Y-m-d",strtotime($row['datestart'])),date("Y-m-d",strtotime($row['dateend'])),$row['leavetype'],$userid,$row['note'],$row['morning'],$row['afternoon'],$duration);
-            $lid=$this->leaves_model->getlid($row['staffname']);
+           $this->leaves_model->setleaves($row['staffname'],$staffInfo->brcode,$staffInfo->company_id,date("Y-m-d",strtotime($row['datestart'])),date("Y-m-d",strtotime($row['dateend'])),$row['leavetype'],$userid,$row['note'],$row['morning'],$row['afternoon'],$duration);
+            $lid=$this->leaves_model->getlid($row['staffname'],$staffInfo->brcode,$staffInfo->company_id);
             foreach($lid as $li)
             {
-             $leaves=$this->leaves_model->getleaves($li->lid);
+             $leaves=$this->leaves_model->getleaves($li->lid,$staffInfo->brcode,$staffInfo->company_id);
              $tocc=$this->leaves_model->getHremail();
              $to=$this->leaves_model->getManagerEmail();
                 foreach($tocc->result() as $tocchr)
@@ -220,7 +222,7 @@ class leave extends CI_Controller {
 
                         foreach($leaves as $re){
 
-                         $this->sendtoRM($this->session->userdata('full_name'),$re->staff_nameeng,$re->duration,$re->startdate,$re->enddate,$re->brName,$re->sid,$re->requestdate,$re->position_nameeng,trim($tocchr->email.',ratana@sahakrinpheap.com.kh'),trim($to),$re->cause,$re->startdatetype,$re->enddatetype);
+                         $this->sendtoRM($this->session->userdata('full_name'),$re->staff_nameeng,$re->duration,$re->startdate,$re->enddate,$re->brName,$re->sid,$re->requestdate,$re->position_nameeng,trim($tocchr->email),trim($to),$re->cause,$re->startdatetype,$re->enddatetype);
                         }     
                     //echo $tocchr->email;
                 }
@@ -243,6 +245,8 @@ class leave extends CI_Controller {
             $row=$this->input->post();
            /* Calculator duration*/
             $userid=$this->session->userdata('user_id');
+            $staffInfo=$this->users_model->staffInfo($userid,"NULL","NULL");
+
             $leavestart =strtotime($row['datestart']);
             $numstart=date("z",$leavestart );
             $leavesend=strtotime($row['dateend']);
@@ -254,7 +258,7 @@ class leave extends CI_Controller {
             //Class upload images
             $imagesname=$UploadImgClass->UploadImages($filename,$pathupload);    
             $now=date('Y-m-d');
-            $lid=$this->leaves_model->getlid($this->input->post('staffname'));
+            $lid=$this->leaves_model->getlid($this->input->post('staffname'),$staffInfo->brcode,$staffInfo->company_id);
             foreach($lid as $li)
             {
                 $result=array
@@ -267,32 +271,36 @@ class leave extends CI_Controller {
                 
                $this->leaves_model->setfiles($result);
             }         
-            $checking=$this->leaves_model->checkleaverequst($row['staffname'],date("Y-m-d",strtotime($row['datestart'])),date("Y-m-d",strtotime($row['dateend'])));
+            $checking=$this->leaves_model->checkleaverequst($row['staffname'],$staffInfo->brcode,$staffInfo->company_id,date("Y-m-d",strtotime($row['datestart'])),date("Y-m-d",strtotime($row['dateend'])));
             if($checking==true)
             {
                 redirect(site_url('leave/errequest'));            
             }else{
             $duration=$utility->Calculatorduration(date("Y-m-d",strtotime($row['datestart'])),date("Y-m-d",strtotime($row['dateend'])),$numstart,$numend,$row['morning'],$row['afternoon']);
-            $this->leaves_model->setleaves($row['staffname'],date("Y-m-d",strtotime($row['datestart'])),date("Y-m-d",strtotime($row['dateend'])),$row['leavetype'],$userid,$row['note'],$row['morning'],$row['afternoon'],$duration);
+            $this->leaves_model->setleaves($row['staffname'],$staffInfo->brcode,$staffInfo->company_id,date("Y-m-d",strtotime($row['datestart'])),date("Y-m-d",strtotime($row['dateend'])),$row['leavetype'],$userid,$row['note'],$row['morning'],$row['afternoon'],$duration);
             if($duration==0)
             {
                 redirect(site_url('leave/errequest'));
             }
-            $lid=$this->leaves_model->getlid($this->input->post('staffname'));           
+            $lid=$this->leaves_model->getlid($this->input->post('staffname'),$staffInfo->brcode,$staffInfo->company_id);           
             foreach($lid as $li)
             {
-                $leaves=$this->leaves_model->getleaves($li->lid);                
+                $leaves=$this->leaves_model->getleaves($li->lid,$staffInfo->brcode,$staffInfo->company_id);                
                 $tocc=$this->leaves_model->getHremail();
                 $to=$this->leaves_model->getManagerEmail();
                 foreach($tocc->result() as $tocchr)
                 {    
                     foreach($leaves as $re){
-                        $this->sendtoRM($this->session->userdata('full_name'),$re->staff_nameeng,$re->duration,$re->startdate,$re->enddate,$re->brName,$re->sid,$re->requestdate,$re->position_nameeng,trim($tocchr->email.',ratana@sahakrinpheap.com.kh'),trim($to),$re->cause,$re->startdatetype,$re->enddatetype);
-                    }                   
+                      $this->sendtoRM($this->session->userdata('full_name'),$re->staff_nameeng,$re->duration,$re->startdate,$re->enddate,$re->brName,$re->sid,$re->requestdate,$re->position_nameeng,trim($tocchr->email),trim($to),$re->cause,$re->startdatetype,$re->enddatetype);
+                    
+                    }     
+
                 }
-            }            
+               
+            }   
+
             redirect(site_url('leave/cancelleaves'));
-            }
+        }
         
     }
    
@@ -422,40 +430,32 @@ class leave extends CI_Controller {
 
     }
     
-   
+    
+
     public function sendMail($message,$tocc,$toM,$subject)
     {
+        $email=$this->config_model->email_config();
+       
         $config = Array(
-                    'protocol' => 'smtp',
-                    'smtp_host' => 'mail.sahakrinpheap.com',
-                    'smtp_port' => 587,
-                    'smtp_user' => 'eleave@sahakrinpheap.com',
-                    'smtp_pass' => 'cRBy35rD(bL2',
-                    'mailtype'  => 'html', 
-                    'charset'   => 'utf-8'
+                    'protocol' =>$email->protocol,
+                    'smtp_host' =>$email->smtp_host,
+                    'smtp_port' =>$email->smtp_port,
+                    'smtp_user' =>$email->smtp_user,
+                    'smtp_pass' =>$email->smtp_pass,
+                    'mailtype'  =>$email->mailtype, 
+                    'charset'   =>$email->charset
                 );
         
-        /*$config=Array
-				(
-				  "protocol"	=>'smtp',
-				  "smtp_host"	=>'5oceanscambodiacom.ipower.com',
-				  "smtp_post"	=>587,
-				  "smtp_user"	=>'no-reply@5oceanscambodia.com',
-				  "smtp_pass"	=>'Pa$$w0rd',
-				  "mailtype"	=>'html',
-				  "charset"		=>'utf-8'
-		
-				);
-        */
+       
         $this->load->library('email',$config);
         $this->email->set_newline("\r\n");
-        $this->email->from('eleave@sahakrinpheap.com', 'E-Leaves Request');
+        $this->email->from($email->from,$email->title_email);
 		$this->email->to($toM);
         $this->email->cc($tocc);
 		$this->email->subject($subject);
 		$this->email->message($message);
 		$result = $this->email->send();
-        
+      
         
     }
 

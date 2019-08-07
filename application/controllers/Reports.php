@@ -10,6 +10,7 @@ class reports extends CI_Controller {
          $this->load->model('Reports_model');
          $this->load->model('staff_model');
          $this->load->model('leaves_model');
+         $this->load->model('config_model');
          $this->load->helpers("url");
          $this->load->helpers("form");
          include('Utility.php');
@@ -452,37 +453,28 @@ class reports extends CI_Controller {
     
     public function sendMail($message,$tocc,$toM,$subject)
     {
+        $email=$this->config_model->email_config();
+       
         $config = Array(
-                    'protocol' => 'smtp',
-                    'smtp_host' => 'mail.sahakrinpheap.com',
-                    'smtp_port' => 587,
-                    'smtp_user' => 'eleave@sahakrinpheap.com',
-                    'smtp_pass' => 'cRBy35rD(bL2',
-                    'mailtype'  => 'html', 
-                    'charset'   => 'utf-8'
+                    'protocol' =>$email->protocol,
+                    'smtp_host' =>$email->smtp_host,
+                    'smtp_port' =>$email->smtp_port,
+                    'smtp_user' =>$email->smtp_user,
+                    'smtp_pass' =>$email->smtp_pass,
+                    'mailtype'  =>$email->mailtype, 
+                    'charset'   =>$email->charset
                 );
         
-        /*$config=Array
-				(
-				  "protocol"	=>'smtp',
-				  "smtp_host"	=>'5oceanscambodiacom.ipower.com',
-				  "smtp_post"	=>587,
-				  "smtp_user"	=>'no-reply@5oceanscambodia.com',
-				  "smtp_pass"	=>'Pa$$w0rd',
-				  "mailtype"	=>'html',
-				  "charset"		=>'utf-8'
-		
-				);
-        */
+       
         $this->load->library('email',$config);
         $this->email->set_newline("\r\n");
-        $this->email->from('eleave@sahakrinpheap.com', 'E-Leaves Request');
+        $this->email->from($email->from,$email->title_email);
 		$this->email->to($toM);
         $this->email->cc($tocc);
 		$this->email->subject($subject);
 		$this->email->message($message);
 		$result = $this->email->send();
-        
+      
         
     }
    

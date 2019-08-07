@@ -23,7 +23,7 @@
                 <div class="animate form login_form" style="box-shadow: 0px 0px 10px #ccc;">
                     <section class="login_content">
                         <div>
-                            <img src="<?= base_url() . 'public/img/stsk_logo.png'; ?>" class="img-circle" style="width: 100px;height:auto;margin: -15px;">
+                            <img src="<?= base_url() . 'public/img/Logo/Logosmall.png'; ?>"  style="width: 100px;height:auto;margin: -15px;">
                         </div>
                         
                         <form action="<?php echo site_url('Login/checksession');?>" method="post">

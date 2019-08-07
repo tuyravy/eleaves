@@ -13,6 +13,8 @@
         <link href="<?php echo base_url(); ?>public/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
         <link href="<?php echo base_url(); ?>public/build/css/custom.min.css" rel="stylesheet">
         <link href="<?php echo base_url(); ?>public/build/js/select2/dist/css/select2.min.css" rel="stylesheet">
+        <script src="<?php echo base_url();?>dist/sweetalert.js"></script>
+        <link rel="stylesheet" href="<?php echo base_url();?>dist/sweetalert.css">
     </head>
     <body class="nav-md" onload="setTimeout(myFunction,900000);">
         <div class="container body">

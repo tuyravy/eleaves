@@ -14,7 +14,7 @@ class Login extends CI_Controller {
          $this->lang->load('global', $this->session->userdata('language'));
          $this->load->model('Login_model');
          $this->load->model('users_model');
-         
+         $this->load->model('config_model');
     }
 	public function index()
     {
@@ -26,6 +26,7 @@ class Login extends CI_Controller {
     {
                     $this->load->helper('form');
                     $this->load->helper('url');
+                    $data['branch']=$this->users_model->getBranch();
                     if(isset($_POST["systemid"]))
                     {
                         $sid=$this->input->post('systemid');
@@ -79,6 +80,7 @@ class Login extends CI_Controller {
                             'role'=>$res->role,
                             'system_id'=>$res->system_id,
                             'logo'=>$res->logo,
+                            'logo_title'=>$res->logo_title,
                             'hid'=>$res->hid,
                             'types'=>$res->types,
                             'subbranch'=>$res->subbranch
@@ -231,15 +233,35 @@ class Login extends CI_Controller {
         $data['title'] = lang('session_login_title');
 		$this->load->view('login/alreadychange',$data);
     }
-   public function requestpasswordbysystemid($sid)
+   public function requestpasswordbysystemid()
     {
-       
-        $email=$this->users_model->getbysystem_id($sid);
-        $date=date("Y-m-d");
-        $tocc="ravy@sahakrinpheap.com.kh";
-        $to=str_replace(' ','',$email->email);
-        $this->sendtouserforgetpassword($email->full_name,$email->BrName,$email->brcode,$email->username,$sid,date("d - M- Y",strtotime($date)),$email->positionname,$tocc,$to);
-        return redirect('login/already');
+        $sid=$this->input->post('systemid');
+        $brcode=$this->input->post('brcode');
+
+        $email=$this->users_model->getbysystem_id($sid,$brcode);
+        if($email=="0"){
+            $this->session->set_flashdata('erorr', 'លោកអ្នកស្នើរសុំលេខសម្ងាត់ថ្មីមិនបានសម្រេចទេ សូមទាក់ទង់ទៅផ្នែកគ្រប់គ្រង់ប្រព័ន្ធ!');
+            
+            redirect(site_url('login/forgetpassword'));
+            
+        }else{
+
+            
+            $date=date("Y-m-d");
+            $tocc="ravy@sahakrinpheap.com.kh";
+            $to=str_replace(' ','',$email->email);
+            $this->sendtouserforgetpassword($email->full_name,$email->BrName,$email->brcode,$email->username,$sid,date("d - M- Y",strtotime($date)),$email->positionname,$tocc,$to);
+            $data=array(
+                'last_time_login'=>date('Y-m-d h:i:s'),
+                "branch_code"=>$email->brcode
+                );
+            $this->db->where("user_id",$email->user_id);
+            $this->db->where('system_id',$sid);
+            $this->db->update('users',$data); 
+
+            return redirect('login/already');
+        }
+        
     }
    public function sendtouserforgetpassword($StaffName,$brname,$BrCode,$username,$sid,$datechange,$postion,$tocc,$to)
     {
@@ -385,43 +407,29 @@ class Login extends CI_Controller {
     }
     public function sendMail($message,$tocc,$toM,$subject)
     {
+        $email=$this->config_model->email_config();
+       
         $config = Array(
-                    'protocol' => 'smtp',
-                    'smtp_host' => 'mail.sahakrinpheap.com',
-                    'smtp_port' => 587,
-                    'smtp_user' => 'eleave@sahakrinpheap.com',
-                    'smtp_pass' => 'cRBy35rD(bL2',
-                    'mailtype'  => 'html', 
-                    'charset'   => 'utf-8'
+                    'protocol' =>$email->protocol,
+                    'smtp_host' =>$email->smtp_host,
+                    'smtp_port' =>$email->smtp_port,
+                    'smtp_user' =>$email->smtp_user,
+                    'smtp_pass' =>$email->smtp_pass,
+                    'mailtype'  =>$email->mailtype, 
+                    'charset'   =>$email->charset
                 );
         
-        /*$config=Array
-				(
-				  "protocol"	=>'smtp',
-				  "smtp_host"	=>'5oceanscambodiacom.ipower.com',
-				  "smtp_post"	=>587,
-				  "smtp_user"	=>'no-reply@5oceanscambodia.com',
-				  "smtp_pass"	=>'Pa$$w0rd',
-				  "mailtype"	=>'html',
-				  "charset"		=>'utf-8'
-		
-				);
-        */
+       
         $this->load->library('email',$config);
         $this->email->set_newline("\r\n");
-        $this->email->from('eleave@sahakrinpheap.com', 'E-Leaves Request');
+        $this->email->from($email->from,$email->title_email);
 		$this->email->to($toM);
         $this->email->cc($tocc);
 		$this->email->subject($subject);
 		$this->email->message($message);
-        $result = $this->email->send();
-        /*if($this->email->send()){
-            //Success email Sent
-            echo $this->email->print_debugger();
-         }else{
-            //Email Failed To Send
-            echo $this->email->print_debugger();
-         }
-        */
+		$result = $this->email->send();
+      
+        
     }
+
 }

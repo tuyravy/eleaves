@@ -29,22 +29,11 @@
                         <legend></legend>
 
                             <form class="form-inline" action="<?= site_url('reports/ereportbydate');?>" method="post">
+                                
                                 <div class="form-group">
-                                    <label for="exampleInputName2">BrName</label>
-                                    <?php if(isset($start)){?>
-                                    <input type="text" class="form-control" name="datestart" id="datestart" value="<?php echo $start;?> "placeholder="Start" autocomplete="off">
-                                    <?php }else{?>
-                                    <input type="text" class="form-control" name="datestart" id="datestart" placeholder="Start" autocomplete="off">
-                                    <?php }?>
+                                    <label for="exampleInputEmail2">Staff Name</label>                                  
+                                      <input type="text" class="form-control" id="searchstaff" placeholder="Staff Name,(*) for all users"  autocomplete="off">
                                 </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail2">StaffName</label>
-                                    <?php if(isset($end)){?>
-                                    <input type="text" class="form-control" name="dateend" id="dateend" placeholder="End"  value="<?php echo $end;?>" autocomplete="off">
-                                    <?php }else{?>
-                                    <input type="text" class="form-control" name="dateend" id="dateend" placeholder="End" autocomplete="off">
-                                    <?php }?>
-                                    </div>
                                 <button type="submit" class="btn btn-success" style="margin-top:5px;"><i class="fa fa-search"></i><span style="margin-left:5px;">Search</span></button>
                                 <a href="<?= site_url('user/addusers'); ?>" style="margin-top:5px;" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Refresh Page"><span class="glyphicon glyphicon-refresh"></span></a>
                             </form>
@@ -66,6 +55,7 @@
                         </div>
                     </div>
                   <div class="table-responsive">
+                   <div id="reports">
                     <table id="datatable-buttons" class="table table-striped table-bordered" >
                       <thead style="border-bottom:2pt solid #22d4ae;">
                         <tr>
@@ -107,6 +97,7 @@
                         <?php }?>
                       </tbody>
                     </table>
+                  </div>
                         <div class="pull-right">
                             <div style="margin-top: 25px;margin-bottom: -12px;">
                                 <label>Total <span class="label label-default"><?= $total_rows; ?></span>records</label>
@@ -202,6 +193,69 @@
 
             
         });
-       
+
+        $("#searchstaff").on("keyup",function(){
+
+          var query=$("#searchstaff").val();
+          if(query=="*"){
+          query="All";
+          }
+          $.getJSON("<?php echo site_url("user/findUser");?>/"+query,function(obj)
+            {
+                var employee='';
+                var i=0;
+                $.each(obj,function(key,value)
+                {
+                    i++;
+                    employee+='<tr>';
+                    employee+="<tr id='tbody'>";
+                    employee+="<td style='text-align:center'>"+i+"</td>";                          
+                    employee+="<td style='text-align:left'>"+value.brName+"</td>"; 
+                    employee+="<td style='text-align:center'>"+value.brcode+"</td>";  
+                    employee+="<td style='text-align:left'>"+value.staff_nameeng+"</td>";    
+                    employee+="<td style='text-align:center'>"+value.system_id+"</td>";  
+                    employee+="<td>"+value.username+"</td>";                       
+                    employee+="<td style='text-align:left'>"+value.position_nameeng+"</td>";                                                         
+                    employee+="<td style='text-align:center'><a href='#' class='btn btn-primary btn-xs' id='addmail' data-sid="+value.system_id+" data-brcode="+value.brcode+"><i class='fa fa-plus' data-toggle='tooltip' data-placement='top' title='Add user'></i></a></td>";                       
+                    employee+="</tr>";                         
+                  
+                });
+                $("#userlist").html(employee);
+
+        });
+      });
+        
     });          
 </script>
+<script language="javascript" type="text/javascript">
+        function printDiv(divID) {
+            
+            //Get the HTML of div
+            var divElements = document.getElementById(divID).innerHTML;
+            //Get the HTML of whole page
+            var oldPage = document.body.innerHTML;
+            //Reset the page's HTML with div's HTML onl
+            document.body.innerHTML = 
+              "<html><head><title></title></head><body>" + 
+              divElements + "</body>";
+            
+              var table=document.getElementById("userlist");
+              var r=0;
+              while(row=table.rows[r++])
+              {
+                var c=7;
+                while(cell=row.cells[c++])
+                {
+                  //cell.innerHTML='[Row='+r+',Col='+c+']'; // do sth with cell
+                  cell.innerHTML=""; // do sth with cell
+
+                }
+              }
+            //Print Page
+            window.print();
+            //Restore orignal HTML
+            document.body.innerHTML = oldPage;
+            
+          
+        }
+    </script>

@@ -35,7 +35,7 @@
                     </div>
                   <div id="reports">
                     <div class="row">
-                        <img src="<?php echo base_url();?>public/img/SKPletterheadLandscape.png" class="img-responsive center" alt="Cinque Terre"  id="logo" style="width:50%;display:none">
+                        <img src="<?php echo base_url();?><?php echo $this->session->userdata('logo_title');?>" class="img-responsive center" alt="Cinque Terre"  id="logo" style="width:50%;display:none">
                         <h2 id="in" style="text-align:center;">Eleaves Reports</h2>
                           <p id="in" style="text-align:center">Reports Date:
                           <?php if(isset($start)){echo $start;}else{echo $start;}?>
